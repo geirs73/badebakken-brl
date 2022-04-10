@@ -1,0 +1,136 @@
+
+@fontpath: "../fonts";
+@debug: false;
+
+.fontspec(@name, @subname, @style, @weight) {
+    font-family: @name;
+    font-style: @style;
+    font-weight: @weight;
+    src: url("@{fontpath}/@{name}/@{name}-@{subname}.ttf");
+}
+
+@font-face {
+    .fontspec(Roboto, Regular, normal, normal)
+}
+
+@font-face {
+    .fontspec(Roboto, Bold, normal, bold)
+}
+
+@font-face {
+    .fontspec(Roboto, Italic, italic, normal)
+}
+
+@font-face {
+    .fontspec(Roboto, BoldItalic, italic, bold)
+}
+
+.debug when (@debug = true) {
+    border-style: solid;
+    border-width: 1px;
+    border-color: orangered;
+}
+
+.debug-cyan when (@debug = true) {
+    .debug;
+    border-color: cyan;
+}
+
+body {
+    padding: 2cm;
+    max-width: 40em;
+    text-align: left;
+    counter-reset: section;
+}
+
+div.regler {
+    font-size: 11pt;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+div.fellesrom 
+{
+    font-size: 11pt;
+    // font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif
+   // font-family: 'Times New Roman', Times, serif;
+}
+
+p.em {
+    font-style: italic;
+}
+
+h1 {
+    font-size: larger;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+div.regler > h2::before {
+    counter-increment: section;
+    content: counter(section) ".";
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 0.5em;
+}
+
+h2 {
+    font-size: large;
+}
+
+div.regler > h2 {
+    text-decoration: underline;
+}
+
+.center {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+em {
+    text-decoration: underline;
+    font-style: normal;
+}
+
+ol {
+    counter-reset: list;
+    margin: 0;
+    padding-right: 0;
+    padding-left: 1.1em;
+    display: block; 
+    .debug-cyan;
+}
+
+div.regler > ol > li {
+    list-style: none;
+    counter-increment: list;
+    list-style-position: outside;
+    padding-left: 3em;
+    padding-bottom: 1ex;
+    .debug;
+}
+
+div.regler > ol > li::marker {    
+    content: counter(list, lower-alpha) ") ";    
+}
+
+ul {
+    list-style-position: outside;
+    padding: 0
+}
+
+ul > li {
+    list-style-position: inside;
+    list-style-type: none;
+    padding: 0;
+    padding-bottom: 1ex;
+    .debug
+}
+
+ul > li::marker {
+    content: "\2013\a0\a0" // 2013 = long em dash
+}
+
