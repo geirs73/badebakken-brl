@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schema\boligselskapsregler.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<regeldokument
+    gyldig-fra="1987-01-01"
+    referanse="ordensregler-1987">
+    <tittel>Husordensregler for Badebakken Borettslag</tittel>
+    <versjoner>
+        <versjon vedtaksdato="1989-04-18">
+            <vedtak>vedtatt på konstituerende generalforsamling 19. februar 1987 med senere endringer,
+                senest 18. april 1989</vedtak>
+            <!-- <endringer>
+                <endring referanse="foobar" handling="tillegg" />
+            </endringer> -->
+        </versjon>
+    </versjoner>
+    <seksjoner>
+        <hovedseksjon paragrafnumerering="true">
+            <paragrafer>
+                <paragraf nummer="5" referanse="foo">
+                    Hver beboer plikter å påse at han, hans husstand eller andre
+                    som han er ansvarlig for, eller gir adgang til bygningene,
+                    <em>holder ro og orden</em>
+                    slik at det ikke voldes ulempe eller ubehag for andre
+                    beboere.
+                </paragraf>
+            </paragrafer>
+
+        </hovedseksjon>
+        <vedlegg>
+            <paragrafer />
+
+        </vedlegg>
+    </seksjoner>
+</regeldokument>

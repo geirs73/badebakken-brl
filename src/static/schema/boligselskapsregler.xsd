@@ -1,0 +1,111 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="regelsett">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="dokument-ref">
+                    <xs:complexType>
+                        <xs:attribute name="src" type="xs:anyURI" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="regeldokument" type="dokument-t" />
+
+    <xs:complexType name="dokument-t">
+        <xs:sequence>
+            <xs:element name="tittel" type="xs:string" minOccurs="1" />
+            <xs:element name="versjoner" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="versjon" type="versjon-t" minOccurs="0" maxOccurs="unbounded" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="introduksjon" minOccurs="0">
+                <xs:complexType />
+            </xs:element>
+            <xs:element name="seksjoner" minOccurs="1">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="hovedseksjon" type="seksjon-t" minOccurs="1" />
+                        <xs:element name="vedlegg" type="seksjon-t" minOccurs="0" maxOccurs="unbounded" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+
+        <xs:attribute name="referanse" type="xs:QName" use="required" />
+        <xs:attribute name="gyldig-fra" type="xs:date" use="required" />
+        <xs:attribute name="gyldig-til" type="xs:date" use="optional" />
+
+    </xs:complexType>
+
+    <xs:complexType name="seksjon-t">
+        <xs:choice>
+            <xs:element name="kapitler" minOccurs="1">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="paragrafer" type="paragrafer-t" minOccurs="1" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="paragrafer" type="paragrafer-t" minOccurs="1" />
+        </xs:choice>
+        <xs:attribute name="paragrafnumerering" type="paragrafnumerering" />
+    </xs:complexType>
+
+    <xs:complexType name="paragrafer-t">
+        <xs:sequence>
+            <xs:element name="paragraf" type="paragraf-t" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="paragraf-t" mixed="true">
+        <xs:all>
+            <xs:element name="strong" minOccurs="0" />
+            <xs:element name="stronger" minOccurs="0" />
+            <xs:element name="em" minOccurs="0" />
+        </xs:all>
+        <xs:attribute name="referanse" type="xs:ID" />
+        <xs:attribute name="nummer" type="xs:integer" use="required" />
+    </xs:complexType>
+
+    <xs:complexType name="setning-t" mixed="true">
+        <xs:sequence />
+    </xs:complexType>
+
+    <xs:simpleType name="handling-e">
+        <xs:restriction base="xs:normalizedString">
+            <xs:enumeration value="sletting" />
+            <xs:enumeration value="redigering" />
+            <xs:enumeration value="tillegg" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="versjon-t">
+        <xs:all>
+            <xs:element name="vedtak" type="xs:string" />
+            <xs:element name="endringer" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="endring" type="endring-t" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:all>
+        <xs:attribute name="vedtaksdato" type="xs:date" use="required" />
+    </xs:complexType>
+
+    <xs:complexType name="endring-t">
+        <xs:attribute name="handling" type="handling-e" use="required" />
+        <xs:attribute name="referanse" type="xs:IDREF" use="required" />
+    </xs:complexType>
+
+    <xs:simpleType name="paragrafnumerering">
+        <xs:restriction base="xs:boolean" />
+    </xs:simpleType>
+
+
+</xs:schema>
