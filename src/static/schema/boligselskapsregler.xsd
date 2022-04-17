@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    targetNamespace="urn:no.badebakken.regelsett"
+    xmlns="urn:no.badebakken.regelsett"
+    elementFormDefault="qualified"
+    >
     <xs:element name="regelsett">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="regeldokument" minOccurs="1" maxOccurs="unbounded" type="dokument-t" />
+                <xs:element name="dokument" minOccurs="1" maxOccurs="unbounded" type="dokument-t" />
             </xs:sequence>
         </xs:complexType>
     </xs:element>
 
-    <xs:element name="regeldokument" type="dokument-t" />
+    <xs:element name="dokument" type="dokument-t" />
 
     <xs:complexType name="dokument-t">
         <xs:sequence>
@@ -42,27 +47,26 @@
     </xs:attributeGroup>
 
 
-    <xs:attributeGroup name="numerert-under-ag">
-        <xs:attribute name="numerert-under" type="xs:boolean" use="optional"/>
+    <xs:attributeGroup name="nummerert-under-ag">
+        <xs:attribute name="nummerert-under" type="xs:boolean" use="optional"/>
     </xs:attributeGroup>
 
-    <xs:attributeGroup name="numerert-ag">
-        <xs:attributeGroup ref="numerert-under-ag" />
-        <xs:attribute name="numerert" type="xs:boolean" use="optional" />
+    <xs:attributeGroup name="nummerert-ag">
+        <xs:attributeGroup ref="nummerert-under-ag" />
+        <xs:attribute name="nummerert" type="xs:boolean" use="optional" />
     </xs:attributeGroup>
 
     <xs:attributeGroup name="dokument-ag">
         <xs:attributeGroup ref="id-ag" />
-        <xs:attributeGroup ref="numerert-under-ag" />
+        <xs:attributeGroup ref="nummerert-under-ag" />
         <xs:attribute name="gyldig-fra" type="xs:date" use="required" />
         <xs:attribute name="gyldig-til" type="xs:date" use="optional" default="9999-01-01" />
     </xs:attributeGroup>
 
     <xs:attributeGroup name="regel-ag">
         <xs:attributeGroup ref="id-ag" />
-        <xs:attributeGroup ref="numerert-ag" />
+        <xs:attributeGroup ref="nummerert-ag" />
         <xs:attribute name="gyldig-fra" type="xs:date" use="optional" />
-        <!-- <xs:attribute name="erstatter" type="xs:IDREF" use="optional" /> -->
     </xs:attributeGroup>
 
 
@@ -73,15 +77,6 @@
         </xs:sequence>
         <xs:attributeGroup ref="regel-ag" />
     </xs:complexType>
-
-    <xs:complexType name="paragraf-t">
-        <xs:sequence>
-            <xs:element name="tittel" type="xs:string" minOccurs="1" />
-            <xs:element name="ledd" type="ledd-t" minOccurs="0" maxOccurs="unbounded" />
-        </xs:sequence>
-        <xs:attributeGroup ref="regel-ag" />
-    </xs:complexType>
-
 
     <xs:complexType name="tekst-t" mixed="true">
         <xs:sequence>
@@ -101,6 +96,17 @@
                     <xs:element name="fremhevet" />
                     <xs:element name="understreket" />
                 </xs:choice>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="paragraf-t" mixed="true">
+        <xs:complexContent>
+            <xs:extension base="ftekst-t">
+                <xs:sequence>
+                    <xs:element name="tittel" type="xs:string" minOccurs="1" />
+                    <xs:element name="ledd" type="ledd-t" minOccurs="0" maxOccurs="unbounded" />
+                </xs:sequence>        
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>

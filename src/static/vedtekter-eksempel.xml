@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="schema/boligselskapsregler.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
-<regelsett>
-    <regeldokument
-        numerert-under="true"
-        id="vedtekter_2"
+<!-- <?xml-model href="schema/boligselskapsregler.xsd" type="application/xml" ?>  -->
+
+<regelsett
+    xmlns="urn:no.badebakken.regelsett"
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:schemaLocation="urn:no.badebakken.regelsett ./schema/boligselskapsregler.xsd">
+
+    <dokument
+        nummerert-under="true"
+        id="v2"
         gyldig-fra="2005-01-01">
 
         <tittel>
@@ -13,24 +18,26 @@
         </tittel>
         <kapittel>
             <tittel>Innledende bestemmelser</tittel>
-            <paragraf>
+            <paragraf nummerert-under="0">
+                <erstatter referanse="v1_1_1" />
+                <erstatter referanse="v1_1_2" />
+                <erstatter referanse="v1_1_3" />
+                <erstatter referanse="v1_1_4" />
                 <tittel>Formål</tittel>
-                <ledd id="sha1_fbee1d21440abcaca6f08296d0aa4bca71e46a8c">
-                    <erstatter referanse="sha1_7a2f6c16964758a34ab00f879ffb2b762dbef3cf" />
-                    <erstatter referanse="sha1_dc215031e88f7ff6a4a913b72c09d6186622ae0d" />
-                    Badebakken borettslag er et samvirkeforetak som har til
-                    formål å gi andelseierne bruksrett til egen bolig i lagets
-                    eiendom (borett) og å drive virksomhet som står i sammenheng
-                    med denne.
-                </ledd>
+                Badebakken borettslag er et samvirkeforetak som har til
+                formål å gi andelseierne bruksrett til egen bolig i lagets
+                eiendom (borett) og å drive virksomhet som står i sammenheng
+                med denne.
             </paragraf>
-            <paragraf>
+            <paragraf nummerert-under="1">
                 <tittel>Forretningskontor, forretningsførsel og tilknytningsforhold</tittel>
-                <ledd>
-                    Borettslaget ligger i Oslo kommune og har
-                    forretningskontor i Oslo kommune.
+                <ledd id="v2_1_2_1">
+                    <erstatter referanse="v1_1_5" />
+                    Borettslaget ligger i Oslo kommune og har forretningskontor
+                    i Oslo kommune.
                 </ledd>
                 <ledd>
+                    <erstatter referanse="v1_1_6" />
                     Borettslaget er tilknyttet Boligbyggelaget Usbl som er
                     forretningsfører.
                 </ledd>
@@ -68,28 +75,28 @@
             </paragraf>
 
         </kapittel>
-    </regeldokument>
-    <regeldokument id="vedtekter_1"
+    </dokument>
+    <dokument id="v1"
         gyldig-fra="1987-02-19"
         gyldig-til="2004-12-31"
-        numerert-under="1">
+        nummerert-under="1">
         <versjoner />
-        <paragraf numerert-under="0">
+        <paragraf nummerert-under="0">
             <tittel>Navn, lagsform, formål og forretningskontor</tittel>
-            <ledd id="sha1_7a2f6c16964758a34ab00f879ffb2b762dbef3cf">
+            <ledd id="v1_1_1">
                 Badebakken Borettslag er et andelslag som har til formål å
                 skaffe andelseierne bolig ved å erverve eller forestå oppføring
                 av boligbygg til andelseierne og leie ut boliger i slike bygg
                 til andelseierne.
             </ledd>
-            <ledd id="sha1_dc215031e88f7ff6a4a913b72c09d6186622ae0d">
+            <ledd id="v1_1_2">
                 Laget har dessuten til formål å erverve eller forestå
                 oppføringen av andre bygg enn boligbygg (herunder garasjer) når
                 de skal brukes til felles formål for andelseierne, eller når
                 utleie av lokalene i slike bygg skal skje i sammenheng med
                 lagets øvrige virksomhet.
             </ledd>
-            <ledd id="sha1_7666f2779ab988af1c29d1e36f72b5b45037b55e">
+            <ledd id="v1_1_3">
                 Dersom det innen boligområdet opprettes et fellesorgan som skal
                 ha til formål å ivareta beboernes fellesinteresser, eksempelvis
                 felles vaktmestertjeneste, vedlikehold etc. av felles
@@ -97,17 +104,246 @@
                 medlem av dette. Medlemskapet medfører plikt til å betale de
                 beløp som fellesorganet fastsetter til formålet.
             </ledd>
-            <ledd id="sha1_5532065ed61fc1f11864912d15bb63d3266dc88d">
+            <ledd id="v1_1_4">
                 Videre har laget til formål å organisere og forvalte andre
                 tiltak som har sammenheng med andelseiernes bointeresser.
             </ledd>
-            <ledd id="sha1_acc23c159468886f76298f2fcc6dde4a8426b404">
+            <ledd id="v1_1_5">
                 Forretningskontoret er i Oslo.
             </ledd>
-            <ledd id="sha1_432f8aad69184e81336e2752354ada8d531bc96f">
-                Borettslaget er tilknyttet BBL Ungdommens Selvbyggerlag som er forretningsfører.
+            <ledd id="v1_1_6">
+                Borettslaget er tilknyttet BBL Ungdommens Selvbyggerlag som er
+                forretningsfører.
             </ledd>
         </paragraf>
 
-    </regeldokument>
+        <paragraf nummerert-under="0">
+            <tittel>Andeler - ansvar</tittel>
+            <ledd id="v1_2_1">
+                Andelene skal være på ett hundre kroner.
+            </ledd>
+            <ledd id="v1_2_2">
+                Andelseierne har ikke personlig ansvar for lagets forpliktelser.
+            </ledd>
+        </paragraf>
+
+        <paragraf nummerert-under="0">
+            <tittel>Andelseiere</tittel>
+            <ledd id="v1_3_1">
+                <punktum id="v1_3_1_1">
+                    Bare andelseiere i boligbyggelaget og bare enkeltpersoner
+                    (fysiske personer) kan være andelseiere i borettslaget. 
+                </punktum>
+                <punktum id="v1_3_1_2">Ingen kan eie mer enn en andel.</punktum>
+                <punktum id="v1_3_1_3">
+                    Likevel kan staten, kommunen, USBL eller annen institusjon
+                    eller sammenslutning med samfunnsnyttig formål eie inntil
+                    30% av andelene i borettslaget, i samsvar med § 13 annet
+                    ledd i lov om borettslag.
+                </punktum>
+                <punktum id="v1_3_1_4">
+                    Andelene behøver ikke være øremerket for en bestemt juridisk
+                    person.
+                </punktum>
+                <punktum id="v1_3_1_5">
+                    Dog kan ORAS A/S eie andel 050 innenfor den totalramme på 30%
+                    juridiske personer som loven setter.
+                </punktum>
+            </ledd>
+            <ledd id="v1_3_2">
+                <punktum id="v1_3_2_1">
+                    Andre enn ektefeller eller personer som i minst to år
+                    naturlig har utgjort en husstand kan ikke tegne andel sammen
+                    eller erverve den i fellesskap på annen måte enn ved arv.
+                </punktum>
+                <punktum id="v1_3_2_2">
+                    Har flere arvinger i fellesskap eller et dødsbo ervervet
+                    andel, kan borettslaget på1egge arvingene elter dødsboet
+                    innen 6 måneder etter al pålegget er mottatt å overdra
+                    andelen med borettsinnskudd til en person som styret
+                    godkjenner.
+                </punktum>
+            </ledd>
+            <ledd id="v1_3_3">
+                Enhver andelseier skal få utlevert e1t eksemplar av vedtektene og andelsbevis
+            </ledd>
+        </paragraf>
+        <paragraf id="v1_4">
+            <tittel>Overføring av andel</tittel>
+            <ledd id="v1_4_1">
+                En andelseier har reit til å overdra sin andel etter reglene i lov om borettslag §§ 15 og 16.
+            </ledd>
+            <ledd id="v1_4_2">
+                Andelseier som ikke har betalt borettsinnskudd, kan bare overdra
+                andelen til en person som styret utpeker dersom ikke styret gir
+                samtykke til annet.
+            </ledd>
+            <ledd id="v1_4_3">
+                Knytter det seg borettsinnskudd til andelen kan andelen ikke
+                gyldig overdras eller erverves uten at erververen samtidig
+                overtar borettsinnskuddet.
+            </ledd>
+        </paragraf>
+        <paragraf id="v1_5">
+            <tittel>Godkjenning av den nye andelseier</tittel>
+            <ledd id="v1_5_1">
+                Den som har ervervet en andel må godkjennes av styret for at
+                ervervet skal bli gyldig overfor laget.
+            </ledd>
+            <ledd id="v1_5_2">
+                Styret skal nekte godkjenning dersom ervervet vil være i strid
+                med § 3 i disse vedtekter, jfr. § 13 i lov om borettslag.
+            </ledd>
+            <ledd id="v1_5_3">
+                <punktum id="v1_5_3_1">
+                    Styret skal også nekte godkjenning dersom overdragelsen er i
+                    strid med bestemmelser om overdragelsesprisen, husstandens
+                    størrelse eller liknende forhold som målte være fastsatt
+                    eller godkjent av den offentlige kredittinstitusjon som har
+                    gitt laget lån.
+                </punktum>
+                <punktum id="v1_5_3_2">
+                    Videre kan styret nekte godkjenning når del ellers er saklig
+                    grunn til det.
+                </punktum>
+                <punktum id="v1_5_3_3">
+                    Godkjenning kan - utenom de tilfeller som er nevnt i annet
+                    ledd ikke nektes dersom andelen er ervervet av andelseierens
+                    ektefelle eller andelseierens eller ektefellens slektninger
+                    i rett opp eller nedstigende linje, søsken, adoptivbarn
+                    eller andre som faktisk står i adoptivbarns stilling, eller
+                    av noen som andelseieren i minst 2 år har hatt felles
+                    husstand ,ned eller hadde felles husstand med ved sin død.
+                </punktum>
+                <punktum id="v1_5_3_4">
+                    Heller ikke kan godkjenning nektes når overdragelsen cr e1
+                    nødvendig ledd i bytte av boliger, og dcn tidligere
+                    andelseier skal la i varig bruk som bolig den bolig han får
+                    ved byttet.
+                </punktum>
+            </ledd>
+            <ledd id="v1_5_4">
+                <punktum id="v1_5_4_1">
+                    Nekter styret å godkjenne erververen som andelseier, skal
+                    det gi erververen og overdrageren skriftlig melding om dette
+                    innen 30 dager etter at det mottok søknaden om godkjenning.
+                </punktum>
+                <punktum id="v1_5_4_2">
+                    I meldingen skal gis opplysning om grunnen til avslaget og
+                    om at dette er endelig dersom søksmål ikke er reist innen 30
+                    dager etter at meldingen er mottatt.
+                </punktum>
+            </ledd>
+            <ledd id="v1_5_5">
+                <punktum id="v1_5_5_1">
+                    Har styret ikke innen fristen gitt melding med opplysninger
+                    som nevnt i fjerde ledd, er erververen å anse som godkjent.
+                </punktum>
+                <punktum id="v1_5_5_2">
+                    Godkjenning kan trekkes tilbake innen ett år dersom
+                    opplysninger av betydning for godkjenningen er uriktige
+                    eller holdt tilbake, og erververen har eller burde hatt
+                    kjennskap til derte
+                </punktum>
+            </ledd>
+            <ledd id="v1_5_6">
+                Når en andel skifter eier, skal den nye eier gi melding herom
+                til borettslaget, selv om styrets godkjenning ikke er nødvendig.
+            </ledd>
+        </paragraf>
+        <paragraf id="v1_6">
+            <tittel>Forkjøpsrett</tittel>
+            <ledd id="v1_6_1">
+                <punktum id="v1_6_1_1">
+                    Dersom andel overdras, har andelseierne i borettslaget og
+                    dernest de øvrige andelseierne i boligbyggelaget - utpekt av
+                    styret i boligbyggelaget - forkjøpsrett.
+                </punktum>
+                <punktum id="v1_6_1_2">
+                    Borettslagets styre skal dra omsorg for at de som er nevnt
+                    i første ledd får høve til å gjøre forkjøpsretten gjeldende
+                    og på deres vegne gjøre retten gjeldende innen 30 dager etter
+                    nt borettslaget har mottatt søknad som nevnt i § 5, fjerde
+                    ledd eller en annen skriftlig melding om at andel er, eller
+                    ønskes overført på nærmere oppgitte prisvilkår.
+                </punktum>
+                <punktum id="v1_6_1_3">
+                    Blir andel overført på gunstigere vilkår for erververen enn
+                    det som er opplyst i meldingen eller blir andelen overført
+                    senere enn 4 måneder elter at meldingen er mottatt, skal ny
+                    melding sendes og forkjøpsrett kan brukes innen ny frist som
+                    nevnt i forrige punktum.
+                </punktum>
+                <punktum id="v1_6_1_4">
+                    Retten kan ilke gjøres gjeldende ved slik overføring av
+                    andeler som omhandlet i vedtektenes § 5, tredje ledd,
+                    tredje og fjerde punktum.
+                </punktum>
+            </ledd>
+
+            <ledd id="v1_6_2">
+                <punktum id="v1_6_2_1">
+                    Styret bestemmer på grunnlag av ansiennitet hvilken
+                    andelseier som skal få overta andelen.
+                </punktum>
+                <punktum id="v1_6_2_2">
+                    Ansiennitet i borettslaget er avgjørende ved tildeling av
+                    ledig leilighet.
+                </punktum>
+                <punktum id="v1_6_2_3">
+                    Ansienniteten settes likt for alle ved første gangs
+                    innflytting
+                </punktum>
+                <punktum id="v1_6_2_4">
+                    Står 2 eller flere søkere likt med hensyn til ansiennitet
+                    vil husstandens størrelse, antall bam, barnas kjønn og alder
+                    være avgjørende.
+                </punktum>
+                <punktum id="v1_6_2_5">
+                    Står 2 eller flere fortsatt likt skal styret ta hensyn tii
+                    sosiale og medisinske grunner.
+                </punktum>
+                <punktum id="v_1_6_2_6">
+                    Andelseier som søker om å bytte seg over til leilighet av
+                    samme størrelsesorden som den han bebor, skal ha
+                    fortrinnsrett før leiligheten tildeles søker fra mindre
+                    leilighet.
+                </punktum>                
+            </ledd>
+
+            <ledd id="v1_6_3">
+                <punktum>                    
+                    Andelseier som vil overta ny andel, må stille sin tidligere
+                    andel til rådighet for borettslaget.
+                </punktum>
+                <punktum>
+                    Det gjelder selv om andelen tilhører flere.
+                </punktum>
+                <punktum>
+                    Styret tildeler andel etter reglene i første og annet ledd.
+                </punktum>
+            </ledd>
+
+            <ledd id="v1_6_4">
+                Dersom andel overdras eller blir stilt til rådighet etter tredje
+                ledd, og ingen andelseier i borettslaget er interessert i å
+                overla andelen, utpeker styret i boligbyggelaget den som skal få
+                overta andelen.                
+            </ledd>
+            <ledd id="v1_6_5">
+                <punktum>
+                    Løsningssummen skal være betalt innen 2 måneder etter at
+                    søknad eller melding som nevnt i annet ledd er mottatt av
+                    laget, likevel slik at oppgjør ikke kan kreves før en måned
+                    etter at løsningssummen cr endelig fastsatt.
+                </punktum>
+                <punktum>
+                    Når det ikke er til vesentlig ulempe, kan borettslaget
+                    likevel bestemme at den forkjøpsberettigede skal betale et
+                    rimelig forskudd etter at forkjøpsretten er brukt
+                </punktum>
+            </ledd>
+        </paragraf>
+
+    </dokument>
 </regelsett>

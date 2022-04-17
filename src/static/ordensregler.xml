@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="schema\boligselskapsregler.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
-<regeldokument
+<!-- <?xml-model href="schema\boligselskapsregler.xsd" type="application/xml" ?> -->
+<dokument
+    xmlns="urn:no.badebakken.regelsett"
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:schemaLocation="urn:no.badebakken.regel ./schema/boligselskapsregler.xsd"
     gyldig-fra="1987-01-01"
     id="ordensregler-1987"
-    numerert-under="1">
+    nummerert-under="1">    
     <tittel>Husordensregler for Badebakken Borettslag</tittel>
     <versjoner>
         <versjon vedtaksdato="1989-04-18">
@@ -44,4 +47,4 @@
     </paragraf>
 
 
-</regeldokument>
+</dokument>
