@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schema/boligselskapsregler.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<regelsett>
+    <regeldokument
+        numerert-under="true"
+        id="vedtekter_2"
+        gyldig-fra="2005-01-01">
+
+        <tittel>
+            <linje>Vedtekter</linje>
+            <linje>for</linje>
+            <linje>Badebakken borettslag Org nr. 943 792 755</linje>
+        </tittel>
+        <kapittel>
+            <tittel>Innledende bestemmelser</tittel>
+            <paragraf>
+                <tittel>Formål</tittel>
+                <ledd id="sha1_fbee1d21440abcaca6f08296d0aa4bca71e46a8c">
+                    <erstatter referanse="sha1_7a2f6c16964758a34ab00f879ffb2b762dbef3cf" />
+                    <erstatter referanse="sha1_dc215031e88f7ff6a4a913b72c09d6186622ae0d" />
+                    Badebakken borettslag er et samvirkeforetak som har til
+                    formål å gi andelseierne bruksrett til egen bolig i lagets
+                    eiendom (borett) og å drive virksomhet som står i sammenheng
+                    med denne.
+                </ledd>
+            </paragraf>
+            <paragraf>
+                <tittel>Forretningskontor, forretningsførsel og tilknytningsforhold</tittel>
+                <ledd>
+                    Borettslaget ligger i Oslo kommune og har
+                    forretningskontor i Oslo kommune.
+                </ledd>
+                <ledd>
+                    Borettslaget er tilknyttet Boligbyggelaget Usbl som er
+                    forretningsfører.
+                </ledd>
+            </paragraf>
+        </kapittel>
+        <kapittel>
+            <tittel>Andeler og andelseiere</tittel>
+            <paragraf>
+                <tittel>Andeler og andelseiere</tittel>
+                <ledd>Andelene skal være på kroner 100,-.</ledd>
+                <ledd>Bare andelseiere i boligbyggelaget og bare fysiske
+                personer (enkeltpersoner) kan være andelseiere i borettslaget. Ingen
+                fysiske personer kan eie mer enn en andel.</ledd>
+                <ledd>
+                    <punktum>Uansett kan staten, en fylkeskommune eller en
+                kommune til sammen eie inntil 10 % av andelene i borettslaget i
+                samsvar med borettslagslovens § 4-2 (1).</punktum>
+                    <punktum> Det samme gjelder selskap
+                som har til formål å skaffe boliger og som blir ledet og kontrollert
+                av stat, fylkeskommune eller kommune, stiftelse som har til formål å
+                skaffe boliger og som er opprettet av staten, en fylkeskommune eller
+                kommune og selskap, stiftelse eller andre som har inngått
+                samarbeidsavtale med stat, fylkeskommune eller kommune om å skaffe
+                boliger til vanskeligstilte.</punktum>
+                </ledd>
+                <ledd>Andelseierne skal få utlevert et eksemplar av
+                borettslagets vedtekter.</ledd>
+            </paragraf>
+            <paragraf>
+                <tittel>Sameie i andel</tittel>
+                <ledd>Bare personer som bor eller skal bo i boligen kan bli sameier i andel</ledd>
+                <ledd>Dersom flere eier en andel sammen, skal det regnes
+                som bruksoverlating hvis en eller flere av sameierne ikke bor i
+                boligen, jfr vedtektenes pkt 4-2.</ledd>
+            </paragraf>
+
+        </kapittel>
+    </regeldokument>
+    <regeldokument id="vedtekter_1"
+        gyldig-fra="1987-02-19"
+        gyldig-til="2004-12-31"
+        numerert-under="1">
+        <versjoner />
+        <paragraf numerert-under="0">
+            <tittel>Navn, lagsform, formål og forretningskontor</tittel>
+            <ledd id="sha1_7a2f6c16964758a34ab00f879ffb2b762dbef3cf">
+                Badebakken Borettslag er et andelslag som har til formål å
+                skaffe andelseierne bolig ved å erverve eller forestå oppføring
+                av boligbygg til andelseierne og leie ut boliger i slike bygg
+                til andelseierne.
+            </ledd>
+            <ledd id="sha1_dc215031e88f7ff6a4a913b72c09d6186622ae0d">
+                Laget har dessuten til formål å erverve eller forestå
+                oppføringen av andre bygg enn boligbygg (herunder garasjer) når
+                de skal brukes til felles formål for andelseierne, eller når
+                utleie av lokalene i slike bygg skal skje i sammenheng med
+                lagets øvrige virksomhet.
+            </ledd>
+            <ledd id="sha1_7666f2779ab988af1c29d1e36f72b5b45037b55e">
+                Dersom det innen boligområdet opprettes et fellesorgan som skal
+                ha til formål å ivareta beboernes fellesinteresser, eksempelvis
+                felles vaktmestertjeneste, vedlikehold etc. av felles
+                antenneanlegg og friarealer, har borettslaget plikt til å være
+                medlem av dette. Medlemskapet medfører plikt til å betale de
+                beløp som fellesorganet fastsetter til formålet.
+            </ledd>
+            <ledd id="sha1_5532065ed61fc1f11864912d15bb63d3266dc88d">
+                Videre har laget til formål å organisere og forvalte andre
+                tiltak som har sammenheng med andelseiernes bointeresser.
+            </ledd>
+            <ledd id="sha1_acc23c159468886f76298f2fcc6dde4a8426b404">
+                Forretningskontoret er i Oslo.
+            </ledd>
+            <ledd id="sha1_432f8aad69184e81336e2752354ada8d531bc96f">
+                Borettslaget er tilknyttet BBL Ungdommens Selvbyggerlag som er forretningsfører.
+            </ledd>
+        </paragraf>
+
+    </regeldokument>
+</regelsett>

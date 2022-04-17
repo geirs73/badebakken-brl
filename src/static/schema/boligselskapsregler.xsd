@@ -1,12 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:element name="regelsett">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="dokument-ref">
-                    <xs:complexType>
-                        <xs:attribute name="src" type="xs:anyURI" />
-                    </xs:complexType>
-                </xs:element>
+                <xs:element name="regeldokument" minOccurs="1" maxOccurs="unbounded" type="dokument-t" />
             </xs:sequence>
         </xs:complexType>
     </xs:element>
@@ -15,7 +12,13 @@
 
     <xs:complexType name="dokument-t">
         <xs:sequence>
-            <xs:element name="tittel" type="xs:string" minOccurs="1" />
+            <xs:element name="tittel" minOccurs="0" maxOccurs="1">
+                <xs:complexType mixed="true">
+                    <xs:sequence>
+                        <xs:element name="linje" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
             <xs:element name="versjoner" minOccurs="0">
                 <xs:complexType>
                     <xs:sequence>
@@ -26,55 +29,98 @@
             <xs:element name="introduksjon" minOccurs="0">
                 <xs:complexType />
             </xs:element>
-            <xs:element name="seksjoner" minOccurs="1">
-                <xs:complexType>
-                    <xs:sequence>
-                        <xs:element name="hovedseksjon" type="seksjon-t" minOccurs="1" />
-                        <xs:element name="vedlegg" type="seksjon-t" minOccurs="0" maxOccurs="unbounded" />
-                    </xs:sequence>
-                </xs:complexType>
-            </xs:element>
+            <xs:choice>
+                <xs:element name="kapittel" type="kapittel-t" maxOccurs="unbounded" />
+                <xs:element name="paragraf" type="paragraf-t" minOccurs="0" maxOccurs="unbounded" />
+            </xs:choice>
         </xs:sequence>
+        <xs:attributeGroup ref="dokument-ag" />
+    </xs:complexType>
 
-        <xs:attribute name="referanse" type="xs:QName" use="required" />
+    <xs:attributeGroup name="id-ag">
+        <xs:attribute name="id" type="xs:ID" use="optional" />
+    </xs:attributeGroup>
+
+
+    <xs:attributeGroup name="numerert-under-ag">
+        <xs:attribute name="numerert-under" type="xs:boolean" use="optional"/>
+    </xs:attributeGroup>
+
+    <xs:attributeGroup name="numerert-ag">
+        <xs:attributeGroup ref="numerert-under-ag" />
+        <xs:attribute name="numerert" type="xs:boolean" use="optional" />
+    </xs:attributeGroup>
+
+    <xs:attributeGroup name="dokument-ag">
+        <xs:attributeGroup ref="id-ag" />
+        <xs:attributeGroup ref="numerert-under-ag" />
         <xs:attribute name="gyldig-fra" type="xs:date" use="required" />
-        <xs:attribute name="gyldig-til" type="xs:date" use="optional" />
+        <xs:attribute name="gyldig-til" type="xs:date" use="optional" default="9999-01-01" />
+    </xs:attributeGroup>
 
-    </xs:complexType>
+    <xs:attributeGroup name="regel-ag">
+        <xs:attributeGroup ref="id-ag" />
+        <xs:attributeGroup ref="numerert-ag" />
+        <xs:attribute name="gyldig-fra" type="xs:date" use="optional" />
+        <!-- <xs:attribute name="erstatter" type="xs:IDREF" use="optional" /> -->
+    </xs:attributeGroup>
 
-    <xs:complexType name="seksjon-t">
-        <xs:choice>
-            <xs:element name="kapitler" minOccurs="1">
-                <xs:complexType>
-                    <xs:sequence>
-                        <xs:element name="paragrafer" type="paragrafer-t" minOccurs="1" />
-                    </xs:sequence>
-                </xs:complexType>
-            </xs:element>
-            <xs:element name="paragrafer" type="paragrafer-t" minOccurs="1" />
-        </xs:choice>
-        <xs:attribute name="paragrafnumerering" type="paragrafnumerering" />
-    </xs:complexType>
 
-    <xs:complexType name="paragrafer-t">
+    <xs:complexType name="kapittel-t">
         <xs:sequence>
+            <xs:element name="tittel" type="xs:string" minOccurs="1" />
             <xs:element name="paragraf" type="paragraf-t" minOccurs="0" maxOccurs="unbounded" />
         </xs:sequence>
+        <xs:attributeGroup ref="regel-ag" />
     </xs:complexType>
 
-    <xs:complexType name="paragraf-t" mixed="true">
-        <xs:all>
-            <xs:element name="strong" minOccurs="0" />
-            <xs:element name="stronger" minOccurs="0" />
-            <xs:element name="em" minOccurs="0" />
-        </xs:all>
-        <xs:attribute name="referanse" type="xs:ID" />
-        <xs:attribute name="nummer" type="xs:integer" use="required" />
+    <xs:complexType name="paragraf-t">
+        <xs:sequence>
+            <xs:element name="tittel" type="xs:string" minOccurs="1" />
+            <xs:element name="ledd" type="ledd-t" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+        <xs:attributeGroup ref="regel-ag" />
     </xs:complexType>
 
-    <xs:complexType name="setning-t" mixed="true">
-        <xs:sequence />
+
+    <xs:complexType name="tekst-t" mixed="true">
+        <xs:sequence>
+            <xs:element name="erstatter" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:attribute name="referanse" type="xs:IDREF" use="required" />
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attributeGroup ref="regel-ag" />
     </xs:complexType>
+
+    <xs:complexType name="ftekst-t" mixed="true">
+        <xs:complexContent>
+            <xs:extension base="tekst-t">
+                <xs:choice minOccurs="0" maxOccurs="unbounded">
+                    <xs:element name="fremhevet" />
+                    <xs:element name="understreket" />
+                </xs:choice>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="punktum-t" mixed="true">
+        <xs:complexContent>
+            <xs:extension base="ftekst-t" />
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="ledd-t" mixed="true">
+        <xs:complexContent>
+            <xs:extension base="ftekst-t">
+                <xs:choice minOccurs="0" maxOccurs="unbounded">
+                    <xs:element name="punktum" type="punktum-t" minOccurs="0" maxOccurs="1" />
+                </xs:choice>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
 
     <xs:simpleType name="handling-e">
         <xs:restriction base="xs:normalizedString">
@@ -103,9 +149,5 @@
         <xs:attribute name="referanse" type="xs:IDREF" use="required" />
     </xs:complexType>
 
-    <xs:simpleType name="paragrafnumerering">
-        <xs:restriction base="xs:boolean" />
-    </xs:simpleType>
-
-
+    <xs:complexType name="lovreferanse" />
 </xs:schema>
