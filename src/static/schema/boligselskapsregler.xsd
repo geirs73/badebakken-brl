@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema 
-    xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+<xs:schema
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
     targetNamespace="urn:no.badebakken.regelsett"
     xmlns="urn:no.badebakken.regelsett"
     elementFormDefault="qualified"
-    >
+>
     <xs:element name="regelsett">
         <xs:complexType>
             <xs:sequence>
@@ -48,7 +48,7 @@
 
 
     <xs:attributeGroup name="nummerert-under-ag">
-        <xs:attribute name="nummerert-under" type="xs:boolean" use="optional"/>
+        <xs:attribute name="nummerert-under" type="xs:boolean" use="optional" />
     </xs:attributeGroup>
 
     <xs:attributeGroup name="nummerert-ag">
@@ -85,6 +85,7 @@
                     <xs:attribute name="referanse" type="xs:IDREF" use="required" />
                 </xs:complexType>
             </xs:element>
+            <xs:element name="punktliste" type="punktliste-t" minOccurs="0" />
         </xs:sequence>
         <xs:attributeGroup ref="regel-ag" />
     </xs:complexType>
@@ -105,8 +106,11 @@
             <xs:extension base="ftekst-t">
                 <xs:sequence>
                     <xs:element name="tittel" type="xs:string" minOccurs="1" />
-                    <xs:element name="ledd" type="ledd-t" minOccurs="0" maxOccurs="unbounded" />
-                </xs:sequence>        
+                    <xs:choice>
+                        <xs:element name="punktum" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+                        <xs:element name="ledd" type="ledd-t" minOccurs="0" maxOccurs="unbounded" />
+                    </xs:choice>
+                </xs:sequence>
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
@@ -153,6 +157,22 @@
     <xs:complexType name="endring-t">
         <xs:attribute name="handling" type="handling-e" use="required" />
         <xs:attribute name="referanse" type="xs:IDREF" use="required" />
+    </xs:complexType>
+
+    <xs:complexType name="punktliste-t">
+        <xs:sequence>
+            <xs:element name="punkt" type="ftekst-t" maxOccurs="unbounded" />
+        </xs:sequence>
+        <xs:attribute name="type" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:normalizedString">
+                    <xs:enumeration value="ordenstall" />
+                    <xs:enumeration value="små-bokstaver" />
+                    <xs:enumeration value="store-bokstaver" />
+                    <xs:enumeration value="romertall" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
     </xs:complexType>
 
     <xs:complexType name="lovreferanse" />

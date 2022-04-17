@@ -3,7 +3,7 @@
 <dokument
     xmlns="urn:no.badebakken.regelsett"
     xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
-    xsi:schemaLocation="urn:no.badebakken.regel ./schema/boligselskapsregler.xsd"
+    xsi:schemaLocation="urn:no.badebakken.regelsett ./schema/boligselskapsregler.xsd"
     gyldig-fra="1987-01-01"
     id="ordensregler-1987"
     nummerert-under="1">    

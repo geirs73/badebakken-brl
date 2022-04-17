@@ -308,7 +308,7 @@
                     samme størrelsesorden som den han bebor, skal ha
                     fortrinnsrett før leiligheten tildeles søker fra mindre
                     leilighet.
-                </punktum>                
+                </punktum>
             </ledd>
 
             <ledd id="v1_6_3">
@@ -340,8 +340,119 @@
                 <punktum>
                     Når det ikke er til vesentlig ulempe, kan borettslaget
                     likevel bestemme at den forkjøpsberettigede skal betale et
-                    rimelig forskudd etter at forkjøpsretten er brukt
+                    rimelig forskudd etter at forkjøpsretten er brukt.
                 </punktum>
+            </ledd>
+        </paragraf>
+
+        <paragraf id="v1_7">
+            <tittel>Styre</tittel>
+
+            <ledd>
+                Laget skal ha et styre som skal bestå av en leder og 2 - 4 andre
+                medlemmer med like mange vararepresentanter.                
+            </ledd>
+            <ledd>
+                <punktum>
+                    Funksjonstiden for lederen og de øvrige styremedlemmer er to
+                    år, dog slik at 2 av medlemmene etter loddtrekning trer ut
+                    etter første driftsår.
+                </punktum>
+                <punktum>
+                    Vararepresentanter velges for ett år.
+                </punktum>
+                <punktum>
+                    Styremedlem og vararepresentanter kan gjenvelges.
+                </punktum>
+            </ledd>
+            <ledd>
+                <punktum>
+                    Boligbyggelaget har rett til å oppnevne 1 styremedlem med vararepresentant. 
+                </punktum>
+                <punktum>
+                    Ellers velger generalforsamlingen styremedlemmer og
+                    vararepresentanter, se dog lov om borettslag § 8, annet
+                    ledd.
+                </punktum>
+                <punktum>
+                    Leder velges ved særskilt valg.
+                </punktum>
+                <punktum>
+                    Styret velger innen sin midte nestleder og sekretær.
+                </punktum>
+            </ledd>
+        </paragraf>
+        <paragraf id="v1_8">
+            <tittel>Styrets vedtak</tittel>
+            <ledd>
+                Styret kan treffe vedtak når minst halvparten av medlemmene er
+                til stede og stemmer for vedtaket.
+            </ledd>
+            <ledd>
+                Styret kan ikke uten at generalforsamlingen med minst to
+                tredjedeler av de avgitte stemmer har samtykket:
+                <punktliste type="ordenstall">
+                    <punkt>
+                        Ombygging, påbygging eller rive de husene laget eier,
+                        bygge nye boliger, selge eller kjøpe fast eiendom eller
+                        på annen vesentlig måte endre bebyggelsen eller tomten.
+                    </punkt>
+                    <punkt>
+                        Gjennomføre tiltak i samsvar med de formål som er nevnt
+                        i § 1, tredje ledd nar tiltaket fører med seg økonomisk
+                        ansvar eller utlegg for laget på mer enn 5 prosent av den
+                        årlige husleie.
+                    </punkt>
+                </punktliste>
+            </ledd>
+        </paragraf>
+        <paragraf>
+            <tittel>Firmategning</tittel>
+            <punktum>
+                Leder (nestleder) og ett styremedlem i fellesskap tegner lagets
+                firma.
+            </punktum>
+            <punktum>
+                Styret kan gi prokura.
+            </punktum>
+        </paragraf>
+        <paragraf id="v1_10">
+            <tittel>Generalforsamling</tittel>
+            <ledd>
+                Den øverste myndighet i borettslaget utøves av
+                generalforsamlingen.
+            </ledd>
+            <ledd>
+                Ordinær generalforsamling holdes hvert år innen 30. mai.
+            </ledd>
+            <ledd>
+                Ekstraordinær generalforsamling holdes når styret eller
+                boligbyggelaget finner det nødvendig.
+            </ledd>
+            <ledd>
+                Likeså skal generalforsamlingen innkalles når revisor eller
+                minst en tiendedel, dog minst tre, av andelseierne skriftlig
+                krever det, og samtidig oppgir hvilke saker som ønskes
+                behandlet.
+            </ledd>
+            <ledd>
+                <punktum>
+                    Innkalling til generalforsamling skal skje skriftlig til
+                    medlemmene med varsel på minst 8, høyst 20 dager. 
+                </punktum>
+                <punktum>
+                    Det skal dessuten gis skriftlig melding til boligbyggelaget.
+                </punktum>
+                <punktum>
+                    Ekstraordinær generalforsamling kan likevel, om det er
+                    nødvendig, innkalles med kortere frist som dog skal være
+                    minst 3 dager.
+                </punktum>
+            </ledd>
+            <ledd>
+                Saker som en andelseier ønsker behandlet på den ordinære
+                generalforsamling, skal nevnes i innkallingen når det settes
+                fram krav om det senest åtte uker før generalforsamlingen.
             </ledd>
         </paragraf>
 

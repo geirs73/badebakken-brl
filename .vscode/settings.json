@@ -12,6 +12,7 @@
         "byggefirmaer",
         "bygningsmateriell",
         "dødsboet",
+        "firmategning",
         "forkjøpsberettigede",
         "husordensregler",
         "IDREF",
@@ -20,6 +21,7 @@
         "ORAS",
         "overdragelsesprisen",
         "prisvilkår",
+        "punktliste",
         "Usbl",
         "vedtaksdato"
     ]
