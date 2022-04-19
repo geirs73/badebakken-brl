@@ -6,7 +6,7 @@
     xsi:schemaLocation="urn:no.badebakken.regelsett ./schema/boligselskapsregler.xsd"
     gyldig-fra="1987-01-01"
     id="ordensregler-1987"
-    nummerert-under="1">    
+    nummerert-under="1">
     <tittel>Husordensregler for Badebakken Borettslag</tittel>
     <versjoner>
         <versjon vedtaksdato="1989-04-18">
@@ -21,28 +21,32 @@
     <paragraf id="p1987-1">
         <tittel>Innledning</tittel>
         <ledd id="p1987-1-1">
-            Hver beboer plikter å påse at han, hans husstand eller andre som
+            <p>
+                Hver beboer plikter å påse at han, hans husstand eller andre som
                 han er ansvarlig for, eller gir adgang til bygningene,
-            <understreket>holder ro og orden</understreket>
-            slik at det ikke voldes ulempe eller ubehag for andre beboere.
+                <understreket>holder ro og orden</understreket>
+                slik at det ikke voldes ulempe eller ubehag for andre beboere.
+            </p>
         </ledd>
         <ledd id="p1987-1-2">
+            <p>
                 Som husordensregler gjelder også særskilte tekniske bestemmelser
                 (f. eks. Bygningsforskriftene), bestemmelser som byggefirmaer
                 eller leverandører måtte gi når det gjelder bruk av
                 bygningsmateriell innendørs, samt for ventilasjonssystemer,
                 våtrom, vann, klosetter fellesantenneanlegg, tekniske
                 installasjoner o.l.
-            </ledd>
+            </p>
+        </ledd>
     </paragraf>
     <paragraf>
         <tittel />
         <ledd>
-                Mellom kl. 23.00 - 07.00 skal det være nattero i boligene og på
-                borettslagets område. I dette tidsrommet skal det ikke spilles
-                på instrumenter, nyttes støyende høyttalere, vaskemaskin,
-                tørketrommel eller forårsakes annen støy som sjenerer øvrige
-                boliger.                
+            <p>Mellom kl. 23.00 - 07.00 skal det være nattero i boligene og på
+            borettslagets område. I dette tidsrommet skal det ikke spilles
+            på instrumenter, nyttes støyende høyttalere, vaskemaskin,
+            tørketrommel eller forårsakes annen støy som sjenerer øvrige
+            boliger.</p>
             </ledd>
     </paragraf>
 
