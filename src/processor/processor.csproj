@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Processor</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Commandline" Version="0.*-*" />
+  </ItemGroup>
+
+  <Target Name="PrepareBuild" AfterTargets="BeforeBuild">
+    <ItemGroup>
+      <Files Include="..\static\*.xml" />
+    </ItemGroup>
+    <Message Text="@(Files)" Importance="normal" />
+    <Copy SourceFiles="@(Files)" DestinationFiles="@(Files->'sample\%(Filename)%(Extension)')" />
+  </Target>
+
+  <Target Name="SetContent" AfterTargets="PrepareBuild">
+    <ItemGroup>
+      <Content Include="sample\*.xml" CopyToPublishDirectory="Always">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+    <Message Text="@(Content)" Importance="Low" />
+  </Target>
+
+  <Target Name="Cleanup" AfterTargets="Clean">
+    <RemoveDir Directories="sample" />
+  </Target>
+
+</Project>

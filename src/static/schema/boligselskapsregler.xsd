@@ -9,6 +9,7 @@
     vc:minVersion="1.1"
 >
 
+
     <xs:attributeGroup name="ag_id">
         <xs:attribute name="id" type="xs:ID" use="optional" />
     </xs:attributeGroup>
@@ -46,7 +47,7 @@
         </xs:complexType>
     </xs:element>
 
-    <xs:element name="dokument" type="r:typ_dokument" />
+    <!-- <xs:element name="dokument" type="r:typ_dokument" /> -->
 
     <!-- types -->
 
@@ -113,6 +114,7 @@
             <xs:element name="lov" type="r:typ_lovreferanse" />
         </xs:choice>
         <xs:attributeGroup ref="r:ag_regel" />
+        <xs:attribute name="sha1" type="xs:hexBinary" />
     </xs:complexType>
 
     <xs:complexType name="typ_punktum" mixed="true">

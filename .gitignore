@@ -337,5 +337,8 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+
+## project stuff
+src/processor/sample/
 publish/
 scratch/
