@@ -342,3 +342,4 @@ _site/
 src/processor/sample/
 publish/
 scratch/
+output/

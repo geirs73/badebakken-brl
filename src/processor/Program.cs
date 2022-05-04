@@ -18,7 +18,11 @@ XmlWriterSettings xmlWriterSettings = new XmlWriterSettings();
 using var reader = XmlReader.Create(".\\sample\\vedtekter-eksempel.xml", xmlReaderSettings);
 var xDoc = XDocument.Load(reader);
 var xDoc2 = rp.ProcessRuleDocument(xDoc);
-using var writer = XmlWriter.Create("./vedtekter-eksempel-proc.xml", xmlWriterSettings);
+
+if (!Directory.Exists("output")) 
+    Directory.CreateDirectory("output");
+
+using var writer = XmlWriter.Create("output/vedtekter-eksempel-proc.xml", xmlWriterSettings);
 xDoc2.Save(writer);
 
 

@@ -1,11 +1,23 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <Company>yxney.net</Company>
+    <Copyright>2022 yxney.net</Copyright>
+    <Description>Processing tool for rule documents for Badebakken borettslag</Description>
+    <VersionPrefix>1.0.0</VersionPrefix>
+    <Authors>Geir Sørensen</Authors>
+    <AssemblyName>Processor</AssemblyName>
     <OutputType>Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <RootNamespace>Processor</RootNamespace>
+    <SatelliteResourceLanguage>en-US</SatelliteResourceLanguage>
+    <AnalysisMode>All</AnalysisMode>
+    <DefaultExcludesInProjectFolder>sample/**/*.*;output/**/*.*</DefaultExcludesInProjectFolder>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <NoWarn>CA1308,CA1812,CA1014</NoWarn>
+
   </PropertyGroup>
 
   <ItemGroup>
@@ -31,6 +43,7 @@
 
   <Target Name="Cleanup" AfterTargets="Clean">
     <RemoveDir Directories="sample" />
+    <RemoveDir Directories="output" />
   </Target>
 
 </Project>
