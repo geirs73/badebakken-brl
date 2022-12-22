@@ -42,7 +42,7 @@ kjeller opp i bygget, og radon er mye tyngre enn luft. Det er sterkt begrenset
 hvor lenge folk oppholder seg i kjellerne, hvor nivået uansett ikke er veldig
 høyt.
 
-Oversikt over måleresultater
+[Oversikt over måleresultater](901_Badebakken_Radon_2015-2017.pdf)
 
 ## Gass og grilling
 
