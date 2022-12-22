@@ -60,7 +60,7 @@ vannforsyning fra Holsfjorden i Buskerud de neste årene. Det er varslet 9,5%
 stigning på avgiften både i 2019, 2020 og 2021. Det fører til at kurven vil se
 omtrent ut som under, litt avhengig av prisveksten ellers i samfunnet:
 
-[Prisvekst vann og avgift til 2021](vann-og-avlop_2011-2021.png)
+![Prisvekst vann og avgift til 2021](vann-og-avlop_2011-2021.png)
 
 ## Energikostnader
 
