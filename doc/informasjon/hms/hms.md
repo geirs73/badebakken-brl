@@ -48,9 +48,9 @@ høyt.
 
 Gassbokser og tanker for grilling skal aldri lagres i kjeller eller garasje!
 
-Les mer her: https://www.follobrannvesen.no/gass-i-bolig-og-fritidsbolig.5921239-395863.html
+Les mer her: <https://www.follobrannvesen.no/gass-i-bolig-og-fritidsbolig.5921239-395863.html>
 
 ## Nyttige lenker
 
-https://www.sikkerhverdag.no/  – Direktoratet for sivilt beredskap lager denne siden  
-http://www.elsikkerhetsportalen.no/ – Her finner du enda mer om sikkerhet i elektriske systemer
+- <https://www.sikkerhverdag.no/>  – Direktoratet for sivilt beredskap lager denne siden  
+- <http://www.elsikkerhetsportalen.no/> – Her finner du enda mer om sikkerhet i elektriske systemer

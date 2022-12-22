@@ -73,9 +73,9 @@ med må hente inn ekstern hjelp.
 
 Alle andelseiere i borettslaget vil få skriftlig innkalling til
 generalforsamlinger i vårt borettslag. Det settes også opp oppslag og
-kunngjøringer på hjemmesiden vår. De som har meldt seg på tekstmeldingssystemet
-vil i tillegg få en påminnelse rett før. Husk at når innkallingen kommer er det
-for sent å komme med forslag til nye saker, se avsnittet over.
+kunngjøringer på hjemmesiden vår. Det kan i tillegg komme en påminnelse rett før
+via tekstmelding. Husk at når innkallingen kommer er det for sent å komme med
+forslag til nye saker, se avsnittet over.
 
 I de aller fleste tilfeller er det lurt å snakke med styreleder og
 styremedlemmer dersom man har noe på hjertet før generalforsamlingen, slik at
@@ -92,9 +92,15 @@ mulig.
 
 ## Møtet
 
-Styret vil alltid være til stede i fellesrommet i god tid før generalforsamlingen begynner, og jo flere som kommer og registrerer seg før møtet starter, jo raskere kommer generalforsamlingen i gang, og jo større er sjansene for at man kan rekke den fotballkampen på teve man har lyst å nå.
+Styret vil alltid være til stede i fellesrommet i god tid før
+generalforsamlingen begynner, og jo flere som kommer og registrerer seg før
+møtet starter, jo raskere kommer generalforsamlingen i gang, og jo større er
+sjansene for at man kan rekke den fotballkampen på teve man har lyst å nå.
 
-Det hjelper å vite hva andels / leilighetsnummeret er, men dersom du ikke vet det, så holder det lenge å fortelle hvilken adresse, etasje og leilighet man bor i, f.eks. Maridalsveien 236, H0502. Dette nummeret skal stå i dørkarmen på inngangsdøren og på postkassen.
+Det hjelper å vite hva andels / leilighetsnummeret er, men dersom du ikke vet
+det, så holder det lenge å fortelle hvilken adresse, etasje og leilighet man bor
+i, f.eks. Maridalsveien 236, H0502. Dette nummeret skal stå i dørkarmen på
+inngangsdøren og på postkassen.
 
 ## Vedtak på generalforsamlinger
 
