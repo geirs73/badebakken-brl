@@ -135,4 +135,3 @@ for disse leilighetstypene.
 | BC   | 164,5/156,8       | Sammenslått av typene B + C             | 1           |
 | HLU  | 72,0 + loftsareal | HL med utbygget loft. Ferdig ca. 2005.  | 1           |
 | GLU  | 93,0 + loftsareal | GL med utbygget loft. Blir ferdig 2019? | 0           |
-
