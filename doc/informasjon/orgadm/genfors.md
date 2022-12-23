@@ -2,33 +2,48 @@
 
 Hvem bestemmer i Badebakken borettslag?
 
-Borettslagsloven sier: Generalforsamlingen har øverste myndighet i borettslaget.
+[Borettslagsloven][brl7-1] sier: Generalforsamlingen har øverste myndighet i
+borettslaget.
+
+[brl7-1]: <https://lovdata.no/lov/2003-06-06-39/%C2%A77-1>
 
 Det skal holdes minst en generalforsamling hvert år, der alle andelseiere har
 rett til å avgi sin stemme i de saker som legges frem. Generalforsamlingen er
-regulert gjennom kapittel 7 i loven om borettslag og borettslagets vedtekter §
-9.
+regulert gjennom
+[kapittel 7 i loven om borettslag][brl7-1] og [borettslagets vedtekter § 9][v9].
+
+[v9]: <https://badebakken.no/s/vedtekter#9>
 
 ## Ordinær generalforsamling / årsmøte
 
 Ordinær generalforsamling, eller årsmøte som det kalles av USBL, holdes må
 holdes en gang i året, og i vårt borettslag er tradisjonen å holde den sent på
-våren/forsommeren. Loven krever at den avholdes innen utgangen av juni. Det er
-selvsagt ingen plikt til å møte opp, men andelseiere som ikke deltar eller avgir
-en fullmakt har dermed heller ingen innflytelse på styringen av borettslaget. De
-siste årene har vi hatt ganske godt oppmøte på generalforsamling. Husk at dette
-er en god anledning til å bli kjent med andre beboere!
+våren/forsommeren. [Loven krever][brl7-4] at den avholdes innen utgangen av
+juni.
 
-I vårt borettslag er det 82 andeler. 6 av andelene er eid av samme andelseier,
-Oslo kommune, så til sammen vil det være maksimalt 77 stemmeberettigede når det
-avholdes generalforsamling ifølge borettslagsloven. Det er mange i borettslaget
-som har sameie i andel i borettslaget, og de må bli enige seg i mellom før de
-avgir stemme.
+[brl7-4]: <https://lovdata.no/lov/2003-06-06-39/%C2%A77-4>
+
+Det er selvsagt ingen plikt til å møte opp, men andelseiere som ikke deltar
+eller avgir en fullmakt har dermed heller ingen innflytelse på styringen av
+borettslaget. De siste årene har vi hatt ganske godt oppmøte på
+generalforsamling. Husk at dette er en god anledning til å bli kjent med andre
+beboere!
+
+I vårt borettslag er det 82 andeler. 6 av andelene er eid av [samme
+andelseier][brl7-10], Oslo kommune, så til sammen vil det være maksimalt 77
+stemmeberettigede når det avholdes generalforsamling ifølge borettslagsloven.
+Det er mange i borettslaget som har [sameie i andel i borettslaget][brl5-2], og
+de må bli enige seg i mellom før de avgir stemme.
+
+[brl7-10]: <https://lovdata.no/lov/2003-06-06-39/%C2%A77-10>
+[brl5-2]: <https://lovdata.no/lov/2003-06-06-39/%C2%A75-2>
 
 Dersom du ikke har mulighet for å delta, kan du gi fullmakt til noen andre. En
-andelseier kan kun ha en fullmakt fra én annen andelseier. Du må gi tydelig tegn
-til møteleder dersom du forlater generalforsamlingen slik at stemmetallet kan
-oppdateres.
+andelseier [kan kun ha en fullmakt fra én annen andelseier][brl7-3]. Du må gi
+tydelig tegn til møteleder dersom du forlater generalforsamlingen slik at
+stemmetallet kan oppdateres.
+
+[brl7-3]: <https://lovdata.no/lov/2003-06-06-39/%C2%A77-3>
 
 Årsregnskap avlegges alltid på generalforsamling, og er en viktig del av
 innkallingen. Styret leverer også en årsrapport som forteller om arbeidet som er
@@ -41,11 +56,13 @@ varamedlemmer og to personer til å sitte i valgkomiteen.
 
 ## Ekstraordinær generalforsamling
 
-Loven sier at styret kan når som helst kalle inn til en ekstraordinær
+[Loven sier][brl7-5] at styret kan når som helst kalle inn til en ekstraordinær
 generalforsamling. Dette gjøres typisk dersom styreleder må gå av, eller dersom
 borettslaget trenger avgjørelser som bør tas av alle beboerne i fellesskap. I
 noen tilfeller er styret lovpålagt å gjøre dette, f.eks. ved opptak av
 fellesgjeld eller salg av eiendom.
+
+[brl7-5]: <https://lovdata.no/lov/2003-06-06-39/%C2%A77-5>
 
 Revisor kan også kalle inn til ekstraordinær generalforsamling, la oss håpe vi
 slipper dette, for det er ikke noe godt tegn.
@@ -104,10 +121,12 @@ inngangsdøren og på postkassen.
 
 ## Vedtak på generalforsamlinger
 
-Det er best om du leser om dette i vedtektene og i borettslagsloven, men
-generelt er det slik at det stort sett kreves alminnelig flertall for de fleste
-saker. Vedtektsendringer må vedtas med to tredjedels flertall, det gjelder også
-for opptak av gjeld.
+Det er best om du leser om dette i vedtektene og i [borettslagsloven][brl7-11],
+men generelt er det slik at det stort sett kreves alminnelig flertall for de
+fleste saker. Vedtektsendringer må vedtas med to tredjedels flertall, det
+gjelder også for opptak av gjeld.
+
+[brl7-11]: <https://lovdata.no/lov/2003-06-06-39/%C2%A77-11>
 
 Generalforsamlingen kan bare gjøre vedtak innenfor lovens rammer og er også
 begrenset av kontrakt med boligbyggelaget (USBL). Dette betyr at
