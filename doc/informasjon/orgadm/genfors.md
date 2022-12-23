@@ -137,7 +137,12 @@ mange ting som ikke borettslaget kan vedta seg bort fra.
 
 ## Les mer
 
-- [Arkiv over generalforsamlinger](https://badebakken.no/informasjon/dokumentarkiv/arkiv-over-generalforsamlinger/)
-- [Borettslagets vedtekter](https://badebakken.no/for-beboere/vedtekter-og-regler/)
-- [Lov om burettslag](https://lovdata.no/dokument/NL/lov/2003-06-06-39) (Lovdata, åpner i nytt vindu)
-- [Hvordan er det å bo i borettslag](https://usbl.no/for-deg/a-bo-i-borettslag) (USBL, åpner i nytt vindu)
+- [Arkiv over generalforsamlinger][gfark]
+- [Borettslagets vedtekter][v]
+- [Lov om burettslag][brl]
+- [Hvordan er det å bo i borettslag][bo]
+
+[gfark]: <https://badebakken.no/informasjon/dokumentarkiv/arkiv-over-generalforsamlinger/>
+[v]: <https://badebakken.no/for-beboere/vedtekter-og-regler/>
+[brl]: <https://lovdata.no/dokument/NL/lov/2003-06-06-39>
+[bo]: <https://usbl.no/for-deg/a-bo-i-borettslag>
