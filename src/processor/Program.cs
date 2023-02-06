@@ -1,28 +1,34 @@
-﻿
-// See https://aka.ms/new-console-template for more information
+﻿// See https://aka.ms/new-console-template for more information
 
 using System.Xml;
 using System.Xml.Linq;
-using Processor;
 
-Console.WriteLine("Hello, World! " + string.Join(", ", args));
+namespace Processor;
 
-var rp = new RuleProcessor();
+internal static class Program
+{
+    private static void Main(string[] args)
+    {
+        Console.WriteLine("Hello, World! " + string.Join(", ", args));
 
-XmlReaderSettings xmlReaderSettings = new XmlReaderSettings();
-xmlReaderSettings.DtdProcessing = DtdProcessing.Ignore;
-xmlReaderSettings.IgnoreWhitespace = false;
+        var rp = new RuleProcessor();
 
-XmlWriterSettings xmlWriterSettings = new XmlWriterSettings();
+        XmlReaderSettings xmlReaderSettings = new()
+        {
+            DtdProcessing = DtdProcessing.Ignore,
+            IgnoreWhitespace = false
+        };
 
-using var reader = XmlReader.Create(".\\sample\\vedtekter-eksempel.xml", xmlReaderSettings);
-var xDoc = XDocument.Load(reader);
-var xDoc2 = rp.ProcessRuleDocument(xDoc);
+        XmlWriterSettings xmlWriterSettings = new();
 
-if (!Directory.Exists("output")) 
-    Directory.CreateDirectory("output");
+        using XmlReader reader = XmlReader.Create(".\\sample\\vedtekter-eksempel.xml", xmlReaderSettings);
+        XDocument xDoc = XDocument.Load(reader);
+        XDocument xDoc2 = rp.ProcessRuleDocument(xDoc);
 
-using var writer = XmlWriter.Create("output/vedtekter-eksempel-proc.xml", xmlWriterSettings);
-xDoc2.Save(writer);
+        if (!Directory.Exists("output"))
+            Directory.CreateDirectory("output");
 
-
+        using XmlWriter writer = XmlWriter.Create("output/vedtekter-eksempel-proc.xml", xmlWriterSettings);
+        xDoc2.Save(writer);
+    }
+}
