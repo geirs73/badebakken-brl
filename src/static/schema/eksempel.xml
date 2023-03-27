@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<regelsett
+    xmlns="urn:no.badebakken.regelsett"
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:schemaLocation="urn:no.badebakken.regelsett ../schema/boligselskapsregler.xsd"
+>
+  <dokument gyldig-fra="2023-01-01">
+    <tittel>
+      <linje></linje>
+    </tittel>
+    <versjoner>
+      <versjon vedtaksdato="2023-01-01">
+        <vedtak></vedtak>
+        <endringer>
+          <endring handling="tillegg" referanse="xxx" />
+        </endringer>
+      </versjon>
+    </versjoner>
+    <introduksjon />
+    <kapittel>
+      <tittel></tittel>
+      <paragraf>
+        <tittel></tittel>
+        <p id="xxx">
+          <fremhevet>
+          </fremhevet>
+          <understreket>
+          </understreket>
+          <lov></lov>
+        </p>
+        <ledd>
+          <p>
+            <lov></lov>
+          </p>
+          <punktliste type="ordenstall">
+            <punkt>
+              <lov></lov>
+            </punkt>
+          </punktliste>
+        </ledd>
+        <punktliste type="ordenstall">
+          <punkt></punkt>
+        </punktliste>
+      </paragraf>
+      <paragraf>
+        <tittel>Foo</tittel>
+        <p>3</p>
+      </paragraf>
+      </kapittel>
+  </dokument>
+</regelsett>
