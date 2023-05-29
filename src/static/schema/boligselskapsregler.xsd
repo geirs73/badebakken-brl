@@ -180,7 +180,7 @@
         <xs:simpleContent>
             <xs:extension base="xs:string">
                 <xs:attribute name="lenke" type="xs:anyURI" />
-                <xs:attribute name="type" type="r:enm_lovverk" />        
+                <xs:attribute name="type" type="r:enm_lovverk" />
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
