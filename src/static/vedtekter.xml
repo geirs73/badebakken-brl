@@ -14,10 +14,12 @@
       <linje>for</linje>
       <linje>Badebakken borettslag Org nr. 943 792 755</linje>
     </tittel>
-    <kapittel id="v2_1">
+
+    <kapittel id="v2_k1">
       <tittel>Innledende bestemmelser</tittel>
+
       <paragraf
-          id="v2_1_1"
+          id="v2_k1_1"
           nummerert-under="0"
           erstatter="v1_1_1 v1_1_2 v1_1_3 v1_1_4">
         <tittel>Formål</tittel>
@@ -25,27 +27,30 @@
           andelseierne bruksrett til egen bolig i lagets eiendom (borett) og å
           drive virksomhet som står i sammenheng med denne.</p>
       </paragraf>
+
       <paragraf
-          id="v2_1_2"
+          id="v2_k1_2"
           nummerert-under="1">
         <tittel>Forretningskontor, forretningsførsel og tilknytningsforhold</tittel>
         <ledd
-            id="v2_1_2_1"
+            id="v2_k1_2_1"
             erstatter="v1_1_5">
           <p>Borettslaget ligger i Oslo kommune og har forretningskontor i Oslo
             kommune.</p>
         </ledd>
         <ledd
-            id="v2_1_2_2"
+            id="v2_k1_2_2"
             erstatter="v1_1_6">
           <p>Borettslaget er tilknyttet Boligbyggelaget Usbl som er
             forretningsfører.</p>
         </ledd>
       </paragraf>
     </kapittel>
-    <kapittel>
+
+    <kapittel id="v2_k2">
       <tittel>Andeler og andelseiere</tittel>
-      <paragraf>
+
+      <paragraf id="v2_k2_1">
         <tittel>Andeler og andelseiere</tittel>
         <ledd>
           <p>Andelene skal være på kroner 100,-.</p>
@@ -66,12 +71,18 @@
             andre som har inngått samarbeidsavtale med stat, fylkeskommune eller
             kommune om å skaffe boliger til vanskeligstilte.</p>
         </ledd>
+        <ledd gyldig-til="2014-06-05">
+          <p>I tillegg har Oras a/s rett til å eie andel 0050 innefor den
+            totalramme som kan eies av juridiske personer i henhold til
+            borettslagsloven § 4-2 (1)</p>
+        </ledd>
         <ledd>
           <p>Andelseierne skal få utlevert et eksemplar av borettslagets
             vedtekter.</p>
         </ledd>
       </paragraf>
-      <paragraf>
+
+      <paragraf id="v2_k2_2">
         <tittel>Sameie i andel</tittel>
         <ledd>
           <p>Bare personer som bor eller skal bo i boligen kan bli sameier i
@@ -84,15 +95,239 @@
         </ledd>
       </paragraf>
 
+      <paragraf
+          id="v2_k2_3"
+          nummerert-under="1">
+        <tittel>2-3 Overføring av andel og godkjenning av ny andelseier</tittel>
+        <ledd>
+          <p>En andelseier har rett til å overdra sin andel, men erververen må
+            godkjennes av borettslaget for at ervervet skal bli gyldig overfor
+            borettslaget.</p>
+        </ledd>
+        <ledd>
+          <p>Borettslaget kan nekte godkjenning når det er saklig grunn til det
+            og skal nekte godkjenning dersom ervervet vil være i strid med pkt.
+            2 i vedtektene.</p>
+        </ledd>
+        <ledd>
+          <p> Nekter borettslaget å godkjenne erververen som andelseier, må
+            melding om dette komme fram til erververen senest tyve dager etter
+            at søknaden om godkjenning kom fram til borettslaget. I motsatt fall
+            skal godkjenning regnes som gitt.</p>
+        </ledd>
+        <ledd>
+          <p>Erververen har ikke rett til å bruke boligen før godkjenning er
+            gitt eller det er rettskraftig avgjort at erververen har rett til å
+            erverve andelen.</p>
+        </ledd>
+        <ledd>
+          <p>Den forrige andelseieren er solidarisk ansvarlig med en eller flere
+            nye erververe for betaling av felleskostnader til ny andelseier er
+            godkjent, eller det er rettskraftig avgjort at en ny andelseier har
+            rett til å erverve andelen.</p>
+        </ledd>
+      </paragraf>
     </kapittel>
+
+    <kapittel id="v2_k3">
+      <tittel>Forkjøpsrett</tittel>
+
+      <paragraf
+          id="v2_k3_1"
+          nummerert-under="1">
+        <tittel>Hovedregel for forkjøpsrett</tittel>
+        <ledd>
+          <p>Dersom andel skifter eier, har andelseierne i borettslaget og
+            dernest de øvrige andelseierne i boligbyggelaget forkjøpsrett.</p>
+        </ledd>
+        <ledd>
+          <p>Forkjøpsretten kan ikke gjøres gjeldende når andelen overdras til
+            ektefelle, til andelseierens eller ektefellens slektning i rett opp-
+            eller nedstigende linje, til fosterbarn som faktisk står i samme
+            stilling som livsarving, til søsken eller noen annen som i de to
+            siste årene har hørt til samme husstand som den tidligere eieren.
+            Forkjøpsretten kan heller ikke gjøres gjeldende når andelen
+            overføres på skifte etter separasjon eller skilsmisse, eller når et
+            husstandsmedlem overtar andelen etter bestemmelsene i <lov
+                type="husstandsfellesskapsloven-1991"
+                lenke="https://lovdata.no/lov/1991-07-04-45/§3">
+            husstandsfellesskapslovens § 3</lov>.</p>
+        </ledd>
+        <ledd>
+          <p>Styret i borettslaget skal sørge for at de som er nevnt i første
+            ledd får anledning til å gjøre forkjøpsretten gjeldende og på deres
+            vegne gjøre retten gjeldende innen fristen nevnt i vedtektenes pkt.
+            3-2, jfr. borettslagslovens § 4-15, første ledd.</p>
+        </ledd>
+      </paragraf>
+
+      <paragraf id="v2_k3_2">
+        <tittel>Frister for å gjøre forkjøpsrett gjeldende</tittel>
+        <p>Fristen for å gjøre forkjøpsretten gjeldende er 20 dager fra
+          borettslaget mottok melding om at andelen har skiftet eier, med
+          opplysning om pris og andre vilkår. Fristen er fem hverdager dersom
+          borettslaget har mottatt skriftlig forhåndsvarsel om at andelen kan
+          skifte eier, og varselet har kommet fram til laget minst 15 dager, men
+          ikke mer enn tre måneder, før meldingen om at andelen har skiftet
+          eier.</p>
+      </paragraf>
+
+      <paragraf
+          id="v2_k3_3"
+          nummerert-under="1">
+        <tittel>Nærmere om forkjøpsretten</tittel>
+        <ledd>
+          <p>Ansiennitet i borettslaget regnes fra dato for overtakelse av
+            andelen. Står flere andelseiere i borettslaget med lik ansiennitet,
+            går den med lengst ansiennitet i boligbyggelaget foran.</p>
+        </ledd>
+        <ledd>
+          <p>Dersom ingen andelseiere i borettslaget melder seg utpeker
+            boligbyggelaget hvilken andelseier i boligbyggelaget som skal få
+            overta andelen.</p>
+        </ledd>
+        <ledd>
+          <p>Andelseier som vil overta ny andel, må overdra sin andel i laget
+            til en ny andelseier. Dette gjelder selv om andelen tilhører flere.</p>
+        </ledd>
+        <ledd>
+          <p>Forkjøpsretten skal kunngjøres i en avis som er vanlig lest på
+            stedet, på boligbyggelagets nettsider, ved oppslag i borettslaget
+            eller på annen egnet måte.</p>
+        </ledd>
+      </paragraf>
+
+    </kapittel>
+
+    <kapittel id="v2_k4">
+      <tittel>Borett og bruksoverlating</tittel>
+
+      <paragraf
+          id="v2_k4_1"
+          nummerert-under="1">
+        <tittel>Boretten</tittel>
+        <ledd>
+          <p>Hver andel gir enerett til å bruke en bolig i borettslaget og rett
+            til å nytte fellesarealer til det de er beregnet eller vanlig brukt
+            til, og til annet som er i samsvar med tiden og forholdene.</p>
+        </ledd>
+        <ledd>
+          <p>Andelseieren kan ikke benytte boligen til annet enn boligformål
+            uten styrets samtykke.</p>
+        </ledd>
+        <ledd>
+          <p>Andelseieren skal behandle boligen, andre rom og annet areal med
+            tilbørlig aktsomhet. Bruken av boligen og fellesarealene må ikke på
+            en urimelig eller unødvendig måte være til skade eller ulempe for
+            andre andelseiere.</p>
+        </ledd>
+        <ledd>
+          <p>En andelseier kan med styrets godkjenning gjennomføre tiltak på
+            eiendommen som er nødvendige på grunn av funksjonshemming hos en
+            bruker av boligen. Godkjenning kan ikke nektes uten saklig grunn.</p>
+        </ledd>
+        <ledd>
+          <p>Styret kan fastsette vanlige ordensregler for eiendommen.</p>
+        </ledd>
+      </paragraf>
+
+      <paragraf id="v2_k4_2">
+        <tittel>Bruksoverlating</tittel>
+
+        <ledd>
+          <p>Andelseieren kan ikke uten samtykke fra styret overlate bruken av
+            boligen til andre.</p>
+        </ledd>
+        <ledd>
+          <p>Med styrets godkjenning kan andelseierne overlate bruken av hele
+            boligen dersom: </p>
+          <punktliste type="strek">
+            <punkt>andelseieren selv eller andelseierens ektefelle eller
+              slektning i rett opp- eller nedstigende linje eller fosterbarn av
+              andelseieren eller ektefellen, har bodd i boligen i minst ett av
+              de siste to årene. Andelseierne kan i slike tilfeller overlate
+              bruken av hele boligen for opp til tre år.</punkt>
+            <punkt>andelseier er en juridisk person.</punkt>
+            <punkt>andelseieren skal være midlertidig borte som følge av arbeid,
+              utdanning, militærtjeneste, sykdom eller andre tungtveiende
+              grunner.</punkt>
+            <punkt>et medlem av brukerhusstanden er andelseierens ektefelle
+              eller slektning i rett opp eller nedstigende linje eller
+              fosterbarn av andelseieren eller ektefellen.</punkt>
+            <punkt>det gjelder bruksrett til noen som har krav på det etter
+              ekteskapslovens § 68 eller <lov type="husstandsfellesskapsloven-1991">husstandsfellesskapslovens § 3, andre ledd.</lov>
+            </punkt>
+          </punktliste>
+        </ledd>
+        <ledd>
+          <p>Andelseier som bor i boligen selv, kan overlate bruken av deler av
+            den til andre uten godkjenning.</p>
+        </ledd>
+        <ledd>
+          <p>Overlating av bruken reduserer ikke andelseierens plikter overfor
+            borettslaget.</p>
+        </ledd>
+      </paragraf>
+    </kapittel>
+
+    <kapittel id="v2_k5">
+      <tittel>Vedlikehold</tittel>
+
+      <paragraf id="v2_k5_1">
+        <tittel>Andelseiernes vedlikeholdsplikt</tittel>
+        <ledd>
+          <p>Den enkelte andelseier skal holde boligen, og andre rom og annet
+            areal som hører boligen til, i forsvarlig stand og vedlikeholde
+            slikt som vinduer, rør, sikringsskap fra og med første
+            hovedsikring/inntakssikring, ledninger med tilbehør, varmekabler,
+            inventar, utstyr inklusive vannklosett, varmtvannsbereder og vask,
+            apparater og innvendige flater. Våtrom må brukes og vedlikeholdes
+            slik at lekkasjer unngås.</p>
+        </ledd>
+        <ledd>
+          <p>Vedlikeholdet omfatter også nødvendige reparasjoner og utskifting
+            av slikt som rør, sikringsskap fra og med første
+            hovedsikring/inntakssikring, ledninger med tilbehør, varmekabler,
+            inventar, utstyr inklusive slik som vannklosett, varmtvannsbereder
+            og vasker, apparater, tapet, gulvbelegg, vegg-, gulv og
+            himlingsplater, skillevegger, listverk, skap, benker og innvendige
+            dører med karmer.</p>
+        </ledd>
+        <ledd>
+          <p>Andelseieren har også ansvaret for oppstaking og rensing av
+            innvendig kloakkledning både til og fra egen vannlås/sluk og fram
+            til borettslagets felles-/hovedledning. Andelseier skal også rense
+            eventuelle sluk på verandaer, balkonger o l.</p>
+        </ledd>
+        <ledd>
+          <p>Andelseieren skal holde boligen fri for insekter og skadedyr.</p>
+        </ledd>
+        <ledd>
+          <p>Vedlikeholdsplikten omfatter også utbedring av tilfeldig skade,
+            herunder skade påført ved innbrudd og uvær.</p>
+        </ledd>
+        <ledd>
+          <p>Oppdager andelseieren skade i boligen som borettslaget er ansvarlig
+            for å utbedre, plikter andelseieren straks å sende melding til
+            borettslaget.</p>
+        </ledd>
+        <ledd>
+          <p>Borettslaget og andre andelseiere kan kreve erstatning for tap som
+            følger av at andelseieren ikke oppfyller pliktene sine, jfr.
+            borettslagslovens §§ 5-13 og 5-15.</p>
+        </ledd>
+      </paragraf>
+    </kapittel>
+
   </dokument>
+
   <dokument
       id="v1"
       gyldig-fra="1987-02-19"
       gyldig-til="2004-12-31"
       nummerert-under="1">
     <versjoner />
-    <paragraf>
+    <paragraf id="v1_1">
       <tittel>Navn, lagsform, formål og forretningskontor</tittel>
       <ledd id="v1_1_1">
         <p>Badebakken Borettslag er et andelslag som har til formål å skaffe
@@ -126,7 +361,9 @@
       </ledd>
     </paragraf>
 
-    <paragraf nummerert-under="0">
+    <paragraf
+        id="v1_2"
+        nummerert-under="0">
       <tittel>Andeler - ansvar</tittel>
       <ledd id="v1_2_1">
         <p>Andelene skal være på ett hundre kroner.</p>
@@ -136,7 +373,9 @@
       </ledd>
     </paragraf>
 
-    <paragraf nummerert-under="false">
+    <paragraf
+        id="v1_3"
+        nummerert-under="false">
       <tittel>Andelseiere</tittel>
       <ledd id="v1_3_1">
         <p id="v1_3_1_1"> Bare andelseiere i boligbyggelaget og bare
@@ -165,6 +404,7 @@
           andelsbevis</p>
       </ledd>
     </paragraf>
+
     <paragraf id="v1_4">
       <tittel>Overføring av andel</tittel>
       <ledd id="v1_4_1">
@@ -182,6 +422,7 @@
           borettsinnskuddet.</p>
       </ledd>
     </paragraf>
+
     <paragraf id="v1_5">
       <tittel>Godkjenning av den nye andelseier</tittel>
       <ledd id="v1_5_1">
@@ -232,6 +473,7 @@
           borettslaget, selv om styrets godkjenning ikke er nødvendig.</p>
       </ledd>
     </paragraf>
+
     <paragraf id="v1_6">
       <tittel>Forkjøpsrett</tittel>
       <ledd id="v1_6_1">
@@ -337,11 +579,13 @@
         </punktliste>
       </ledd>
     </paragraf>
-    <paragraf>
+
+    <paragraf id="v1_9">
       <tittel>Firmategning</tittel>
       <p> Leder (nestleder) og ett styremedlem i fellesskap tegner lagets firma. </p>
       <p> Styret kan gi prokura. </p>
     </paragraf>
+
     <paragraf id="v1_10">
       <tittel>Generalforsamling</tittel>
       <ledd>
@@ -372,6 +616,7 @@
           om det senest åtte uker før generalforsamlingen.</p>
       </ledd>
     </paragraf>
+
     <paragraf id="v1_11">
       <tittel>Saker som skal behandles på ordinær generalforsamling</tittel>
       <ledd>
@@ -393,6 +638,7 @@
           innkallingen.</p>
       </ledd>
     </paragraf>
+
     <paragraf id="v1_12">
       <tittel>Møteledelse og avstemming</tittel>
       <ledd>
@@ -406,11 +652,13 @@
           ikke stemt, eller det gjelder valg, avgjøres det ved loddtrekning. </p>
       </ledd>
     </paragraf>
+
     <paragraf id="v1_13">
       <tittel>Revisor</tittel>
       <p>Borettslagets revisor skal være den som til enhver tid er valgt til
         revisor i boligbyggelaget.</p>
     </paragraf>
+
     <paragraf id="v1_14">
       <tittel>Parkering og parkeringshus</tittel>
       <ledd>
@@ -428,6 +676,7 @@
           framleietaker eller hans husstand) eier eller disponerer bil. </p>
       </ledd>
     </paragraf>
+
     <paragraf id="v1_15">
       <tittel>Endringer i vedtektene</tittel>
       <ledd>
@@ -439,6 +688,7 @@
           boligbyggelaget.</p>
       </ledd>
     </paragraf>
+
     <paragraf id="v1_16">
       <tittel>Forholdet til borettsloven</tittel>
       <p> For alle forhold som disse vedtektene ikke har bestemmelser om,

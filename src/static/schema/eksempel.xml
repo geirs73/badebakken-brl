@@ -4,48 +4,53 @@
     xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
     xsi:schemaLocation="urn:no.badebakken.regelsett ../schema/boligselskapsregler.xsd"
 >
-  <dokument gyldig-fra="2023-01-01">
+  <dokument
+      gyldig-fra="2023-01-01"
+      id="id_bbc2d1504cf8400580b3b8b55e169f9f">
     <tittel>
-      <linje></linje>
+      <linje />
     </tittel>
     <versjoner>
       <versjon vedtaksdato="2023-01-01">
-        <vedtak></vedtak>
+        <vedtak />
         <endringer>
-          <endring handling="tillegg" referanse="xxx" />
+          <endring
+              handling="tillegg"
+              referanse="xxx" />
         </endringer>
       </versjon>
     </versjoner>
     <introduksjon />
-    <kapittel>
-      <tittel></tittel>
-      <paragraf>
-        <tittel></tittel>
+    <kapittel id="a">
+      <tittel />
+      <paragraf id="id_f95a825347c54b3ea332581ca1c4e372">
+        <tittel />
         <p id="xxx">
-          <fremhevet>
-          </fremhevet>
-          <understreket>
-          </understreket>
-          <lov></lov>
+          <fremhevet />
+          <understreket />
+          <lov
+              lenke=""
+              type="borettslagslov-1960" />
         </p>
-        <ledd>
-          <p>
-            <lov></lov>
+        <ledd id="id_5ec796361190478b87b4ab9e2df9f883">
+          <p id="id_5fbdc5cd39144d55a1f197085987a1f1">
+            <lov
+                lenke=""
+                type="borettslagslov-1960" />
           </p>
           <punktliste type="ordenstall">
-            <punkt>
-              <lov></lov>
+            <punkt id="id_870b13d867f54ccda46fa987fd64cf34">
+              <lov
+                  lenke=""
+                  type="borettslagslov-1960" />
             </punkt>
           </punktliste>
         </ledd>
-        <punktliste type="ordenstall">
-          <punkt></punkt>
-        </punktliste>
       </paragraf>
-      <paragraf>
+      <paragraf id="id_a567de6162794de4ad5d645306b02eb4">
         <tittel>Foo</tittel>
         <p>3</p>
       </paragraf>
-      </kapittel>
+    </kapittel>
   </dokument>
 </regelsett>
