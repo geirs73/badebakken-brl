@@ -37,7 +37,6 @@ function GetSaxon {
         return $SaxonLib
     }
 
-
     Remove-Item -Recurse -Force -Path $tempDir | Out-Null
 
     if (!(Test-Path $unzipArea -PathType Container)) {

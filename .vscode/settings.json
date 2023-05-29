@@ -115,5 +115,8 @@
         "verktøybod",
         "Villavent",
         "vipps"
-    ]
+    ],
+    "xml.catalogs": [
+        "./src/static/catalog.xml"
+    ],
 }

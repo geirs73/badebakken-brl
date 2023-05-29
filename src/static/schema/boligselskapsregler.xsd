@@ -15,12 +15,24 @@
     </xs:attributeGroup>
 
     <xs:attributeGroup name="ag_nummerert_under">
-        <xs:attribute name="nummerert-under" type="xs:boolean" use="optional" />
+        <xs:attribute name="nummerert-under" type="xs:boolean" use="optional">
+            <xs:annotation>
+                <xs:documentation>
+                    Slå av og på nummerering under nåværende element. 0 = av, 1 = på.
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
     </xs:attributeGroup>
 
     <xs:attributeGroup name="ag_nummerert">
         <xs:attributeGroup ref="r:ag_nummerert_under" />
-        <xs:attribute name="nummerert" type="xs:boolean" use="optional" />
+        <xs:attribute name="nummerert" type="xs:boolean" use="optional">
+            <xs:annotation>
+                <xs:documentation>
+                    Slå av og på nummerering av nåværende element. 0 = av, 1 = på.
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
     </xs:attributeGroup>
 
     <xs:attributeGroup name="ag_dokument">
@@ -42,7 +54,8 @@
     <xs:element name="regelsett">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="dokument" minOccurs="1" maxOccurs="unbounded" type="r:typ_dokument" />
+                <xs:element name="dokument" minOccurs="1" maxOccurs="unbounded"
+                    type="r:typ_dokument" />
             </xs:sequence>
         </xs:complexType>
     </xs:element>
@@ -56,14 +69,16 @@
             <xs:element name="tittel" minOccurs="0" maxOccurs="1">
                 <xs:complexType mixed="true">
                     <xs:sequence>
-                        <xs:element name="linje" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+                        <xs:element name="linje" type="xs:string" minOccurs="0"
+                            maxOccurs="unbounded" />
                     </xs:sequence>
                 </xs:complexType>
             </xs:element>
             <xs:element name="versjoner" minOccurs="0">
                 <xs:complexType>
                     <xs:sequence>
-                        <xs:element name="versjon" type="r:versjon-t" minOccurs="0" maxOccurs="unbounded" />
+                        <xs:element name="versjon" type="r:versjon-t" minOccurs="0"
+                            maxOccurs="unbounded" />
                     </xs:sequence>
                 </xs:complexType>
             </xs:element>
@@ -72,7 +87,8 @@
             </xs:element>
             <xs:choice>
                 <xs:element name="kapittel" type="r:typ_kapittel" maxOccurs="unbounded" />
-                <xs:element name="paragraf" type="r:typ_paragraf" minOccurs="0" maxOccurs="unbounded" />
+                <xs:element name="paragraf" type="r:typ_paragraf" minOccurs="0"
+                    maxOccurs="unbounded" />
             </xs:choice>
         </xs:sequence>
         <xs:attributeGroup ref="r:ag_dokument" />
@@ -92,7 +108,8 @@
             <xs:choice minOccurs="0" maxOccurs="unbounded">
                 <xs:element name="p" type="r:typ_punktum" minOccurs="0" maxOccurs="unbounded" />
                 <xs:element name="ledd" type="r:typ_ledd" minOccurs="0" maxOccurs="unbounded" />
-                <xs:element name="punktliste" type="r:typ_punktliste" minOccurs="0" maxOccurs="unbounded" />
+                <xs:element name="punktliste" type="r:typ_punktliste" minOccurs="0"
+                    maxOccurs="unbounded" />
             </xs:choice>
         </xs:sequence>
         <xs:attributeGroup ref="r:ag_regel" />
@@ -119,7 +136,8 @@
 
     <xs:complexType name="typ_punktum" mixed="true">
         <xs:annotation>
-            <xs:documentation>Punktum i lover er det samme som setninger i vanlig språkbruk. Forkortet til &lt;p&gt;</xs:documentation>
+            <xs:documentation>Punktum i lover er det samme som setninger i vanlig språkbruk.
+                Forkortet til &lt;p&gt;</xs:documentation>
         </xs:annotation>
         <xs:complexContent>
             <xs:extension base="r:typ_tekst" />

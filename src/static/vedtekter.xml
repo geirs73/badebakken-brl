@@ -4,13 +4,11 @@
 <regelsett
     xmlns="urn:no.badebakken.regelsett"
     xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
-    xsi:schemaLocation="urn:no.badebakken.regelsett ./schema/boligselskapsregler.xsd"
 >
-
     <dokument
         nummerert-under="true"
         id="v2"
-        gyldig-fra="2005-01-01">
+        gyldig-fra="2005-04-11">
 
         <tittel>
             <linje>Vedtekter</linje>
@@ -76,7 +74,7 @@
         gyldig-til="2004-12-31"
         nummerert-under="1">
         <versjoner />
-        <paragraf nummerert-under="0">
+        <paragraf>
             <tittel>Navn, lagsform, formål og forretningskontor</tittel>
             <ledd id="v1_1_1">
                 <p>Badebakken Borettslag er et andelslag som har til formål å
@@ -122,12 +120,12 @@
             </ledd>
         </paragraf>
 
-        <paragraf nummerert-under="0">
+        <paragraf nummerert-under="false">
             <tittel>Andelseiere</tittel>
             <ledd id="v1_3_1">
                 <p id="v1_3_1_1">
                     Bare andelseiere i boligbyggelaget og bare enkeltpersoner
-                    (fysiske personer) kan være andelseiere i borettslaget. 
+                    (fysiske personer) kan være andelseiere i borettslaget.
                 </p>
                 <p id="v1_3_1_2">Ingen kan eie mer enn en andel.</p>
                 <p id="v1_3_1_3">
@@ -307,7 +305,7 @@
             </ledd>
 
             <ledd id="v1_6_3">
-                <p>                    
+                <p>
                     Andelseier som vil overta ny andel, må stille sin tidligere
                     andel til rådighet for borettslaget.
                 </p>
@@ -362,7 +360,7 @@
             </ledd>
             <ledd>
                 <p>
-                    Boligbyggelaget har rett til å oppnevne 1 styremedlem med vararepresentant. 
+                    Boligbyggelaget har rett til å oppnevne 1 styremedlem med vararepresentant.
                 </p>
                 <p>
                     Ellers velger generalforsamlingen styremedlemmer og
@@ -433,7 +431,7 @@
             <ledd>
                 <p>
                     Innkalling til generalforsamling skal skje skriftlig til
-                    medlemmene med varsel på minst 8, høyst 20 dager. 
+                    medlemmene med varsel på minst 8, høyst 20 dager.
                 </p>
                 <p>
                     Det skal dessuten gis skriftlig melding til boligbyggelaget.
@@ -523,7 +521,7 @@
                     den utstrekning det er ledige plasser i parkeringshuset rett og
                     plikt til å leie parkeringsplass i dette mot å betale fastsatt
                     innskudd og å erlegge en månedlig leie som til enhver tid blir
-                    fastsatt av styret. 
+                    fastsatt av styret.
                 </p>
                 <p>
                     Det samme gjelder om andelseierens husstand (eller evnt.
@@ -539,7 +537,7 @@
                 av generalforsamlingen med minst to tredjedeler av de avgitte
                 stemmer. </p>
             </ledd>
-            <ledd>                
+            <ledd>
                 <p>Endringer i vedtektene er ikke gyldige uten samtykke fra
                 boligbyggelaget.</p>
             </ledd>
