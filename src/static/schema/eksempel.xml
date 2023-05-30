@@ -30,19 +30,19 @@
           <understreket />
           <lov
               lenke=""
-              type="borettslagslov-1960" />
+              type="brl-1960" />
         </p>
         <ledd id="id_5ec796361190478b87b4ab9e2df9f883">
           <p id="id_5fbdc5cd39144d55a1f197085987a1f1">
             <lov
                 lenke=""
-                type="borettslagslov-1960" />
+                type="brl-1960" />
           </p>
           <punktliste type="ordenstall">
             <punkt id="id_870b13d867f54ccda46fa987fd64cf34">
               <lov
                   lenke=""
-                  type="borettslagslov-1960" />
+                  type="brl-1960" />
             </punkt>
           </punktliste>
         </ledd>

@@ -7,15 +7,15 @@ namespace Processor;
 
 public class RuleProcessor
 {
-    private static readonly Regex multiWhitespaceRegex
+    private static readonly Regex MultiWhitespaceRegex
         = new(@"\s+", RegexOptions.Compiled);
 
-    private int foo = 5;
+    private int _foo = 5;
 
     public XDocument ProcessRuleDocument(XDocument doc)
     {
-        foo = 3;
-        Console.Out.Write(foo);
+        _foo = 3;
+        Console.Out.Write(_foo);
         XNamespace ns = doc?.Root?.Name.Namespace ?? throw new ArgumentException("bad bad doc");
         IEnumerable<XElement> punktumCollection = from d in doc.Root.Descendants(ns + "p")
                                 select d;
@@ -26,7 +26,7 @@ public class RuleProcessor
             // var innerXml = elementReader.ReadInnerXml();
             string innerText = p.Value;
             // var innerText2 = p.ToString();
-            string normalizedInnerText = multiWhitespaceRegex.Replace(innerText, " ");
+            string normalizedInnerText = MultiWhitespaceRegex.Replace(innerText, " ");
 #pragma warning disable CA5350
             using SHA1 crypto = SHA1.Create();
 #pragma warning restore CA5350

@@ -21,6 +21,7 @@
         "borettsinnskuddet",
         "branninnstruks",
         "bredbånd",
+        "brukerhusstanden",
         "bruksoverlating",
         "byggefirmaer",
         "bygningsmateriell",
@@ -36,6 +37,7 @@
         "Fordelingsbrøken",
         "forkjøpsberettigede",
         "forretningsførerhonorar",
+        "forsinkelsesrente",
         "garasjeåpner",
         "garasjebrukere",
         "garasjeportåpner",
@@ -63,6 +65,7 @@
         "kontaktinformasjon",
         "ladeanlegg",
         "ladeanlegget",
+        "lagforholdet",
         "lagsform",
         "leilighetsnummeret",
         "leilighetstype",
@@ -76,6 +79,7 @@
         "luftspalter",
         "maridalsveien",
         "midtleiligheter",
+        "mindretallsvern",
         "mobilnummer",
         "motorsykkelplass",
         "motorsykkelplasser",
@@ -83,6 +87,7 @@
         "naboens",
         "naboer",
         "noen",
+        "noens",
         "oras",
         "ORAS",
         "overdragelsesprisen",
@@ -126,5 +131,15 @@
     ],
     "xml.catalogs": [
         "./src/static/catalog.xml"
+    ],
+    "cSpell.ignorePaths": [
+        "package-lock.json",
+        "node_modules",
+        "vscode-extension",
+        ".git/objects",
+        ".vscode",
+        ".vscode-insiders",
+        "*.html",
+        "*.less"
     ],
 }
