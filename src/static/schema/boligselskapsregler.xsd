@@ -214,8 +214,8 @@
     <xs:choice
         minOccurs="0"
         maxOccurs="unbounded">
-      <xs:element name="fremhevet" />
-      <xs:element name="understreket" />
+      <xs:element name="fremhevet" type="xs:normalizedString" />
+      <xs:element name="understreket" type="xs:normalizedString" />
       <xs:element
           name="lov"
           type="r:typ_lovreferanse" />

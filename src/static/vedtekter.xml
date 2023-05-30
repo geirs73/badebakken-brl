@@ -20,7 +20,7 @@
       <paragraf
           id="v2_k1_1"
           nummerert-under="0"
-          erstatter="v1_1_1 v1_1_2 v1_1_3 v1_1_4">
+          erstatter="v1_1_1 v1_1_2 v1_1_3 v1_1_4 v3_1_14">
         <tittel>Formål</tittel>
         <p>Badebakken borettslag er et samvirkeforetak som har til formål å gi
           andelseierne bruksrett til egen bolig i lagets eiendom (borett) og å
@@ -409,8 +409,134 @@
     <kapittel id="v2_k8">
       <tittel>Styret og dets vedtak</tittel>
 
-      <paragraf id="v2_k8_1">
+      <paragraf
+          id="v2_k8_1"
+          nummerert-under="1">
         <tittel>Styret</tittel>
+
+        <ledd>
+          <p>Borettslaget skal ha et styre som skal bestå av en styreleder og to
+            til fire andre medlemmer med to varamedlemmer.</p>
+        </ledd>
+        <ledd>
+          <p>Funksjonstiden for styreleder og de andre medlemmene er to år.
+            Varamedlemmer velges for ett år. Styremedlem og varamedlem kan
+            gjenvelges.</p>
+        </ledd>
+        <ledd>
+          <p>Styret skal velges av generalforsamlingen. Generalforsamlingen
+            velger styreleder ved særskilt valg. Styret velger nestleder blant
+            sine medlemmer.</p>
+        </ledd>
+      </paragraf>
+
+      <paragraf id="v2_k8_2">
+        <tittel>Styrets oppgaver</tittel>
+
+        <ledd>
+          <p>Styret skal lede virksomheten i samsvar med lov, vedtekter og
+            generalforsamlingens vedtak. Styret kan ta alle avgjørelser som ikke
+            i loven eller vedtektene er lagt til andre organer.</p>
+        </ledd>
+        <ledd>
+          <p>Styreleder skal sørge for at styret holder møte så ofte som det
+            trengs. Et styremedlem eller forretningsføreren kan kreve at styret
+            sammenkalles.</p>
+        </ledd>
+        <ledd>
+          <p>Styret skal føre protokoll over styresakene. Protokollen skal
+            underskrives av de frammøtte styremedlemmene.</p>
+        </ledd>
+      </paragraf>
+
+      <paragraf id="v2_k8_3">
+        <tittel>Styrets vedtak</tittel>
+
+        <ledd>
+          <p>Styret er vedtaksført når mer enn halvparten av alle
+            styremedlemmene er til stede. Vedtak kan treffes med mer enn
+            halvparten av de avgitte stemmene. Står stemmene likt, gjør
+            møtelederens stemme utslaget. De som stemmer for et vedtak som
+            innebærer en endring, må likevel utgjøre minst en tredjedel av alle
+            styremedlemmene.</p>
+        </ledd>
+        <ledd>
+          <p>Styret kan ikke uten at generalforsamlingen har gitt samtykke med
+            minst to tredjedels flertall, fatte vedtak om: </p>
+          <punktliste type="ordenstall">
+            <punkt>ombygging, påbygging eller andre endringer av bebyggelsen
+              eller tomten som etter forholdene i laget går ut over vanlig
+              forvaltning og vedlikehold,</punkt>
+            <punkt>å øke tallet på andeler eller å knytte andeler til boliger
+              som tidligere har vært benyttet til utleie, jfr. borettslagslovens
+              § 3-2, andre ledd,</punkt>
+            <punkt>salg eller kjøp av fast eiendom,</punkt>
+            <punkt>å ta opp lån som skal sikres med pant med prioritet foran
+              innskuddene,</punkt>
+            <punkt>andre rettslige disposisjoner over fast eiendom som går ut
+              over vanlig forvaltning,</punkt>
+            <punkt>andre tiltak som går ut over vanlig forvaltning, når tiltaket
+              fører med seg økonomisk ansvar eller utlegg for laget på mer enn 5
+              % av de årlige felleskostnadene.</punkt>
+          </punktliste>
+        </ledd>
+      </paragraf>
+
+      <paragraf id="v2_k8_4">
+        <tittel>Representasjon og fullmakt</tittel>
+        <p>To styremedlemmer i fellesskap representerer laget utad og tegner
+          dets navn.</p>
+      </paragraf>
+    </kapittel>
+
+    <kapittel id="v2_k9">
+      <tittel>Generalforsamlingen</tittel>
+
+      <paragraf id="v2_k9_1">
+        <tittel>Myndighet</tittel>
+
+        <p>Den øverste myndighet i borettslaget utøves av generalforsamlingen.</p>
+      </paragraf>
+
+      <paragraf id="v2_k9_2">
+        <tittel>Tidspunkt for generalforsamling</tittel>
+
+        <ledd>
+          <p>Ordinær generalforsamling skal holdes hvert år innen utgangen av
+            juni.</p>
+        </ledd>
+        <ledd>
+          <p>Ekstraordinær generalforsamling holdes når styret finner det
+            nødvendig, eller når revisor eller minst to andelseiere som til
+            sammen har minst en tiendedel av stemmene, krever det og samtidig
+            oppgir hvilke saker de ønsker behandlet.</p>
+        </ledd>
+      </paragraf>
+
+      <paragraf id="v2_k9_3">
+        <tittel>Varsel om og innkalling til generalforsamling</tittel>
+
+        <ledd>
+          <p>Forut for ordinær generalforsamling skal styret varsle andelseierne
+            om dato for møtet og om frist for innlevering av saker som ønskes
+            behandlet.</p>
+        </ledd>
+        <ledd>
+          <p>Generalforsamlingen skal innkalles skriftlig av styret med et
+            varsel som skal være på minst åtte og høyst 20 dager. Ekstraordinær
+            generalforsamling kan om nødvendig kalles inn med kortere varsel som
+            likevel skal være på minst tre dager. I begge tilfeller skal det gis
+            skriftlig melding til boligbyggelaget.</p>
+        </ledd>
+        <ledd>
+          <p>I innkallingen skal de sakene som skal behandles være bestemt
+            angitt. Skal et forslag som etter borettslagsloven eller vedtektene
+            må vedtas med minst to tredjedels flertall kunne behandles, må
+            hovedinnholdet være angitt i innkallingen. Saker som en andelseier
+            ønsker behandlet på ordinær generalforsamling skal nevnes i
+            innkallingen når styret har mottatt krav om det etter vedtektenes
+            pkt 9-3 (1).</p>
+        </ledd>
       </paragraf>
     </kapittel>
 
