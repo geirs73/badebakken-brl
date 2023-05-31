@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <regelsett xmlns="urn:no.badebakken.regelsett">
-  <dokument
-      gyldig-fra="1987-01-01"
-      id="ordensregler-1987"
-      nummerert-under="1">
+  <dokument gyldig-fra="1987-01-01" id="ordensregler-1987" nummerert-under="1">
     <tittel>Husordensregler for Badebakken Borettslag</tittel>
     <versjoner>
       <versjon vedtaksdato="1989-04-18">

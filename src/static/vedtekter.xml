@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?> <!-- The schema is bound using catalog.xml -->
-<regelsett
-    xmlns="urn:no.badebakken.regelsett"
-    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
-  <dokument
-      nummerert-under="true"
-      id="v2"
-      gyldig-fra="2005-04-11">
+<regelsett xmlns="urn:no.badebakken.regelsett"
+  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+  <dokument nummerert-under="true" id="v2" gyldig-fra="2005-04-11">
     <tittel>
       <linje>Vedtekter</linje> <linje>for</linje> <linje>Badebakken borettslag Org nr. 943 792 755</linje>
     </tittel>
@@ -13,10 +9,8 @@
     <kapittel id="v2_k1">
       <tittel>Innledende bestemmelser</tittel>
 
-      <paragraf
-          id="v2_k1_1"
-          nummerert-under="0"
-          erstatter="v1_1_1 v1_1_2 v1_1_3 v1_1_4">
+      <paragraf id="v2_k1_1" nummerert-under="0"
+        erstatter="v1_1_1 v1_1_2 v1_1_3 v1_1_4">
         <tittel>Formål</tittel>
 
         <p>Badebakken borettslag er et samvirkeforetak som har til formål å gi
@@ -24,18 +18,14 @@
           drive virksomhet som står i sammenheng med denne.</p>
       </paragraf>
 
-      <paragraf
-          id="v2_k1_2"
-          nummerert-under="1">
+      <paragraf id="v2_k1_2" nummerert-under="1">
         <tittel>Forretningskontor, forretningsførsel og tilknytningsforhold</tittel>
 
-        <ledd-p
-            id="v2_k1_2_1"
-            erstatter="v1_1_5">Borettslaget ligger i Oslo kommune og har
+        <ledd-p id="v2_k1_2_1" erstatter="v1_1_5">Borettslaget ligger i Oslo
+          kommune og har
           forretningskontor i Oslo kommune.</ledd-p>
-        <ledd-p
-            id="v2_k1_2_2"
-            erstatter="v1_1_6">Borettslaget er tilknyttet Boligbyggelaget Usbl
+        <ledd-p id="v2_k1_2_2" erstatter="v1_1_6">Borettslaget er tilknyttet
+          Boligbyggelaget Usbl
           som er forretningsfører.</ledd-p>
       </paragraf>
 
@@ -80,9 +70,7 @@
           jfr vedtektenes pkt 4-2. </ledd-p>
       </paragraf>
 
-      <paragraf
-          id="v2_k2_3"
-          nummerert-under="1">
+      <paragraf id="v2_k2_3" nummerert-under="1">
         <tittel>2-3 Overføring av andel og godkjenning av ny andelseier</tittel>
 
         <ledd-p>
@@ -113,9 +101,7 @@
         </ledd-p>
       </paragraf>
 
-      <paragraf
-          id="v2_k2_4"
-          gyldig-fra="2009-05-07">
+      <paragraf id="v2_k2_4" gyldig-fra="2009-05-07">
         <tittel>Sammenslåing av andelsleiligheter</tittel>
 
         <ledd>
@@ -145,9 +131,7 @@
         </ledd>
       </paragraf>
 
-      <paragraf
-          id="v2_k2_5"
-          gyldig-fra="2012-08-20">
+      <paragraf id="v2_k2_5" gyldig-fra="2012-08-20">
         <tittel>Utbygging av loft</tittel>
 
         <ledd>
@@ -175,9 +159,7 @@
         </ledd>
       </paragraf>
 
-      <paragraf
-          id="v2_k2_6"
-          gyldig-fra="2014-06-05">
+      <paragraf id="v2_k2_6" gyldig-fra="2014-06-05">
         <tittel>Boder og andeler</tittel>
 
         <ledd>
@@ -194,9 +176,7 @@
     <kapittel id="v2_k3">
       <tittel>Forkjøpsrett</tittel>
 
-      <paragraf
-          id="v2_k3_1"
-          nummerert-under="1">
+      <paragraf id="v2_k3_1" nummerert-under="1">
         <tittel>Hovedregel for forkjøpsrett</tittel>
 
         <ledd>
@@ -213,9 +193,7 @@
             <n>Forkjøpsretten kan heller ikke gjøres gjeldende når andelen
               overføres på skifte etter separasjon eller skilsmisse, eller når
               et husstandsmedlem overtar andelen etter bestemmelsene i </n>
-            <lov
-                type="hfl-1991"
-                referanse="§3"> husstandsfellesskapslovens § 3</lov>
+            <lov type="hfl-1991" referanse="§3"> husstandsfellesskapslovens § 3</lov>
             <n>.</n>
           </pf>
         </ledd>
@@ -239,9 +217,7 @@
           meldingen om at andelen har skiftet eier.</p>
       </paragraf>
 
-      <paragraf
-          id="v2_k3_3"
-          nummerert-under="1">
+      <paragraf id="v2_k3_3" nummerert-under="1">
         <tittel>Nærmere om forkjøpsretten</tittel>
 
         <ledd>
@@ -271,9 +247,7 @@
     <kapittel id="v2_k4">
       <tittel>Borett og bruksoverlating</tittel>
 
-      <paragraf
-          id="v2_k4_1"
-          nummerert-under="1">
+      <paragraf id="v2_k4_1" nummerert-under="1">
         <tittel>Boretten</tittel>
 
         <ledd-p>
@@ -327,9 +301,7 @@
             <punkt-f>
               <n>det gjelder bruksrett til noen som har krav på det etter
               ekteskapslovens § 68 eller </n>
-              <lov
-                  type="hfl-1991"
-                  referanse="§3">husstandsfellesskapslovens § 3, andre ledd.</lov>
+              <lov type="hfl-1991" referanse="§3">husstandsfellesskapslovens § 3, andre ledd.</lov>
             </punkt-f>
           </punktliste>
         </ledd>
@@ -392,13 +364,9 @@
             <n>Borettslaget og andre andelseiere kan kreve erstatning for tap som
             følger av at andelseieren ikke oppfyller pliktene sine, jfr.
             borettslagslovens §§ </n>
-            <lov
-                type="brl-2003"
-                referanse="5-13">5-13</lov>
+            <lov type="brl-2003" referanse="5-13">5-13</lov>
             <n> og </n>
-            <lov
-                type="brl-2003"
-                referanse="5-15">5-15.</lov>
+            <lov type="brl-2003" referanse="5-15">5-15.</lov>
           </pf>
         </ledd>
         <ledd gyldig-fra="2011-05-18">
@@ -462,9 +430,7 @@
           <pf>
             <n>Andelseier kan kreve erstatning for tap som følge av at
             borettslaget ikke oppfyller pliktene sine, jfr </n>
-            <lov
-                type="brl-2003"
-                referanse="5-18">borettslagslovens §
+            <lov type="brl-2003" referanse="5-18">borettslagslovens §
             5-18.</lov>
           </pf>
         </ledd>
@@ -477,9 +443,7 @@
         </ledd>
       </paragraf>
 
-      <paragraf
-          id="v2_k5_3"
-          gyldig-fra="2014-06-05">
+      <paragraf id="v2_k5_3" gyldig-fra="2014-06-05">
         <tittel>Oppussing av våtrom</tittel>
 
         <ledd>
@@ -523,9 +487,7 @@
           overlating av bruk og brudd på husordensregler.</p>
       </paragraf>
 
-      <paragraf
-          id="v2_k6_2"
-          nummerert-under="1">
+      <paragraf id="v2_k6_2" nummerert-under="1">
         <tittel>Pålegg om salg</tittel>
 
         <ledd>
@@ -574,9 +536,7 @@
     <kapittel id="v2_k8">
       <tittel>Styret og dets vedtak</tittel>
 
-      <paragraf
-          id="v2_k8_1"
-          nummerert-under="1">
+      <paragraf id="v2_k8_1" nummerert-under="1">
         <tittel>Styret</tittel>
 
         <ledd-p>
@@ -786,13 +746,9 @@
           <pf>
             <n>Det Samme Gjelder Avstemning Om Pålegg Om Salg Eller Krav
             Om Fravikelse Etter Borettslagslovens §§ </n>
-            <lov
-                referanse="§5-22"
-                type="brl-2003">5-22</lov>
+            <lov referanse="§5-22" type="brl-2003">5-22</lov>
             <n> og </n>
-            <lov
-                referanse="§5-23"
-                type="brl-2003">5-23.</lov>
+            <lov referanse="§5-23" type="brl-2003">5-23.</lov>
           </pf>
         </ledd>
       </paragraf>
@@ -851,11 +807,8 @@
   ******************************************* --> <!--
   Første versjon av vedtektene pre ny brl-lov --> <!--
   ******************************************* -->
-  <dokument
-      id="v1"
-      gyldig-fra="1987-02-19"
-      gyldig-til="2004-12-31"
-      nummerert-under="1">
+  <dokument id="v1" gyldig-fra="1987-02-19" gyldig-til="2004-12-31"
+    nummerert-under="1">
     <versjoner />
     <paragraf id="v1_1">
       <tittel>Navn, lagsform, formål og forretningskontor</tittel>
@@ -892,9 +845,7 @@
       </ledd>
     </paragraf>
 
-    <paragraf
-        id="v1_2"
-        nummerert-under="0">
+    <paragraf id="v1_2" nummerert-under="0">
       <tittel>Andeler - ansvar</tittel>
 
       <ledd id="v1_2_1">
@@ -905,9 +856,7 @@
       </ledd>
     </paragraf>
 
-    <paragraf
-        id="v1_3"
-        nummerert-under="false">
+    <paragraf id="v1_3" nummerert-under="false">
       <tittel>Andelseiere</tittel>
 
       <ledd id="v1_3_1">
