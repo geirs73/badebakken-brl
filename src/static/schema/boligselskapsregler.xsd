@@ -117,7 +117,7 @@
           <xs:sequence>
             <xs:element
                 name="versjon"
-                type="r:versjon-t"
+                type="r:typ_versjon"
                 minOccurs="0"
                 maxOccurs="unbounded" />
           </xs:sequence>
@@ -189,6 +189,11 @@
             minOccurs="0"
             maxOccurs="unbounded" />
         <xs:element
+            name="pf"
+            type="r:typ_punktum_f"
+            minOccurs="0"
+            maxOccurs="unbounded" />
+        <xs:element
             name="ledd"
             type="r:typ_ledd"
             minOccurs="0"
@@ -237,6 +242,11 @@
           type="r:typ_punktum"
           minOccurs="0" />
       <xs:element
+          name="pf"
+          type="r:typ_punktum_f"
+          minOccurs="0"
+          maxOccurs="unbounded" />
+      <xs:element
           name="punktliste"
           type="r:typ_punktliste"
           minOccurs="0" />
@@ -245,18 +255,19 @@
     <xs:attributeGroup ref="r:ag_id_optional" />
   </xs:complexType>
 
-  <xs:complexType
-      name="typ_tekst"
-      mixed="true">
+  <xs:complexType name="typ_formatert_tekst">
     <xs:choice
         minOccurs="0"
         maxOccurs="unbounded">
       <xs:element
-          name="fremhevet"
-          type="xs:normalizedString" />
+          name="n"
+          type="xs:string" />
       <xs:element
-          name="understreket"
-          type="xs:normalizedString" />
+          name="b"
+          type="xs:string" />
+      <xs:element
+          name="u"
+          type="xs:string" />
       <xs:element
           name="lov"
           type="r:typ_lovreferanse" />
@@ -268,28 +279,47 @@
         type="xs:hexBinary" />
   </xs:complexType>
 
-  <xs:complexType
-      name="typ_punktum"
-      mixed="true">
+  <xs:complexType name="typ_punktum">
+    <xs:annotation>
+      <xs:documentation>Punktum i lover er det samme som setninger i vanlig
+        språkbruk. Forkortet til &lt;p&gt;</xs:documentation>
+    </xs:annotation>
+    <xs:simpleContent>
+      <xs:extension base="xs:normalizedString" />
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="typ_punktum_f">
     <xs:annotation>
       <xs:documentation>Punktum i lover er det samme som setninger i vanlig
         språkbruk. Forkortet til &lt;p&gt;</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
-      <xs:extension base="r:typ_tekst" />
+      <xs:extension base="r:typ_formatert_tekst" />
     </xs:complexContent>
   </xs:complexType>
 
+  <xs:complexType name="typ_lovreferanse">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute
+            name="referanse"
+            use="optional"
+            type="xs:normalizedString" />
+        <xs:attribute
+            name="lenke"
+            use="optional"
+            type="xs:anyURI" />
+        <xs:attribute
+            name="type"
+            use="required"
+            type="r:enm_lovverk" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
 
-  <xs:simpleType name="enm_handling">
-    <xs:restriction base="xs:normalizedString">
-      <xs:enumeration value="sletting" />
-      <xs:enumeration value="redigering" />
-      <xs:enumeration value="tillegg" />
-    </xs:restriction>
-  </xs:simpleType>
 
-  <xs:complexType name="versjon-t">
+  <xs:complexType name="typ_versjon">
     <xs:all>
       <xs:element
           name="vedtak"
@@ -324,26 +354,42 @@
   </xs:complexType>
 
   <xs:complexType name="typ_punktliste">
-    <xs:sequence>
+    <xs:choice minOccurs="1" maxOccurs="unbounded">
       <xs:element
           name="punkt"
-          type="r:typ_tekst"
+          type="xs:normalizedString"
           maxOccurs="unbounded" />
-    </xs:sequence>
+      <xs:element
+          name="punkt-f"
+          type="r:typ_formatert_tekst"
+          maxOccurs="unbounded" />
+    </xs:choice>
     <xs:attribute
         name="type"
-        use="required">
-      <xs:simpleType>
-        <xs:restriction base="xs:normalizedString">
-          <xs:enumeration value="strek" />
-          <xs:enumeration value="ordenstall" />
-          <xs:enumeration value="små-bokstaver" />
-          <xs:enumeration value="store-bokstaver" />
-          <xs:enumeration value="romertall" />
-        </xs:restriction>
-      </xs:simpleType>
-    </xs:attribute>
+        use="required"
+        type="r:enm_punkter" />
   </xs:complexType>
+
+  <!-- Enumerasjoner ******************** -->
+
+  <xs:simpleType name="enm_handling">
+    <xs:restriction base="xs:normalizedString">
+      <xs:enumeration value="sletting" />
+      <xs:enumeration value="redigering" />
+      <xs:enumeration value="tillegg" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="enm_punkter">
+    <xs:restriction base="xs:normalizedString">
+      <xs:enumeration value="strek" />
+      <xs:enumeration value="ordenstall" />
+      <xs:enumeration value="små-bokstaver" />
+      <xs:enumeration value="store-bokstaver" />
+      <xs:enumeration value="romertall" />
+    </xs:restriction>
+
+  </xs:simpleType>
 
   <xs:simpleType name="enm_lovverk">
     <xs:restriction base="xs:NCName">
@@ -371,24 +417,14 @@
             https://lovdata.no/dokument/NL/lov/1991-07-04-45</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
+      <xs:enumeration value="frl-1976">
+        <xs:annotation>
+          <xs:documentation>Forsinkelsesrenteloven
+            https://lovdata.no/dokument/NL/lov/1976-12-17-100</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
-  <xs:complexType name="typ_lovreferanse">
-    <xs:simpleContent>
-      <xs:extension base="xs:string">
-        <xs:attribute
-            name="referanse"
-            use="optional"
-            type="xs:normalizedString" />
-        <xs:attribute
-            name="lenke"
-            use="optional"
-            type="xs:anyURI" />
-        <xs:attribute
-            name="type"
-            use="required"
-            type="r:enm_lovverk" />
-      </xs:extension>
-    </xs:simpleContent>
-  </xs:complexType>
+
+
 </xs:schema>

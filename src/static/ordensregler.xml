@@ -18,10 +18,12 @@
     <paragraf id="p1987-1">
       <tittel>Innledning</tittel>
       <ledd id="p1987-1-1">
-        <p> Hver beboer plikter å påse at han, hans husstand eller andre som han
-          er ansvarlig for, eller gir adgang til bygningene, <understreket>holder
-          ro og orden</understreket> slik at det ikke voldes ulempe eller ubehag
-          for andre beboere. </p>
+        <pf>
+          <n>Hver beboer plikter å påse at han, hans husstand eller andre som
+            han er ansvarlig for, eller gir adgang til bygningene,</n>
+          <u>holder ro og orden</u>
+          <n> slik at det ikke voldes ulempe eller ubehag for andre beboere. </n>
+        </pf>
       </ledd>
       <ledd id="p1987-1-2">
         <p> Som husordensregler gjelder også særskilte tekniske bestemmelser (f.
@@ -34,7 +36,7 @@
     <paragraf id="x">
       <tittel />
       <ledd>
-        <p> Mellom kl. 23.00 - 07.00 skal det være nattero i boligene og på
+        <p>Mellom kl. 23.00 - 07.00 skal det være nattero i boligene og på
           borettslagets område. I dette tidsrommet skal det ikke spilles på
           instrumenter, nyttes støyende høyttalere, vaskemaskin, tørketrommel
           eller forårsakes annen støy som sjenerer øvrige boliger. </p>
