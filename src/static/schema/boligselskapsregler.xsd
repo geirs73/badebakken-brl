@@ -5,51 +5,7 @@
   targetNamespace="urn:no.badebakken.regelsett" elementFormDefault="qualified"
   xml:lang="no-NB" vc:minVersion="1.1">
 
-  <!-- attributes **************************************************** -->
-
-  <xs:attributeGroup name="ag_id">
-    <xs:attribute name="id" type="xs:ID" use="required" />
-  </xs:attributeGroup>
-
-  <xs:attributeGroup name="ag_id_optional">
-    <xs:attribute name="id" type="xs:ID" use="optional" />
-  </xs:attributeGroup>
-
-  <xs:attributeGroup name="ag_nummerert_under">
-    <xs:attribute name="nummerert-under" type="xs:boolean" use="optional">
-      <xs:annotation>
-        <xs:documentation> Slå av og på nummerering under nåværende element. 0 =
-          av, 1 = på. </xs:documentation>
-      </xs:annotation>
-    </xs:attribute>
-  </xs:attributeGroup>
-
-  <xs:attributeGroup name="ag_nummerert">
-    <xs:attributeGroup ref="r:ag_nummerert_under" />
-    <xs:attribute name="nummerert" type="xs:boolean" use="optional">
-      <xs:annotation>
-        <xs:documentation> Slå av og på nummerering av nåværende element. 0 =
-          av, 1 = på. </xs:documentation>
-      </xs:annotation>
-    </xs:attribute>
-  </xs:attributeGroup>
-
-  <xs:attributeGroup name="ag_dokument">
-    <xs:attributeGroup ref="r:ag_nummerert_under" />
-    <xs:attribute name="gyldig-fra" type="xs:date" use="required" />
-    <xs:attribute name="gyldig-til" type="xs:date" use="optional"
-      default="9999-01-01" />
-  </xs:attributeGroup>
-
-  <xs:attributeGroup name="ag_regel">
-    <xs:attributeGroup ref="r:ag_nummerert" />
-    <xs:attribute name="gyldig-fra" type="xs:date" use="optional" />
-    <xs:attribute name="gyldig-til" type="xs:date" use="optional"
-      default="9999-01-01" />
-    <xs:attribute name="erstatter" type="xs:IDREFS" />
-  </xs:attributeGroup>
-
-  <!-- root **************************************************** -->
+  <!-- Dokument-rot **************************************************** -->
 
   <xs:element name="regelsett">
     <xs:complexType>
@@ -60,7 +16,7 @@
     </xs:complexType>
   </xs:element>
 
-  <!-- types ****************************************************-->
+  <!-- Typer ****************************************************-->
 
   <xs:complexType name="typ_dokument">
     <xs:sequence>
@@ -97,11 +53,32 @@
             </xs:simpleContent>
           </xs:complexType>
         </xs:element>
-
       </xs:choice>
     </xs:sequence>
     <xs:attributeGroup ref="r:ag_dokument" />
     <xs:attributeGroup ref="r:ag_id" />
+  </xs:complexType>
+
+  <xs:complexType name="typ_versjon">
+    <xs:all>
+      <xs:element name="vedtak" type="xs:normalizedString" />
+      <xs:element name="beskrivelse" type="xs:normalizedString" minOccurs="0" />
+      <xs:element name="endringer" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="endring" type="r:typ_endring"
+              maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:all>
+    <xs:attribute name="vedtaksdato" type="xs:date" use="optional" />
+    <xs:attribute name="ikrafttredelse" type="xs:date" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="typ_endring">
+    <xs:attribute name="handling" type="r:enm_handling" use="required" />
+    <xs:attribute name="referanse" type="xs:IDREF" use="required" />
   </xs:complexType>
 
   <xs:complexType name="typ_kapittel">
@@ -209,26 +186,6 @@
     </xs:simpleContent>
   </xs:complexType>
 
-
-  <xs:complexType name="typ_versjon">
-    <xs:all>
-      <xs:element name="vedtak" type="xs:string" />
-      <xs:element name="endringer" minOccurs="0">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element name="endring" type="r:typ_endring" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-    </xs:all>
-    <xs:attribute name="vedtaksdato" type="xs:date" use="required" />
-  </xs:complexType>
-
-  <xs:complexType name="typ_endring">
-    <xs:attribute name="handling" type="r:enm_handling" use="required" />
-    <xs:attribute name="referanse" type="xs:IDREF" use="required" />
-  </xs:complexType>
-
   <xs:complexType name="typ_punktliste">
     <xs:choice minOccurs="1" maxOccurs="unbounded">
       <xs:element name="punkt" type="r:typ_punktum" maxOccurs="unbounded" />
@@ -293,6 +250,63 @@
       </xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
+
+  <!-- Attributter **************************************************** -->
+
+  <xs:attributeGroup name="ag_permanent_id">
+    <xs:attribute name="pid" use="optional">
+      <xs:simpleType>
+        <xs:restriction base="xs:hexBinary">
+          <xs:length value="6" />
+          <!-- length in bytes, equals two digits in hexBinary of course -->
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+
+  <xs:attributeGroup name="ag_id">
+    <xs:attribute name="id" type="xs:ID" use="required" />
+    <xs:attributeGroup ref="r:ag_permanent_id" />
+  </xs:attributeGroup>
+
+  <xs:attributeGroup name="ag_id_optional">
+    <xs:attribute name="id" type="xs:ID" use="optional" />
+    <xs:attributeGroup ref="r:ag_permanent_id" />
+  </xs:attributeGroup>
+
+  <xs:attributeGroup name="ag_nummerert_under">
+    <xs:attribute name="nummerert-under" type="xs:boolean" use="optional">
+      <xs:annotation>
+        <xs:documentation> Slå av og på nummerering under nåværende element. 0 =
+          av, 1 = på. </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:attributeGroup>
+
+  <xs:attributeGroup name="ag_nummerert">
+    <xs:attributeGroup ref="r:ag_nummerert_under" />
+    <xs:attribute name="nummerert" type="xs:boolean" use="optional">
+      <xs:annotation>
+        <xs:documentation> Slå av og på nummerering av nåværende element. 0 =
+          av, 1 = på. </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:attributeGroup>
+
+  <xs:attributeGroup name="ag_dokument">
+    <xs:attributeGroup ref="r:ag_nummerert_under" />
+    <xs:attribute name="gyldig-fra" type="xs:date" use="required" />
+    <xs:attribute name="gyldig-til" type="xs:date" use="optional"
+      default="9999-01-01" />
+  </xs:attributeGroup>
+
+  <xs:attributeGroup name="ag_regel">
+    <xs:attributeGroup ref="r:ag_nummerert" />
+    <xs:attribute name="gyldig-fra" type="xs:date" use="optional" />
+    <xs:attribute name="gyldig-til" type="xs:date" use="optional"
+      default="9999-01-01" />
+    <xs:attribute name="erstatter" type="xs:IDREFS" />
+  </xs:attributeGroup>
 
 
 </xs:schema>

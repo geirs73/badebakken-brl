@@ -1,16 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?> <!-- The schema is bound using catalog.xml -->
 <regelsett xmlns="urn:no.badebakken.regelsett"
   xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
-  <dokument nummerert-under="true" id="v2" gyldig-fra="2005-04-11">
+  <dokument nummerert-under="true" id="v2" gyldig-fra="2005-07-01"
+    pid="2dc4167fb26d">
     <tittel>
-      <linje>Vedtekter</linje> <linje>for</linje> <linje>Badebakken borettslag Org nr. 943 792 755</linje>
+      <linje>Vedtekter</linje>
+      <linje>for</linje>
+      <linje>Badebakken borettslag Org nr. 943 792 755</linje>
     </tittel>
 
-    <kapittel id="v2_k1">
+    <versjoner>
+      <versjon ikrafttredelse="2005-08-15" vedtaksdato="2005-04-11">
+        <vedtak>Vedtatt på konstituerende generalforsamling den 19. februar
+          1987, med senere endringer og sist den 11. april 2005</vedtak>
+        <beskrivelse>Bakgrunnen for nye vedtekter var at Stortinget hadde
+          vedtatt ny lov om borettslag. Denne loven trer muligens i kraft den
+          01.07.05 og vedtektene vil derfor ikke ta til å gjelde før loven trer
+          i kraft. Dvs at de gamle vedtektene gjelder inntil ny lov trer i
+          funksjon.</beskrivelse>
+        <endringer>
+          <endring handling="sletting" referanse="v1" />
+          <endring handling="tillegg" referanse="v2" />
+        </endringer>
+      </versjon>
+
+      <versjon ikrafttredelse="2009-05-07">
+        <vedtak>Vedtatt på konstituerende generalforsamling den 19. februar
+          1987, med senere endringer og sist den 7. mai 2009</vedtak>
+        <beskrivelse>Ny paragraf §2-4 om sammenslåing av
+          andelsleiligheter</beskrivelse>
+        <endringer>
+          <endring handling="tillegg" referanse="v2_k2_5" />
+        </endringer>
+      </versjon>
+
+      <versjon ikrafttredelse="2011-05-18">
+        <vedtak>Vedtatt på konstituerende generalforsamling den 19. februar
+          1987, med senere endringer og sist den 18. mai 2011</vedtak>
+        <beskrivelse />
+        <endringer>
+          <endring handling="tillegg" referanse="v2_k5_1_8" />
+          <endring handling="tillegg" referanse="v2_k5_2_6" />
+        </endringer>
+      </versjon>
+
+      <versjon ikrafttredelse="2012-08-20">
+        <vedtak>Vedtatt på konstituerende generalforsamling den 19. februar
+          1987, med senere endringer og sist den 20. august 2012</vedtak>
+        <endringer>
+          <endring handling="tillegg" referanse="v2_k2_5" />
+        </endringer>
+      </versjon>
+
+      <versjon ikrafttredelse="2014-06-05">
+        <vedtak>Vedtatt på konstituerende generalforsamling den 19. februar
+          1987, med senere endringer og sist den 5. juni 2014</vedtak>
+        <endringer>
+          <endring handling="sletting" referanse="v2_k2_1_4_x1" />
+          <endring handling="tillegg" referanse="v2_k2_6" />
+          <endring handling="tillegg" referanse="v2_k5_1_9" />
+          <endring handling="tillegg" referanse="v2_k5_1_10" />
+          <endring handling="tillegg" referanse="v2_k5_3" />
+        </endringer>
+      </versjon>
+
+      <versjon ikrafttredelse="2015-06-03">
+        <vedtak>Vedtatt på konstituerende generalforsamling den 19. februar
+          1987, med senere endringer og sist den 3. juni 2015</vedtak>
+        <endringer>
+          <endring handling="tillegg" referanse="v2_k2_7" />
+        </endringer>
+      </versjon>
+
+      <versjon ikrafttredelse="2016-06-01">
+        <vedtak>Vedtatt på konstituerende generalforsamling den 19. februar
+          1987, med senere endringer og sist den 1. juni 2016</vedtak>
+        <endringer>
+          <endring handling="tillegg" referanse="v2_k5_2_7" />
+        </endringer>
+      </versjon>
+
+      <versjon ikrafttredelse="2018-05-31">
+        <vedtak>Vedtatt på konstituerende generalforsamling den 19. februar
+          1987, med senere endringer og sist den 31. mai 2018</vedtak>
+        <endringer>
+          <endring handling="tillegg" referanse="v2_k2_4_5" />
+          <endring handling="tillegg" referanse="v2_k2_4_6" />
+          <endring handling="tillegg" referanse="v2_k2_4_7" />
+        </endringer>
+      </versjon>
+
+    </versjoner>
+
+    <kapittel id="v2_k1" pid="f21dd284f2b4">
       <tittel>Innledende bestemmelser</tittel>
 
       <paragraf id="v2_k1_1" nummerert-under="0"
-        erstatter="v1_1_1 v1_1_2 v1_1_3 v1_1_4">
+        erstatter="v1_1_1 v1_1_2 v1_1_3 v1_1_4" pid="1ffa838b5ef6">
         <tittel>Formål</tittel>
 
         <p>Badebakken borettslag er et samvirkeforetak som har til formål å gi
@@ -22,11 +108,10 @@
         <tittel>Forretningskontor, forretningsførsel og tilknytningsforhold</tittel>
 
         <ledd-p id="v2_k1_2_1" erstatter="v1_1_5">Borettslaget ligger i Oslo
-          kommune og har
-          forretningskontor i Oslo kommune.</ledd-p>
+          kommune og har forretningskontor i Oslo kommune.</ledd-p>
+
         <ledd-p id="v2_k1_2_2" erstatter="v1_1_6">Borettslaget er tilknyttet
-          Boligbyggelaget Usbl
-          som er forretningsfører.</ledd-p>
+          Boligbyggelaget Usbl som er forretningsfører.</ledd-p>
       </paragraf>
 
     </kapittel>
@@ -53,9 +138,10 @@
             andre som har inngått samarbeidsavtale med stat, fylkeskommune eller
             kommune om å skaffe boliger til vanskeligstilte.</p>
         </ledd>
-        <ledd-p gyldig-til="2014-06-05">I tillegg har Oras a/s rett til å eie
-          andel 0050 innefor den totalramme som kan eies av juridiske personer i
-          henhold til borettslagsloven § 4-2 (1) </ledd-p>
+        <ledd-p id="v2_k2_1_4_x1" gyldig-til="2014-06-05" pid="d8829fb38c43">I
+          tillegg har Oras a/s rett til å eie andel 0050 innefor den totalramme
+          som kan eies av juridiske personer i henhold til borettslagsloven §
+          4-2 (1)</ledd-p>
         <ledd-p>Andelseierne skal få utlevert et eksemplar av borettslagets
           vedtektene.</ledd-p>
       </paragraf>
@@ -129,17 +215,19 @@
           <p>Det er ikke anledning til fremleie av noen av de berørte
             andelsleilighetene i perioden sammenslåingsprosessen pågår.</p>
         </ledd>
-        <ledd gyldig-fra="2018-05-31">
+        <ledd id="v2_k2_4_5" gyldig-fra="2018-05-31">
           <p>Fordelingsnøkkelen for andelen som slettes skal legges til
             fordelingsnøkkelen for andelen som beholdes.</p>
           <p>Partialobligasjonen for andelen som slettes skal legges til
             partialobligasjonen for andelen som beholdes.</p>
         </ledd>
-        <ledd-p gyldig-fra="2018-05-31">Dersom begge andelene som skal slås
+        <ledd-p id="v2_k2_4_6" gyldig-fra="2018-05-31">Dersom begge andelene som
+          skal slås
           sammen har garasjeplass, må
           den ene selges til en annen andelseier slik at vedtektenes pkt. 2-7
           (5) oppfylles.</ledd-p>
-        <ledd-p gyldig-fra="2018-05-31">Ved sammenslåing av leiligheter vil den
+        <ledd-p id="v2_k2_4_7" gyldig-fra="2018-05-31">Ved sammenslåing av
+          leiligheter vil den
           nye andelen disponere
           bodene som tilhørte de to tidligere andelene.</ledd-p>
 
@@ -438,7 +526,7 @@
             <lov type="brl-2003" referanse="5-15">5-15.</lov>
           </pf>
         </ledd>
-        <ledd gyldig-fra="2011-05-18">
+        <ledd id="v2_k5_1_8" gyldig-fra="2011-05-18">
           <p>Vedlikehold på innsiden av balkonger/plattinger er andelseiers
             ansvar i sin helhet.</p>
           <p>Med innside av balkong menes alle områder som er innenfor
@@ -449,7 +537,7 @@
           <p>Når det gjelder plattingen i første etasje er andelseier ansvarlig
             for alt vedlikehold av treverk.</p>
         </ledd>
-        <ledd gyldig-fra="2014-06-05">
+        <ledd id="v2_k5_1_9" gyldig-fra="2014-06-05">
           <p>Eksterne anlegg som er satt opp av beboer etter godkjennelse fra
             styret vil ikke utløse vedlikeholdsplikt for borettslaget.</p>
           <p>Dette
@@ -459,7 +547,7 @@
             på eksterne anlegg til andeler for å sikre at ansvarsforholdet
             følger andelen ved salg.</p>
         </ledd>
-        <ledd-p gyldig-fra="2014-06-05">
+        <ledd-p id="v2_k5_1_10" gyldig-fra="2014-06-05">
           Godkjente eksterne anlegg kan pålegges fjernet eller flyttet på for
           andelseiers regning dersom vedlikehold av den generelle boligmassen
           krever det.
@@ -503,14 +591,14 @@
             5-18.</lov>
           </pf>
         </ledd>
-        <ledd gyldig-fra="2011-05-18">
+        <ledd id="v2_k5_2_6" gyldig-fra="2011-05-18">
           <p>Borettslaget har vedlikeholdsansvar for fasade og vil således være
             ansvarlig for alt vedlikehold utvendig samt reparasjon og utskifting
             av bærende konstruksjoner i forbindelse med balkong/platting.</p>
           <p>Dette ansvaret sikres et fast påslag i husleien til de berørte
             andelseiere.</p>
         </ledd>
-        <ledd gyldig-fra="2016-06-01">
+        <ledd id="v2_k5_2_7" gyldig-fra="2016-06-01">
           <p>I henhold til lover og forskrifter relatert til brann, er
             borettslaget ansvarlig for å ha varslings- og slokkeutstyr i hver
             leilighet, og alle leiligheter i Badebakken borettslag har fått
