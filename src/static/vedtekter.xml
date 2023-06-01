@@ -53,11 +53,11 @@
             andre som har inngått samarbeidsavtale med stat, fylkeskommune eller
             kommune om å skaffe boliger til vanskeligstilte.</p>
         </ledd>
-        <ledd-p gyldig-til="2014-06-05"> I tillegg har Oras a/s rett til å eie
+        <ledd-p gyldig-til="2014-06-05">I tillegg har Oras a/s rett til å eie
           andel 0050 innefor den totalramme som kan eies av juridiske personer i
           henhold til borettslagsloven § 4-2 (1) </ledd-p>
-        <ledd-p> Andelseierne skal få utlevert et eksemplar av borettslagets
-          vedtektene. </ledd-p>
+        <ledd-p>Andelseierne skal få utlevert et eksemplar av borettslagets
+          vedtektene.</ledd-p>
       </paragraf>
 
       <paragraf id="v2_k2_2">
@@ -129,6 +129,20 @@
           <p>Det er ikke anledning til fremleie av noen av de berørte
             andelsleilighetene i perioden sammenslåingsprosessen pågår.</p>
         </ledd>
+        <ledd gyldig-fra="2018-05-31">
+          <p>Fordelingsnøkkelen for andelen som slettes skal legges til
+            fordelingsnøkkelen for andelen som beholdes.</p>
+          <p>Partialobligasjonen for andelen som slettes skal legges til
+            partialobligasjonen for andelen som beholdes.</p>
+        </ledd>
+        <ledd-p gyldig-fra="2018-05-31">Dersom begge andelene som skal slås
+          sammen har garasjeplass, må
+          den ene selges til en annen andelseier slik at vedtektenes pkt. 2-7
+          (5) oppfylles.</ledd-p>
+        <ledd-p gyldig-fra="2018-05-31">Ved sammenslåing av leiligheter vil den
+          nye andelen disponere
+          bodene som tilhørte de to tidligere andelene.</ledd-p>
+
       </paragraf>
 
       <paragraf id="v2_k2_5" gyldig-fra="2012-08-20">
@@ -170,9 +184,64 @@
           <p>Boder kan ikke fremleies eller byttes mellom andeler uten styrets
             godkjennelse.</p>
         </ledd>
+        <ledd-p>Dersom to andelseiere ønsker å bytte fysiske boder seg imellom,
+          skal styret informeres og det skal være utfylt en enkel kontrakt
+          mellom partene som bytter, der partene får en kopi hver og styret
+          beholdet ett eksemplar.</ledd-p>
+      </paragraf>
+
+      <paragraf id="v2_k2_7" gyldig-til="2015-06-03">
+        <tittel>Salg og kjøp av garasjeplasser</tittel>
+
+        <punktliste type="ordenstall">
+          <punkt id="v2_k2_7_p1_x1" gyldig-til="2018-05-31">Andelseiere kan
+            kjøpe og selge
+            garasjeplasser seg imellom etter samtykke fra styret.</punkt>
+          <punkt id="v2_k2_7_p1" erstatter="v2_k2_7_p1_x1"
+            gyldig-fra="2018-05-31">Andelseiere kan kjøpe og selge
+            garasjeplasser seg imellom etter samtykke fra styret, og det skal
+            foreligge skriftlig kontrakt. Den skriftlige kontrakten skal
+            spesifisere endring av fordelingsnøkkel og partialobligasjon mellom
+            andelene, i tillegg til fordeling av kostnader for overdragelse
+            mellom kjøper og selger. Felleskostnader og andel fellesgjeld på
+            kontraktsinngåelsens tidspunkt skal beregnes ut fra ny
+            fordelingsnøkkel og tas med i kontrakten.</punkt>
+          <punkt>Alle kostnader knyttet til overdragelsen dekkes av
+            andelseierne, dvs. kjøper og selger.</punkt>
+          <punkt gyldig-til="2018-05-31">Styret sørger for endring av
+            fordelingsnøkkelen mellom andelene.</punkt>
+          <punkt gyldig-fra="2018-05-31">Styret sørger for endring av
+            fordelingsnøkkelen mellom andelene og partialobligasjon for andelene
+            som berøres. For andel som kjøper garasjeplass, skal
+            fordelingsnøkkel økes med et tillegg tilsvarende det som gjelder for
+            andre andeler med garasjeplass. Partialobligasjon skal skrives opp
+            med kroner 75 000. For andel som mister garasjeplass, skal
+            fordelingsnøkkel reduseres til det som gjelder for andre andeler
+            uten garasjeplass. Partialobligasjon skal skrives ned med kroner 75
+            000.</punkt>
+          <punkt>Selger må fremlegge skriftlig samtykke fra alle som har
+            pantesikkerhet i selgers andel.</punkt>
+          <punkt>En andel kan kun ha bruksrett til 1 &#x2013; én &#x2013;
+            garasjeplass. Dette
+            gjelder også dersom andelseier erverver en ekstra bruksrett ved
+            sammenslåing av leiligheter, i slike tilfeller må den ekstra
+            bruksretten til garasjeplass selges innen 12 måneder.</punkt>
+          <punkt>Andelseier med garasjeplass kan leie ut garasjeplassen. Før
+            utleie må styret få informasjon om leietakers navn,
+            registreringsnummer på kjøretøy samt telefonnummer. Andelseier står
+            rettslig ansvarlig for bruken av plassen selv om plassen er utleid.</punkt>
+          <punkt>Dersom to andelseiere med garasjeplass ønsker å bytte fysiske
+            garasjeplasser seg imellom, skal styret informeres og det skal være
+            utfylt en enkel kontrakt mellom partene som bytter, der partene får
+            en kopi hver og styret beholder ett eksemplar. Styret sørger for å
+            oppdatere sin informasjon og sørger også for å få oppdatert
+            andelsnummer på veggen ved årlig vedlikehold.
+          </punkt>
+        </punktliste>
       </paragraf>
 
     </kapittel>
+
     <kapittel id="v2_k3">
       <tittel>Forkjøpsrett</tittel>
 
@@ -440,6 +509,20 @@
             av bærende konstruksjoner i forbindelse med balkong/platting.</p>
           <p>Dette ansvaret sikres et fast påslag i husleien til de berørte
             andelseiere.</p>
+        </ledd>
+        <ledd gyldig-fra="2016-06-01">
+          <p>I henhold til lover og forskrifter relatert til brann, er
+            borettslaget ansvarlig for å ha varslings- og slokkeutstyr i hver
+            leilighet, og alle leiligheter i Badebakken borettslag har fått
+            montert slikt utstyr.</p>
+          <p>Andelseiere er ansvarlige for at dette utstyret ikke ødelegges.
+            Faste installasjoner, som brannslanger eller røykvarslere, skal ikke
+            fjernes.</p>
+          <p>Utstyr kan likevel flyttes i kortere perioder i forbindelse med
+            vedlikehold, som f.eks. ved malearbeider.</p>
+          <p>Dersom andelseier får borettslagets utstyr fjernet eller ødelagt
+            vil borettslaget kunne pålegge beboer om å erstatte utstyret i sin
+            helhet.</p>
         </ledd>
       </paragraf>
 

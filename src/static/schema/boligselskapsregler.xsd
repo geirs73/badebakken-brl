@@ -1,34 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns:r="urn:no.badebakken.regelsett"
-    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
-    targetNamespace="urn:no.badebakken.regelsett"
-    elementFormDefault="qualified"
-    xml:lang="no-NB"
-    vc:minVersion="1.1">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:r="urn:no.badebakken.regelsett"
+  xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+  targetNamespace="urn:no.badebakken.regelsett" elementFormDefault="qualified"
+  xml:lang="no-NB" vc:minVersion="1.1">
 
   <!-- attributes **************************************************** -->
 
   <xs:attributeGroup name="ag_id">
-    <xs:attribute
-        name="id"
-        type="xs:ID"
-        use="required" />
+    <xs:attribute name="id" type="xs:ID" use="required" />
   </xs:attributeGroup>
 
   <xs:attributeGroup name="ag_id_optional">
-    <xs:attribute
-        name="id"
-        type="xs:ID"
-        use="optional" />
+    <xs:attribute name="id" type="xs:ID" use="optional" />
   </xs:attributeGroup>
 
   <xs:attributeGroup name="ag_nummerert_under">
-    <xs:attribute
-        name="nummerert-under"
-        type="xs:boolean"
-        use="optional">
+    <xs:attribute name="nummerert-under" type="xs:boolean" use="optional">
       <xs:annotation>
         <xs:documentation> Slå av og på nummerering under nåværende element. 0 =
           av, 1 = på. </xs:documentation>
@@ -38,10 +26,7 @@
 
   <xs:attributeGroup name="ag_nummerert">
     <xs:attributeGroup ref="r:ag_nummerert_under" />
-    <xs:attribute
-        name="nummerert"
-        type="xs:boolean"
-        use="optional">
+    <xs:attribute name="nummerert" type="xs:boolean" use="optional">
       <xs:annotation>
         <xs:documentation> Slå av og på nummerering av nåværende element. 0 =
           av, 1 = på. </xs:documentation>
@@ -51,31 +36,17 @@
 
   <xs:attributeGroup name="ag_dokument">
     <xs:attributeGroup ref="r:ag_nummerert_under" />
-    <xs:attribute
-        name="gyldig-fra"
-        type="xs:date"
-        use="required" />
-    <xs:attribute
-        name="gyldig-til"
-        type="xs:date"
-        use="optional"
-        default="9999-01-01" />
+    <xs:attribute name="gyldig-fra" type="xs:date" use="required" />
+    <xs:attribute name="gyldig-til" type="xs:date" use="optional"
+      default="9999-01-01" />
   </xs:attributeGroup>
 
   <xs:attributeGroup name="ag_regel">
     <xs:attributeGroup ref="r:ag_nummerert" />
-    <xs:attribute
-        name="gyldig-fra"
-        type="xs:date"
-        use="optional" />
-    <xs:attribute
-        name="gyldig-til"
-        type="xs:date"
-        use="optional"
-        default="9999-01-01" />
-    <xs:attribute
-        name="erstatter"
-        type="xs:IDREFS" />
+    <xs:attribute name="gyldig-fra" type="xs:date" use="optional" />
+    <xs:attribute name="gyldig-til" type="xs:date" use="optional"
+      default="9999-01-01" />
+    <xs:attribute name="erstatter" type="xs:IDREFS" />
   </xs:attributeGroup>
 
   <!-- root **************************************************** -->
@@ -83,11 +54,8 @@
   <xs:element name="regelsett">
     <xs:complexType>
       <xs:sequence>
-        <xs:element
-            name="dokument"
-            minOccurs="1"
-            maxOccurs="unbounded"
-            type="r:typ_dokument" />
+        <xs:element name="dokument" minOccurs="1" maxOccurs="unbounded"
+          type="r:typ_dokument" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -96,52 +64,30 @@
 
   <xs:complexType name="typ_dokument">
     <xs:sequence>
-      <xs:element
-          name="tittel"
-          minOccurs="0"
-          maxOccurs="1">
+      <xs:element name="tittel" minOccurs="0" maxOccurs="1">
         <xs:complexType mixed="true">
           <xs:sequence>
-            <xs:element
-                name="linje"
-                type="xs:string"
-                minOccurs="0"
-                maxOccurs="unbounded" />
+            <xs:element name="linje" type="xs:string" minOccurs="0"
+              maxOccurs="unbounded" />
           </xs:sequence>
         </xs:complexType>
       </xs:element>
-      <xs:element
-          name="versjoner"
-          minOccurs="0">
+      <xs:element name="versjoner" minOccurs="0">
         <xs:complexType>
           <xs:sequence>
-            <xs:element
-                name="versjon"
-                type="r:typ_versjon"
-                minOccurs="0"
-                maxOccurs="unbounded" />
+            <xs:element name="versjon" type="r:typ_versjon" minOccurs="0"
+              maxOccurs="unbounded" />
           </xs:sequence>
         </xs:complexType>
       </xs:element>
-      <xs:element
-          name="introduksjon"
-          minOccurs="0">
+      <xs:element name="introduksjon" minOccurs="0">
         <xs:complexType />
       </xs:element>
       <xs:choice>
-        <xs:element
-            name="kapittel"
-            type="r:typ_kapittel"
-            maxOccurs="unbounded" />
-        <xs:element
-            name="paragraf"
-            type="r:typ_paragraf"
-            minOccurs="0"
-            maxOccurs="unbounded" />
-        <xs:element
-            name="paragraf-p"
-            minOccurs="0"
-            maxOccurs="unbounded">
+        <xs:element name="kapittel" type="r:typ_kapittel" maxOccurs="unbounded" />
+        <xs:element name="paragraf" type="r:typ_paragraf" minOccurs="0"
+          maxOccurs="unbounded" />
+        <xs:element name="paragraf-p" minOccurs="0" maxOccurs="unbounded">
           <xs:complexType>
             <xs:simpleContent>
               <xs:extension base="xs:string">
@@ -160,15 +106,9 @@
 
   <xs:complexType name="typ_kapittel">
     <xs:sequence>
-      <xs:element
-          name="tittel"
-          type="xs:token"
-          minOccurs="1" />
-      <xs:element
-          name="paragraf"
-          type="r:typ_paragraf"
-          minOccurs="0"
-          maxOccurs="unbounded" />
+      <xs:element name="tittel" type="xs:token" minOccurs="1" />
+      <xs:element name="paragraf" type="r:typ_paragraf" minOccurs="0"
+        maxOccurs="unbounded" />
     </xs:sequence>
     <xs:attributeGroup ref="r:ag_regel" />
     <xs:attributeGroup ref="r:ag_id" />
@@ -176,32 +116,15 @@
 
   <xs:complexType name="typ_paragraf">
     <xs:sequence>
-      <xs:element
-          name="tittel"
-          type="xs:token"
-          minOccurs="0" />
-      <xs:choice
-          minOccurs="0"
-          maxOccurs="unbounded">
-        <xs:element
-            name="p"
-            type="r:typ_punktum"
-            minOccurs="0"
-            maxOccurs="unbounded" />
-        <xs:element
-            name="pf"
-            type="r:typ_punktum_f"
-            minOccurs="0"
-            maxOccurs="unbounded" />
-        <xs:element
-            name="ledd"
-            type="r:typ_ledd"
-            minOccurs="0"
-            maxOccurs="unbounded" />
-        <xs:element
-            name="ledd-p"
-            minOccurs="0"
-            maxOccurs="unbounded">
+      <xs:element name="tittel" type="xs:token" minOccurs="0" />
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="p" type="r:typ_punktum" minOccurs="0"
+          maxOccurs="unbounded" />
+        <xs:element name="pf" type="r:typ_punktum_f" minOccurs="0"
+          maxOccurs="unbounded" />
+        <xs:element name="ledd" type="r:typ_ledd" minOccurs="0"
+          maxOccurs="unbounded" />
+        <xs:element name="ledd-p" minOccurs="0" maxOccurs="unbounded">
           <xs:complexType>
             <xs:simpleContent>
               <xs:extension base="xs:normalizedString">
@@ -211,11 +134,8 @@
             </xs:simpleContent>
           </xs:complexType>
         </xs:element>
-        <xs:element
-            name="punktliste"
-            type="r:typ_punktliste"
-            minOccurs="0"
-            maxOccurs="unbounded" />
+        <xs:element name="punktliste" type="r:typ_punktliste" minOccurs="0"
+          maxOccurs="unbounded" />
       </xs:choice>
     </xs:sequence>
     <xs:attributeGroup ref="r:ag_regel" />
@@ -234,49 +154,26 @@
   </xs:complexType> -->
 
   <xs:complexType name="typ_ledd">
-    <xs:choice
-        minOccurs="0"
-        maxOccurs="unbounded">
-      <xs:element
-          name="p"
-          type="r:typ_punktum"
-          minOccurs="0" />
-      <xs:element
-          name="pf"
-          type="r:typ_punktum_f"
-          minOccurs="0"
-          maxOccurs="unbounded" />
-      <xs:element
-          name="punktliste"
-          type="r:typ_punktliste"
-          minOccurs="0" />
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="p" type="r:typ_punktum" minOccurs="0" />
+      <xs:element name="pf" type="r:typ_punktum_f" minOccurs="0"
+        maxOccurs="unbounded" />
+      <xs:element name="punktliste" type="r:typ_punktliste" minOccurs="0" />
     </xs:choice>
     <xs:attributeGroup ref="r:ag_regel" />
     <xs:attributeGroup ref="r:ag_id_optional" />
   </xs:complexType>
 
   <xs:complexType name="typ_formatert_tekst">
-    <xs:choice
-        minOccurs="0"
-        maxOccurs="unbounded">
-      <xs:element
-          name="n"
-          type="xs:string" />
-      <xs:element
-          name="b"
-          type="xs:string" />
-      <xs:element
-          name="u"
-          type="xs:string" />
-      <xs:element
-          name="lov"
-          type="r:typ_lovreferanse" />
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="n" type="xs:string" />
+      <xs:element name="b" type="xs:string" />
+      <xs:element name="u" type="xs:string" />
+      <xs:element name="lov" type="r:typ_lovreferanse" />
     </xs:choice>
     <xs:attributeGroup ref="r:ag_regel" />
     <xs:attributeGroup ref="r:ag_id_optional" />
-    <xs:attribute
-        name="sha1"
-        type="xs:hexBinary" />
+    <xs:attribute name="sha1" type="xs:hexBinary" />
   </xs:complexType>
 
   <xs:complexType name="typ_punktum">
@@ -285,7 +182,10 @@
         språkbruk. Forkortet til &lt;p&gt;</xs:documentation>
     </xs:annotation>
     <xs:simpleContent>
-      <xs:extension base="xs:normalizedString" />
+      <xs:extension base="xs:normalizedString">
+        <xs:attributeGroup ref="r:ag_id_optional" />
+        <xs:attributeGroup ref="r:ag_regel" />
+      </xs:extension>
     </xs:simpleContent>
   </xs:complexType>
 
@@ -302,18 +202,9 @@
   <xs:complexType name="typ_lovreferanse">
     <xs:simpleContent>
       <xs:extension base="xs:string">
-        <xs:attribute
-            name="referanse"
-            use="optional"
-            type="xs:normalizedString" />
-        <xs:attribute
-            name="lenke"
-            use="optional"
-            type="xs:anyURI" />
-        <xs:attribute
-            name="type"
-            use="required"
-            type="r:enm_lovverk" />
+        <xs:attribute name="referanse" use="optional" type="xs:normalizedString" />
+        <xs:attribute name="lenke" use="optional" type="xs:anyURI" />
+        <xs:attribute name="type" use="required" type="r:enm_lovverk" />
       </xs:extension>
     </xs:simpleContent>
   </xs:complexType>
@@ -321,53 +212,30 @@
 
   <xs:complexType name="typ_versjon">
     <xs:all>
-      <xs:element
-          name="vedtak"
-          type="xs:string" />
-      <xs:element
-          name="endringer"
-          minOccurs="0">
+      <xs:element name="vedtak" type="xs:string" />
+      <xs:element name="endringer" minOccurs="0">
         <xs:complexType>
           <xs:sequence>
-            <xs:element
-                name="endring"
-                type="r:typ_endring" />
+            <xs:element name="endring" type="r:typ_endring" />
           </xs:sequence>
         </xs:complexType>
       </xs:element>
     </xs:all>
-    <xs:attribute
-        name="vedtaksdato"
-        type="xs:date"
-        use="required" />
+    <xs:attribute name="vedtaksdato" type="xs:date" use="required" />
   </xs:complexType>
 
   <xs:complexType name="typ_endring">
-    <xs:attribute
-        name="handling"
-        type="r:enm_handling"
-        use="required" />
-    <xs:attribute
-        name="referanse"
-        type="xs:IDREF"
-        use="required" />
+    <xs:attribute name="handling" type="r:enm_handling" use="required" />
+    <xs:attribute name="referanse" type="xs:IDREF" use="required" />
   </xs:complexType>
 
   <xs:complexType name="typ_punktliste">
     <xs:choice minOccurs="1" maxOccurs="unbounded">
-      <xs:element
-          name="punkt"
-          type="xs:normalizedString"
-          maxOccurs="unbounded" />
-      <xs:element
-          name="punkt-f"
-          type="r:typ_formatert_tekst"
-          maxOccurs="unbounded" />
+      <xs:element name="punkt" type="r:typ_punktum" maxOccurs="unbounded" />
+      <xs:element name="punkt-f" type="r:typ_formatert_tekst"
+        maxOccurs="unbounded" />
     </xs:choice>
-    <xs:attribute
-        name="type"
-        use="required"
-        type="r:enm_punkter" />
+    <xs:attribute name="type" use="required" type="r:enm_punkter" />
   </xs:complexType>
 
   <!-- Enumerasjoner ******************** -->
