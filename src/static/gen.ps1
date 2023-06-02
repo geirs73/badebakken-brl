@@ -1,18 +1,21 @@
-[string] $SaxonLib
+param(
+    [Parameter(Mandatory = $true)]
+    [string] $Infile,
 
-function TransformToHtml {
-    param(
-        [Parameter(Mandatory = $true)]
-        [string] $XmlInputFile,
+    [Parameter(Mandatory = $true)]
+    [string] $Template,
 
-        [Parameter(Mandatory = $true)]
-        [string] $TemplateFile,
+    [Parameter(Mandatory = $true)]
+    [string] $Outfile
+)
 
-        [Parameter(Mandatory = $true)]
-        [string] $HtmlOutputFile
-    )
-    $(java -jar $SaxonLib -s:"$XmlInputFile" -xsl:"$TemplateFile" -o:"$HtmlOutputFile")
+[string] $SaxonLib = ""
+
+function Transform {
+    Write-Host -ForegroundColor DarkMagenta "$Template $Infile $Outfile"
+    $(java -jar $SaxonLib -s:"$Infile" -xsl:"$Template" -o:"$Outfile" )
 }
+
 
 function GetSaxon {
     param (
@@ -58,10 +61,7 @@ function GetSaxon {
 function Main() {
 
     # $(java -jar $SaxonLib -?)
-    TransformToHtml `
-        -TemplateFile '.\html\ordensregler.xslt' `
-        -HtmlOutputFile '.\ordensregler.html' `
-        -XmlInputFile '.\ordensregler.xml'
+    Transform
 }
 
 [string] $SaxonLib = GetSaxon -Version 12.2
