@@ -27,11 +27,10 @@ public class RuleProcessor
             string innerText = p.Value;
             // var innerText2 = p.ToString();
             string normalizedInnerText = MultiWhitespaceRegex.Replace(innerText, " ");
-#pragma warning disable CA5350
-            using SHA1 crypto = SHA1.Create();
-#pragma warning restore CA5350
             byte[] textBytes = Encoding.UTF8.GetBytes(normalizedInnerText);
-            byte[] hashBytes = crypto.ComputeHash(textBytes);
+#pragma warning disable CA5350
+            byte[] hashBytes = SHA1.HashData(textBytes);
+#pragma warning restore CA5350
             // var hashHexString = Convert.ToHexString(hashBytes).ToLowerInvariant();
             // p.SetAttributeValue("hash", hashHexString);
             string hashBase64String = Convert.ToBase64String(hashBytes);
