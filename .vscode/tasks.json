@@ -36,7 +36,40 @@
                 "${workspaceFolder}/src/processor/processor.csproj"
             ],
             "problemMatcher": "$msCompile"
+        },
+        {
+            "type": "xslt",
+            "label": "xslt: Saxon Transform (New)",
+            "saxonJar": "${config:XSLT.tasks.saxonJar}",
+            "xsltFile": "${command:xslt-xpath.pickXsltFile}",
+            "xmlSource": "${file}",
+            "resultPath": "${command:xslt-xpath.pickResultFile}",
+            "allowSyntaxExtensions40": "off",
+            "messageEscaping": "adaptive",
+            "group": {
+                "kind": "build"
+            },
+            "problemMatcher": [
+                "$saxon-xslt"
+            ]
+        },
+        {
+            "type": "xslt",
+            "label": "xslt: Saxon Transform Test",
+            "saxonJar": "${config:XSLT.tasks.saxonJar}",
+            "xsltFile": "./src/static/migrering/migrering_2023-0603-1.xslt",
+            "xmlSource": "./src/static/vedtekter.xml",
+            "resultPath": "./src/static/vedtekter-oppdatert.xml",
+            "allowSyntaxExtensions40": "off",
+            "messageEscaping": "adaptive",
+            "group": {
+                "kind": "build"
+            },
+            "problemMatcher": [
+                "$saxon-xslt"
+            ]
         }
+
     ],
 	"inputs": [
 		/*

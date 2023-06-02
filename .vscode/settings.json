@@ -151,4 +151,8 @@
         "*.html",
         "*.less"
     ],
+    "xml.codeLens.enabled": true,
+    "xml.completion.autoCloseRemovesContent": true,
+    "XSLT.tasks.saxonJar": "src\\lib\\saxon-he-12.2.jar",
+    "XSLT.resources.xsltPackages": [],
 }
