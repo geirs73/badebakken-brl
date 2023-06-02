@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-  xmlns:r="urn:no.badebakken.regelsett"
+  xmlns:r="urn:net.yxney.boligselskapsregler"
   xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
-  targetNamespace="urn:no.badebakken.regelsett" elementFormDefault="qualified"
+  targetNamespace="urn:net.yxney.boligselskapsregler" elementFormDefault="qualified"
   xml:lang="no-NB" vc:minVersion="1.1">
 
   <!-- Dokument-rot **************************************************** -->

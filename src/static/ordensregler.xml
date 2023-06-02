@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<regelsett xmlns="urn:no.badebakken.regelsett">
+<regelsett xmlns="urn:net.yxney.boligselskapsregler">
   <dokument gyldig-fra="1987-01-01" id="ordensregler-1987" nummerert-under="1">
     <tittel>Husordensregler for Badebakken Borettslag</tittel>
     <versjoner>

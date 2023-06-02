@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?> <!-- The schema is bound using catalog.xml -->
-<regelsett xmlns="urn:no.badebakken.regelsett"
+<regelsett xmlns="urn:net.yxney.boligselskapsregler"
   xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+  <!-- The schema is bound using catalog.xml -->
   <dokument nummerert-under="true" id="v2" gyldig-fra="2005-07-01"
     pid="2dc4167fb26d">
     <tittel>
@@ -974,10 +974,10 @@
       </paragraf>
 
     </kapittel>
-  </dokument> <!--
-  ******************************************* --> <!--
-  Første versjon av vedtektene pre ny brl-lov --> <!--
-  ******************************************* -->
+  </dokument>
+  <!-- ******************************************* -->
+  <!-- Første versjon av vedtektene pre ny brl-lov -->
+  <!-- ******************************************* -->
   <dokument id="v1" gyldig-fra="1987-02-19" gyldig-til="2004-12-31"
     nummerert-under="1">
     <versjoner />

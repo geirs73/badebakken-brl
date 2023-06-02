@@ -18,7 +18,4 @@
             <xsl:apply-templates select="@* | node() " />
         </xsl:copy>
     </xsl:template>
-
-    <xsl:template match="r:" />
-
 </xsl:stylesheet>
