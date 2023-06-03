@@ -53,12 +53,8 @@
         {
             "label": "xml migration 1",
             "type": "shell",
-            "command": "${workspaceFolder}/src/static/gen.ps1",
+            "command": "${workspaceFolder}/src/static/transform_migrering_1.ps1",
             "args": [
-                "-Infile",
-                "${workspaceFolder}/src/static/vedtekter.xml",
-                "-Outfile",
-                "${workspaceFolder}/src/static/vedtekter-oppd.xml",
                 "-Template",
                 "${workspaceFolder}/src/static/migrering/nullmigrering.xslt"
             ]
