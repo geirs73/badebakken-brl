@@ -136,7 +136,8 @@
         "verandaer",
         "verktøybod",
         "Villavent",
-        "vipps"
+        "vipps",
+        "yxney"
     ],
     "xml.catalogs": [
         "./src/static/catalog.xml"
@@ -155,4 +156,7 @@
     "xml.completion.autoCloseRemovesContent": true,
     "XSLT.tasks.saxonJar": "src\\lib\\saxon-he-12.2.jar",
     "XSLT.resources.xsltPackages": [],
+    "xml.format.emptyElements": "collapse",
+    "xml.format.joinCommentLines": true,
+    "vssolution.xmlClosingTagSpace": false,
 }

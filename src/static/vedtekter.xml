@@ -1,8 +1,6 @@
-<regelsett xmlns="urn:net.yxney.boligselskapsregler"
-  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<regelsett xmlns="urn:net.yxney.boligselskapsregler" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <!-- The schema is bound using catalog.xml -->
-  <dokument nummerert-under="true" id="v2" gyldig-fra="2005-07-01"
-    pid="2dc4167fb26d">
+  <dokument nummerert-under="true" id="v2" gyldig-fra="2005-07-01" pid="2dc4167fb26d">
     <tittel>
       <linje>Vedtekter</linje>
       <linje>for</linje>
@@ -19,8 +17,8 @@
           i kraft. Dvs at de gamle vedtektene gjelder inntil ny lov trer i
           funksjon.</beskrivelse>
         <endringer>
-          <endring handling="sletting" referanse="v1" />
-          <endring handling="tillegg" referanse="v2" />
+          <endring handling="sletting" referanse="v1"/>
+          <endring handling="tillegg" referanse="v2"/>
         </endringer>
       </versjon>
 
@@ -30,17 +28,17 @@
         <beskrivelse>Ny paragraf §2-4 om sammenslåing av
           andelsleiligheter</beskrivelse>
         <endringer>
-          <endring handling="tillegg" referanse="v2_k2_5" />
+          <endring handling="tillegg" referanse="v2_k2_5"/>
         </endringer>
       </versjon>
 
       <versjon ikrafttredelse="2011-05-18">
         <vedtak>Vedtatt på konstituerende generalforsamling den 19. februar
           1987, med senere endringer og sist den 18. mai 2011</vedtak>
-        <beskrivelse />
+        <beskrivelse/>
         <endringer>
-          <endring handling="tillegg" referanse="v2_k5_1_8" />
-          <endring handling="tillegg" referanse="v2_k5_2_6" />
+          <endring handling="tillegg" referanse="v2_k5_1_8"/>
+          <endring handling="tillegg" referanse="v2_k5_2_6"/>
         </endringer>
       </versjon>
 
@@ -48,7 +46,7 @@
         <vedtak>Vedtatt på konstituerende generalforsamling den 19. februar
           1987, med senere endringer og sist den 20. august 2012</vedtak>
         <endringer>
-          <endring handling="tillegg" referanse="v2_k2_5" />
+          <endring handling="tillegg" referanse="v2_k2_5"/>
         </endringer>
       </versjon>
 
@@ -56,11 +54,11 @@
         <vedtak>Vedtatt på konstituerende generalforsamling den 19. februar
           1987, med senere endringer og sist den 5. juni 2014</vedtak>
         <endringer>
-          <endring handling="sletting" referanse="v2_k2_1_4_x1" />
-          <endring handling="tillegg" referanse="v2_k2_6" />
-          <endring handling="tillegg" referanse="v2_k5_1_9" />
-          <endring handling="tillegg" referanse="v2_k5_1_10" />
-          <endring handling="tillegg" referanse="v2_k5_3" />
+          <endring handling="sletting" referanse="v2_k2_1_4_x1"/>
+          <endring handling="tillegg" referanse="v2_k2_6"/>
+          <endring handling="tillegg" referanse="v2_k5_1_9"/>
+          <endring handling="tillegg" referanse="v2_k5_1_10"/>
+          <endring handling="tillegg" referanse="v2_k5_3"/>
         </endringer>
       </versjon>
 
@@ -68,7 +66,7 @@
         <vedtak>Vedtatt på konstituerende generalforsamling den 19. februar
           1987, med senere endringer og sist den 3. juni 2015</vedtak>
         <endringer>
-          <endring handling="tillegg" referanse="v2_k2_7" />
+          <endring handling="tillegg" referanse="v2_k2_7"/>
         </endringer>
       </versjon>
 
@@ -76,7 +74,7 @@
         <vedtak>Vedtatt på konstituerende generalforsamling den 19. februar
           1987, med senere endringer og sist den 1. juni 2016</vedtak>
         <endringer>
-          <endring handling="tillegg" referanse="v2_k5_2_7" />
+          <endring handling="tillegg" referanse="v2_k5_2_7"/>
         </endringer>
       </versjon>
 
@@ -84,9 +82,9 @@
         <vedtak>Vedtatt på konstituerende generalforsamling den 19. februar
           1987, med senere endringer og sist den 31. mai 2018</vedtak>
         <endringer>
-          <endring handling="tillegg" referanse="v2_k2_4_5" />
-          <endring handling="tillegg" referanse="v2_k2_4_6" />
-          <endring handling="tillegg" referanse="v2_k2_4_7" />
+          <endring handling="tillegg" referanse="v2_k2_4_5"/>
+          <endring handling="tillegg" referanse="v2_k2_4_6"/>
+          <endring handling="tillegg" referanse="v2_k2_4_7"/>
         </endringer>
       </versjon>
 
@@ -95,8 +93,7 @@
     <kapittel id="v2_k1" pid="f21dd284f2b4">
       <tittel>Innledende bestemmelser</tittel>
 
-      <paragraf id="v2_k1_1" nummerert-under="0"
-        erstatter="v1_1_1 v1_1_2 v1_1_3 v1_1_4" pid="1ffa838b5ef6">
+      <paragraf id="v2_k1_1" nummerert-under="0" erstatter="v1_1_1 v1_1_2 v1_1_3 v1_1_4" pid="1ffa838b5ef6">
         <tittel>Formål</tittel>
 
         <p>Badebakken borettslag er et samvirkeforetak som har til formål å gi
@@ -285,8 +282,7 @@
           <punkt id="v2_k2_7_p1_x1" gyldig-til="2018-05-31">Andelseiere kan
             kjøpe og selge
             garasjeplasser seg imellom etter samtykke fra styret.</punkt>
-          <punkt id="v2_k2_7_p1" erstatter="v2_k2_7_p1_x1"
-            gyldig-fra="2018-05-31">Andelseiere kan kjøpe og selge
+          <punkt id="v2_k2_7_p1" erstatter="v2_k2_7_p1_x1" gyldig-fra="2018-05-31">Andelseiere kan kjøpe og selge
             garasjeplasser seg imellom etter samtykke fra styret, og det skal
             foreligge skriftlig kontrakt. Den skriftlige kontrakten skal
             spesifisere endring av fordelingsnøkkel og partialobligasjon mellom
@@ -978,9 +974,8 @@
   <!-- ******************************************* -->
   <!-- Første versjon av vedtektene pre ny brl-lov -->
   <!-- ******************************************* -->
-  <dokument id="v1" gyldig-fra="1987-02-19" gyldig-til="2004-12-31"
-    nummerert-under="1">
-    <versjoner />
+  <dokument id="v1" gyldig-fra="1987-02-19" gyldig-til="2004-12-31" nummerert-under="1">
+    <versjoner/>
     <paragraf id="v1_1">
       <tittel>Navn, lagsform, formål og forretningskontor</tittel>
 
