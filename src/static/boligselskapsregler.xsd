@@ -50,7 +50,7 @@
       <xs:element name="tittel" minOccurs="0" maxOccurs="1">
         <xs:complexType mixed="true">
           <xs:sequence>
-            <xs:element name="linje" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="linje" type="xs:normalizedString" minOccurs="0" maxOccurs="unbounded"/>
           </xs:sequence>
         </xs:complexType>
       </xs:element>
@@ -60,16 +60,7 @@
       <xs:choice>
         <xs:element name="kapittel" type="r:typ_kapittel" maxOccurs="unbounded"/>
         <xs:element name="paragraf" type="r:typ_paragraf" minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element name="paragraf-p" minOccurs="0" maxOccurs="unbounded">
-          <xs:complexType>
-            <xs:simpleContent>
-              <xs:extension base="xs:string">
-                <xs:attributeGroup ref="r:ag_id_optional"/>
-                <xs:attributeGroup ref="r:ag_regel"/>
-              </xs:extension>
-            </xs:simpleContent>
-          </xs:complexType>
-        </xs:element>
+        <xs:element name="paragraf-p" minOccurs="0" maxOccurs="unbounded" type="r:typ_setning"/>
       </xs:choice>
     </xs:sequence>
     <xs:attributeGroup ref="r:ag_dokument"/>
@@ -94,17 +85,17 @@
     <xs:sequence>
       <xs:element name="tittel" type="xs:token" minOccurs="0"/>
       <xs:choice minOccurs="0" maxOccurs="1">
-        <xs:choice minOccurs="0" maxOccurs="unbounded">
-          <xs:element name="ledd" type="r:typ_ledd" minOccurs="0" maxOccurs="unbounded"/>
-          <xs:element name="ledd-p" minOccurs="0" maxOccurs="unbounded" type="r:typ_punktum"/>
-        </xs:choice>
-        <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
           <xs:element name="p" type="r:typ_punktum" minOccurs="0" maxOccurs="unbounded"/>
           <xs:element name="pf" type="r:typ_punktum_f" minOccurs="0" maxOccurs="unbounded"/>
-        </xs:choice>
-        <xs:sequence minOccurs="0" maxOccurs="unbounded">
-          <xs:element name="punktliste" type="r:typ_punktliste" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element name="punktliste" type="r:typ_punktliste" minOccurs="0" maxOccurs="1"/>
         </xs:sequence>
+        <xs:choice minOccurs="0" maxOccurs="1">
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="ledd" type="r:typ_ledd" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="ledd-p" minOccurs="0" maxOccurs="unbounded" type="r:typ_punktum"/>
+          </xs:choice>
+        </xs:choice>
       </xs:choice>
     </xs:sequence>
     <xs:attributeGroup ref="r:ag_regel"/>
@@ -124,7 +115,16 @@
     <xs:attributeGroup ref="r:ag_id_optional"/>
   </xs:complexType>
 
-  <xs:complexType name="typ_formatert_tekst">
+  <xs:complexType name="typ_setning">
+    <xs:simpleContent>
+      <xs:extension base="xs:normalizedString">
+        <xs:attributeGroup ref="r:ag_id_optional"/>
+        <xs:attributeGroup ref="r:ag_regel"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="typ_formatert_setning">
     <xs:choice minOccurs="0" maxOccurs="unbounded">
       <xs:element name="n" type="xs:string"/>
       <xs:element name="b" type="xs:string"/>
@@ -141,10 +141,7 @@
       <xs:documentation>Punktum i lover er det samme som setninger i vanlig språkbruk. Forkortet til &lt;p&gt;</xs:documentation>
     </xs:annotation>
     <xs:simpleContent>
-      <xs:extension base="xs:normalizedString">
-        <xs:attributeGroup ref="r:ag_id_optional"/>
-        <xs:attributeGroup ref="r:ag_regel"/>
-      </xs:extension>
+      <xs:extension base="r:typ_setning"/>
     </xs:simpleContent>
   </xs:complexType>
 
@@ -153,13 +150,13 @@
       <xs:documentation>Punktum i lover er det samme som setninger i vanlig språkbruk. Forkortet til &lt;p&gt;</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
-      <xs:extension base="r:typ_formatert_tekst"/>
+      <xs:extension base="r:typ_formatert_setning"/>
     </xs:complexContent>
   </xs:complexType>
 
   <xs:complexType name="typ_lovreferanse">
     <xs:simpleContent>
-      <xs:extension base="xs:string">
+      <xs:extension base="xs:normalizedString">
         <xs:attribute name="referanse" use="optional" type="xs:normalizedString"/>
         <xs:attribute name="lenke" use="optional" type="xs:anyURI"/>
         <xs:attribute name="type" use="required" type="r:enm_lovverk"/>
@@ -170,7 +167,7 @@
   <xs:complexType name="typ_punktliste">
     <xs:choice minOccurs="1" maxOccurs="unbounded">
       <xs:element name="punkt" type="r:typ_punktum" maxOccurs="unbounded"/>
-      <xs:element name="punkt-f" type="r:typ_formatert_tekst" maxOccurs="unbounded"/>
+      <xs:element name="punkt-f" type="r:typ_formatert_setning" maxOccurs="unbounded"/>
     </xs:choice>
     <xs:attribute name="type" use="required" type="r:enm_punkter"/>
   </xs:complexType>
@@ -250,7 +247,7 @@
   </xs:attributeGroup>
 
   <xs:attributeGroup name="ag_nummerert_under">
-    <xs:attribute name="nummerert-under" type="xs:boolean" use="optional">
+    <xs:attribute name="nummerert-under" type="xs:boolean" use="optional" default="0">
       <xs:annotation>
         <xs:documentation> Slå av og på nummerering under nåværende element. 0 = av, 1 = på. </xs:documentation>
       </xs:annotation>
@@ -270,6 +267,7 @@
     <xs:attributeGroup ref="r:ag_nummerert_under"/>
     <xs:attribute name="gyldig-fra" type="xs:date" use="required"/>
     <xs:attribute name="gyldig-til" type="xs:date" use="optional" default="9999-01-01"/>
+    <xs:attribute name="erstatter" type="xs:IDREFS"/>
   </xs:attributeGroup>
 
   <xs:attributeGroup name="ag_regel">

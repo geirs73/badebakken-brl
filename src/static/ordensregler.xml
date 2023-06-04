@@ -1,44 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <regelsett xmlns="urn:net.yxney.boligselskapsregler">
-  <dokument gyldig-fra="1987-01-01" id="ordensregler-1987" nummerert-under="1">
-    <tittel>Husordensregler for Badebakken Borettslag</tittel>
-    <versjoner>
-      <versjon vedtaksdato="1989-04-18" ikrafttredelse="1989-04-18">
-        <vedtak>vedtatt på konstituerende generalforsamling 19. februar 1987 med senere endringer,
-                senest 18. april 1989</vedtak>
-        <!-- <endringer>
-                <endring referanse="foobar" handling="tillegg" />
-            </endringer> -->
-      </versjon>
-    </versjoner>
+  <versjoner>
+    <versjon vedtaksdato="1989-04-18" ikrafttredelse="1989-04-18" dokument-id="ordensregler-1987">
+      <vedtak>vedtatt på konstituerende generalforsamling 19. februar 1987 med senere endringer,
+        senest 18. april 1989</vedtak>
+      <!-- <endringer> <endring referanse="foobar" handling="tillegg" /> </endringer> -->
+    </versjon>
+  </versjoner>
+  <dokumenter>
+    <dokument gyldig-fra="1987-01-01" id="ordensregler-1987" nummerert-under="1">
+      <tittel>Husordensregler for Badebakken Borettslag</tittel>
 
-    <paragraf id="p1987-1">
-      <tittel>Innledning</tittel>
-      <ledd id="p1987-1-1">
-        <pf>
-          <n>Hver beboer plikter å påse at han, hans husstand eller andre som
+      <paragraf id="p1987-1">
+        <tittel>Innledning</tittel>
+        <ledd id="p1987-1-1">
+          <pf>
+            <n>Hver beboer plikter å påse at han, hans husstand eller andre som
             han er ansvarlig for, eller gir adgang til bygningene,</n>
-          <u>holder ro og orden</u>
-          <n> slik at det ikke voldes ulempe eller ubehag for andre beboere. </n>
-        </pf>
-      </ledd>
-      <ledd id="p1987-1-2">
-        <p> Som husordensregler gjelder også særskilte tekniske bestemmelser (f.
-          eks. Bygningsforskriftene), bestemmelser som byggefirmaer eller
-          leverandører måtte gi når det gjelder bruk av bygningsmateriell
-          innendørs, samt for ventilasjonssystemer, våtrom, vann, klosetter
-          fellesantenneanlegg, tekniske installasjoner o.l. </p>
-      </ledd>
-    </paragraf>
-    <paragraf id="x">
-      <tittel />
-      <ledd>
-        <p>Mellom kl. 23.00 - 07.00 skal det være nattero i boligene og på
-          borettslagets område. I dette tidsrommet skal det ikke spilles på
-          instrumenter, nyttes støyende høyttalere, vaskemaskin, tørketrommel
-          eller forårsakes annen støy som sjenerer øvrige boliger. </p>
-      </ledd>
-    </paragraf>
+            <u>holder ro og orden</u>
+            <n> slik at det ikke voldes ulempe eller ubehag for andre beboere. </n>
+          </pf>
+        </ledd>
+        <ledd id="p1987-1-2">
+          <p>Som husordensregler gjelder også særskilte tekniske bestemmelser (f.
+            eks. Bygningsforskriftene), bestemmelser som byggefirmaer eller
+            leverandører måtte gi når det gjelder bruk av bygningsmateriell
+            innendørs, samt for ventilasjonssystemer, våtrom, vann, klosetter
+            fellesantenneanlegg, tekniske installasjoner o.l.</p>
+        </ledd>
+      </paragraf>
+      <paragraf id="x">
+        <tittel/>
+        <ledd>
+          <p>Mellom kl. 23.00 - 07.00 skal det være nattero i boligene og på
+            borettslagets område. I dette tidsrommet skal det ikke spilles på
+            instrumenter, nyttes støyende høyttalere, vaskemaskin, tørketrommel
+            eller forårsakes annen støy som sjenerer øvrige boliger.</p>
+        </ledd>
+      </paragraf>
 
-  </dokument>
+    </dokument>
+  </dokumenter>
 </regelsett>

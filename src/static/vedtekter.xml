@@ -37,8 +37,8 @@
         1987, med senere endringer og sist den 18. mai 2011</vedtak>
       <beskrivelse/>
       <endringer>
-        <endring handling="tillegg" referanse="v2_k5_1_8"/>
-        <endring handling="tillegg" referanse="v2_k5_2_6"/>
+        <endring handling="tillegg" referanse="v2_k5_1_8_v1"/>
+        <endring handling="tillegg" referanse="v2_k5_2_6_v1"/>
       </endringer>
     </versjon>
 
@@ -88,20 +88,37 @@
       </endringer>
     </versjon>
 
+    <versjon ikrafttredelse="2023-05-30" dokument-id="v2">
+      <vedtak>Vedtatt på konstituerende generalforsamling den 19. februar
+        1987, med senere endringer og sist den 30. mai 2023</vedtak>
+      <beskrivelse/>
+      <endringer>
+        <endring handling="sletting" referanse="v2_k5_1_8_v2"/>
+        <endring handling="tillegg" referanse="v2_k5_1_8_v2"/>
+        <endring handling="sletting" referanse="v2_k5_1_9_1_v1"/>
+        <endring handling="tillegg" referanse="v2_k5_1_9_1_v2"/>
+        <endring handling="sletting" referanse="v2_k5_1_9_2_v1"/>
+        <endring handling="tillegg" referanse="v2_k5_1_9_2_v2"/>
+        <endring handling="sletting" referanse="v2_k5_2_6_v1"/>
+        <endring handling="tillegg" referanse="v2_k5_2_6_v2"/>
+      </endringer>
+    </versjon>
+
   </versjoner>
 
   <dokumenter>
-    <dokument nummerert-under="true" id="v2" gyldig-fra="2005-07-01" pid="2dc4167fb26d">
+    <dokument nummerert-under="true" id="v2" gyldig-fra="2005-07-01" pid="2dc4167fb26d" erstatter="v1">
       <tittel>
         <linje>Vedtekter</linje>
-      <linje>for</linje>
-      <linje>Badebakken borettslag Org nr. 943 792 755</linje>
+        <linje>for</linje>
+        <linje>Badebakken borettslag Org nr. 943 792 755</linje>
       </tittel>
 
       <kapittel id="v2_k1" pid="f21dd284f2b4">
         <tittel>Innledende bestemmelser</tittel>
 
-        <paragraf id="v2_k1_1" nummerert-under="0" erstatter="v1_1_1 v1_1_2 v1_1_3 v1_1_4" pid="1ffa838b5ef6">
+        <paragraf id="v2_k1_1" nummerert-under="0" erstatter="v1_1_1 v1_1_2
+        v1_1_3 v1_1_4" pid="1ffa838b5ef6">
           <tittel>Formål</tittel>
 
           <p>Badebakken borettslag er et samvirkeforetak som har til formål å gi
@@ -122,7 +139,6 @@
       </kapittel>
       <kapittel id="v2_k2">
         <tittel>Andeler og andelseiere</tittel>
-
         <paragraf id="v2_k2_1">
           <tittel>Andeler og andelseiere</tittel>
           <ledd-p> Andelene skal være på kroner 100,-. </ledd-p>
@@ -289,14 +305,15 @@
             <punkt id="v2_k2_7_p1_x1" gyldig-til="2018-05-31">Andelseiere kan
               kjøpe og selge
               garasjeplasser seg imellom etter samtykke fra styret.</punkt>
-            <punkt id="v2_k2_7_p1" erstatter="v2_k2_7_p1_x1" gyldig-fra="2018-05-31">Andelseiere kan kjøpe og selge
-              garasjeplasser seg imellom etter samtykke fra styret, og det skal
-              foreligge skriftlig kontrakt. Den skriftlige kontrakten skal
-              spesifisere endring av fordelingsnøkkel og partialobligasjon mellom
-              andelene, i tillegg til fordeling av kostnader for overdragelse
-              mellom kjøper og selger. Felleskostnader og andel fellesgjeld på
-              kontraktsinngåelsens tidspunkt skal beregnes ut fra ny
-              fordelingsnøkkel og tas med i kontrakten.</punkt>
+            <punkt id="v2_k2_7_p1" erstatter="v2_k2_7_p1_x1" gyldig-fra="2018-05-31">
+              Andelseiere kan kjøpe og selge garasjeplasser seg imellom etter
+              samtykke fra styret, og det skal foreligge skriftlig kontrakt. Den
+              skriftlige kontrakten skal spesifisere endring av fordelingsnøkkel
+              og partialobligasjon mellom andelene, i tillegg til fordeling av
+              kostnader for overdragelse mellom kjøper og selger.
+              Felleskostnader og andel fellesgjeld på kontraktsinngåelsens
+              tidspunkt skal beregnes ut fra ny fordelingsnøkkel og tas med i
+              kontrakten.</punkt>
             <punkt>Alle kostnader knyttet til overdragelsen dekkes av
               andelseierne, dvs. kjøper og selger.</punkt>
             <punkt gyldig-til="2018-05-31">Styret sørger for endring av
@@ -529,7 +546,7 @@
               <lov type="brl-2003" referanse="5-15">5-15.</lov>
             </pf>
           </ledd>
-          <ledd id="v2_k5_1_8" gyldig-fra="2011-05-18">
+          <ledd id="v2_k5_1_8_v1" gyldig-fra="2011-05-18" gyldig-til="2023-05-30">
             <p>Vedlikehold på innsiden av balkonger/plattinger er andelseiers
               ansvar i sin helhet.</p>
             <p>Med innside av balkong menes alle områder som er innenfor
@@ -540,16 +557,35 @@
             <p>Når det gjelder plattingen i første etasje er andelseier ansvarlig
               for alt vedlikehold av treverk.</p>
           </ledd>
+          <ledd id="v2_k5_1_8_v2" gyldig-fra="2023-05-30" erstatter="v2_k5_1_8_v1">
+            <p>Overflatevedlikehold av balkonger/plattinger er andelseiers
+              ansvar.</p>
+            <p>Overflatevedlikeholdet omfatter, men er ikke begrenset til,
+              maling, oljing / beising av alt treverk, rensing av sluk, snørydding
+              samt annet alminnelig vedlikehold.</p>
+          </ledd>
           <ledd id="v2_k5_1_9" gyldig-fra="2014-06-05">
             <p>Eksterne anlegg som er satt opp av beboer etter godkjennelse fra
               styret vil ikke utløse vedlikeholdsplikt for borettslaget.</p>
-            <p>Dette
-              omfatter, en er ikke begrenset til, anlegg som markiser, utvendige
-              persienner, piper og varmluftpumper.</p>
-            <p>Styret vil tinglyse heftelser
-              på eksterne anlegg til andeler for å sikre at ansvarsforholdet
-              følger andelen ved salg.</p>
+            <p id="v2_k5_1_9_1_v1" gyldig-til="2023-05-30">
+              Dette omfatter, en er ikke begrenset til, anlegg som markiser,
+              utvendige persienner, piper og varmluftpumper.</p>
+            <p id="v2_k5_1_9_1_v2" gyldig-fra="2023-05-30" erstatter="v2_k5_1_9_1_v1">
+              Dette omfatter, men er ikke begrenset til, anlegg som markiser,
+              utvendige persienner, takterrasser, piper og varmluftpumper.</p>
+            <p id="v2_k5_1_9_2_v1" gyldig-til="2023-05-30">
+              Styret vil tinglyse heftelser på eksterne anlegg til andeler for å
+              sikre at ansvarsforholdet følger andelen ved salg.</p>
+            <p id="v2_k5_1_9_2_v2" gyldig-fra="2023-05-30" erstatter="v2_k5_1_9_2_v1">
+              Styret skal tinglyse heftelser på større eksterne anlegg til
+              andeler for å sikre at ansvarsforholdet følger andelen ved
+              salg.</p>
+            <p>Dersom borettslaget påføres ekstra kostnader som følge av
+              manglende vedlikehold, kan borettslaget kreve kostnader for
+              nødvendige utbedringer, delvis eller i sin helhet, refundert fra
+              andelseier.</p>
           </ledd>
+          <ledd id="v2_k5_1_9_v2" gyldig-fra="2023-05-30"/>
           <ledd-p id="v2_k5_1_10" gyldig-fra="2014-06-05">
             Godkjente eksterne anlegg kan pålegges fjernet eller flyttet på for
             andelseiers regning dersom vedlikehold av den generelle boligmassen
@@ -591,15 +627,26 @@
               <n>Andelseier kan kreve erstatning for tap som følge av at
             borettslaget ikke oppfyller pliktene sine, jfr </n>
               <lov type="brl-2003" referanse="5-18">borettslagslovens §
-            5-18.</lov>
+                5-18.</lov>
             </pf>
           </ledd>
-          <ledd id="v2_k5_2_6" gyldig-fra="2011-05-18">
+          <ledd id="v2_k5_2_6_v1" gyldig-fra="2011-05-18">
             <p>Borettslaget har vedlikeholdsansvar for fasade og vil således være
               ansvarlig for alt vedlikehold utvendig samt reparasjon og utskifting
               av bærende konstruksjoner i forbindelse med balkong/platting.</p>
             <p>Dette ansvaret sikres et fast påslag i husleien til de berørte
               andelseiere.</p>
+          </ledd>
+          <ledd id="v2_k5_2_6_v2" gyldig-fra="2023-05-30" erstatter="v2_k5_2_6_v1">
+            <p>Borettslaget har vedlikeholdsansvar for fasade og vil således
+              være ansvarlig for alt større vedlikehold av balkong/platting.</p>
+            <p>Dette omfatter reparasjon og utskifting av dekke og bærende
+              konstruksjoner.</p>
+            <p>Dette ansvaret sikres et fast påslag i husleien til berørte
+              andelseiere</p>
+            <p>Takterrasser er ikke omfattet av denne vedlikeholdsplikten, og
+              ansvaret for takterrassen vil tilfalle andelseier gjennom heftelser
+              på den enkelte leilighet.</p>
           </ledd>
           <ledd id="v2_k5_2_7" gyldig-fra="2016-06-01">
             <p>I henhold til lover og forskrifter relatert til brann, er
@@ -1028,7 +1075,7 @@
         </ledd>
       </paragraf>
 
-      <paragraf id="v1_3" nummerert-under="false">
+      <paragraf id="v1_3" nummerert-under="0">
         <tittel>Andelseiere</tittel>
 
         <ledd id="v1_3_1">
