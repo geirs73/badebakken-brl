@@ -18,8 +18,31 @@
           </xs:sequence>
         </xs:complexType>
       </xs:element>
-      <xs:element name="dokument" minOccurs="1" maxOccurs="unbounded" type="r:typ_dokument"/>
+      <xs:element name="dokumenter" minOccurs="1">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="dokument" minOccurs="1" maxOccurs="unbounded" type="r:typ_dokument"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
     </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="typ_versjon">
+    <xs:all>
+      <xs:element name="vedtak" type="xs:normalizedString"/>
+      <xs:element name="beskrivelse" type="xs:normalizedString" minOccurs="0"/>
+      <xs:element name="endringer" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="endring" type="r:typ_endring" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:all>
+    <xs:attribute name="vedtaksdato" type="xs:date" use="optional"/>
+    <xs:attribute name="ikrafttredelse" type="xs:date" use="required"/>
+    <xs:attribute name="dokument-id" type="xs:IDREF" use="required"/>
   </xs:complexType>
 
   <xs:complexType name="typ_dokument">
@@ -53,22 +76,6 @@
     <xs:attributeGroup ref="r:ag_id"/>
   </xs:complexType>
 
-  <xs:complexType name="typ_versjon">
-    <xs:all>
-      <xs:element name="vedtak" type="xs:normalizedString"/>
-      <xs:element name="beskrivelse" type="xs:normalizedString" minOccurs="0"/>
-      <xs:element name="endringer" minOccurs="0">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element name="endring" type="r:typ_endring" maxOccurs="unbounded"/>
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-    </xs:all>
-    <xs:attribute name="vedtaksdato" type="xs:date" use="optional"/>
-    <xs:attribute name="ikrafttredelse" type="xs:date" use="required"/>
-  </xs:complexType>
-
   <xs:complexType name="typ_endring">
     <xs:attribute name="handling" type="r:enm_handling" use="required"/>
     <xs:attribute name="referanse" type="xs:IDREF" use="required"/>
@@ -86,21 +93,18 @@
   <xs:complexType name="typ_paragraf">
     <xs:sequence>
       <xs:element name="tittel" type="xs:token" minOccurs="0"/>
-      <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="p" type="r:typ_punktum" minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element name="pf" type="r:typ_punktum_f" minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element name="ledd" type="r:typ_ledd" minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element name="ledd-p" minOccurs="0" maxOccurs="unbounded">
-          <xs:complexType>
-            <xs:simpleContent>
-              <xs:extension base="xs:normalizedString">
-                <xs:attributeGroup ref="r:ag_id_optional"/>
-                <xs:attributeGroup ref="r:ag_regel"/>
-              </xs:extension>
-            </xs:simpleContent>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="punktliste" type="r:typ_punktliste" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:choice minOccurs="0" maxOccurs="1">
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ledd" type="r:typ_ledd" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element name="ledd-p" minOccurs="0" maxOccurs="unbounded" type="r:typ_punktum"/>
+        </xs:choice>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="p" type="r:typ_punktum" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element name="pf" type="r:typ_punktum_f" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:choice>
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="punktliste" type="r:typ_punktliste" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
       </xs:choice>
     </xs:sequence>
     <xs:attributeGroup ref="r:ag_regel"/>
