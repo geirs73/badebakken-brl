@@ -5,7 +5,7 @@ param(
     [Parameter(Mandatory = $true)]
     [string] $Template,
 
-    [Parameter(Mandatory = $true)]
+    [Parameter(Mandatory = $false)]
     [string] $Outfile
 )
 
@@ -13,7 +13,11 @@ param(
 
 function Transform {
     Write-Host -ForegroundColor DarkMagenta "$Template $Infile $Outfile"
-    $(java -jar $SaxonLib -s:"$Infile" -xsl:"$Template" -o:"$Outfile" )
+    if ($Outfile) {
+        $(java -jar $SaxonLib -s:"$Infile" -xsl:"$Template" -o:"$Outfile" )
+    } else {
+        $(java -jar $SaxonLib -s:"$Infile" -xsl:"$Template"  )
+    }
 }
 
 
