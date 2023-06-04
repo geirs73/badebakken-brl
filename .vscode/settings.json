@@ -159,4 +159,5 @@
     "xml.format.emptyElements": "collapse",
     "xml.format.joinCommentLines": true,
     "vssolution.xmlClosingTagSpace": false,
+    "editor.wordBasedSuggestions": false,
 }

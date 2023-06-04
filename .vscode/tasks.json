@@ -56,9 +56,18 @@
             "command": "${workspaceFolder}/src/static/transform_migrering_1.ps1",
             "args": [
                 "-Template",
-                "${workspaceFolder}/src/static/migrering/nullmigrering.xslt"
+                "${workspaceFolder}/src/static/migrering/migrering-1.xslt"
             ]
         },
-
+        {
+            "label": "html",
+            "type": "shell",
+            "command": "${workspaceFolder}/src/static/transform_html.ps1",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
     ],
 }
