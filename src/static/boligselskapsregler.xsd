@@ -177,7 +177,7 @@
   <xs:simpleType name="enm_handling">
     <xs:restriction base="xs:normalizedString">
       <xs:enumeration value="sletting"/>
-      <xs:enumeration value="redigering"/>
+      <!-- <xs:enumeration value="redigering"/> -->
       <xs:enumeration value="tillegg"/>
     </xs:restriction>
   </xs:simpleType>
