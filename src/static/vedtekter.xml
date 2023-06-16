@@ -1,14 +1,14 @@
 <regelsett xmlns="urn:net.yxney.boligselskapsregler" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <!-- The schema is bound using catalog.xml -->
   <versjoner>
-    <versjon ikrafttredelse="1987-01-01" dokument-id="v1">
+    <versjon gyldig-fra="1987-01-01" dokument-id="v1">
       <vedtak>Lorem ipsum</vedtak>
       <beskrivelse>Lorem ipsum</beskrivelse>
       <endringer>
         <endring handling="tillegg" referanse="v1"/>
       </endringer>
     </versjon>
-    <versjon ikrafttredelse="2005-08-15" vedtaksdato="2005-04-11" dokument-id="v2">
+    <versjon gyldig-fra="2005-08-15" vedtaksdato="2005-04-11" dokument-id="v2">
       <vedtak>Vedtatt på konstituerende generalforsamling den 19. februar
         1987, med senere endringer og sist den 11. april 2005</vedtak>
       <beskrivelse>Bakgrunnen for nye vedtekter var at Stortinget hadde
@@ -22,7 +22,7 @@
       </endringer>
     </versjon>
 
-    <versjon ikrafttredelse="2009-05-07" dokument-id="v2">
+    <versjon gyldig-fra="2009-05-07" dokument-id="v2">
       <vedtak>Vedtatt på konstituerende generalforsamling den 19. februar
         1987, med senere endringer og sist den 7. mai 2009</vedtak>
       <beskrivelse>Ny paragraf §2-4 om sammenslåing av
@@ -32,7 +32,7 @@
       </endringer>
     </versjon>
 
-    <versjon ikrafttredelse="2011-05-18" dokument-id="v2">
+    <versjon gyldig-fra="2011-05-18" dokument-id="v2">
       <vedtak>Vedtatt på konstituerende generalforsamling den 19. februar
         1987, med senere endringer og sist den 18. mai 2011</vedtak>
       <beskrivelse/>
@@ -42,7 +42,7 @@
       </endringer>
     </versjon>
 
-    <versjon ikrafttredelse="2012-08-20" dokument-id="v2">
+    <versjon gyldig-fra="2012-08-20" dokument-id="v2">
       <vedtak>Vedtatt på konstituerende generalforsamling den 19. februar
         1987, med senere endringer og sist den 20. august 2012</vedtak>
       <endringer>
@@ -50,7 +50,7 @@
       </endringer>
     </versjon>
 
-    <versjon ikrafttredelse="2014-06-05" dokument-id="v2">
+    <versjon gyldig-fra="2014-06-05" dokument-id="v2">
       <vedtak>Vedtatt på konstituerende generalforsamling den 19. februar
         1987, med senere endringer og sist den 5. juni 2014</vedtak>
       <endringer>
@@ -62,7 +62,7 @@
       </endringer>
     </versjon>
 
-    <versjon ikrafttredelse="2015-06-03" dokument-id="v2">
+    <versjon gyldig-fra="2015-06-03" dokument-id="v2">
       <vedtak>Vedtatt på konstituerende generalforsamling den 19. februar
         1987, med senere endringer og sist den 3. juni 2015</vedtak>
       <endringer>
@@ -70,7 +70,7 @@
       </endringer>
     </versjon>
 
-    <versjon ikrafttredelse="2016-06-01" dokument-id="v2">
+    <versjon gyldig-fra="2016-06-01" dokument-id="v2">
       <vedtak>Vedtatt på konstituerende generalforsamling den 19. februar
         1987, med senere endringer og sist den 1. juni 2016</vedtak>
       <endringer>
@@ -78,7 +78,7 @@
       </endringer>
     </versjon>
 
-    <versjon ikrafttredelse="2018-05-31" dokument-id="v2">
+    <versjon gyldig-fra="2018-05-31" dokument-id="v2">
       <vedtak>Vedtatt på konstituerende generalforsamling den 19. februar
         1987, med senere endringer og sist den 31. mai 2018</vedtak>
       <endringer>
@@ -88,7 +88,7 @@
       </endringer>
     </versjon>
 
-    <versjon ikrafttredelse="2023-05-30" dokument-id="v2">
+    <versjon gyldig-fra="2023-05-30" dokument-id="v2">
       <vedtak>Vedtatt på konstituerende generalforsamling den 19. februar
         1987, med senere endringer og sist den 30. mai 2023</vedtak>
       <beskrivelse/>

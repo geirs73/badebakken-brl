@@ -41,7 +41,7 @@
       </xs:element>
     </xs:all>
     <xs:attribute name="vedtaksdato" type="xs:date" use="optional"/>
-    <xs:attribute name="ikrafttredelse" type="xs:date" use="required"/>
+    <xs:attribute name="gyldig-fra" type="xs:date" use="required"/>
     <xs:attribute name="dokument-id" type="xs:IDREF" use="required"/>
   </xs:complexType>
 

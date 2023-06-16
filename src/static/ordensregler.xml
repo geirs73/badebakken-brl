@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <regelsett xmlns="urn:net.yxney.boligselskapsregler">
   <versjoner>
-    <versjon vedtaksdato="1989-04-18" ikrafttredelse="1989-04-18" dokument-id="ordensregler-1987">
+    <versjon vedtaksdato="1989-04-18" gyldig-fra="1989-04-18" dokument-id="ordensregler-1987">
       <vedtak>vedtatt på konstituerende generalforsamling 19. februar 1987 med senere endringer,
         senest 18. april 1989</vedtak>
       <!-- <endringer> <endring referanse="foobar" handling="tillegg" /> </endringer> -->
