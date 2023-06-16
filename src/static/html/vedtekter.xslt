@@ -19,17 +19,17 @@
         <xsl:apply-templates select="r:versjoner"/>
     </xsl:template>
     <xsl:template match="r:versjon">
-        <xsl:variable name="versjon" select="@ikrafttredelse"/>
+        <xsl:variable name="versjon" select="@gyldig-fra"/>
         <xsl:variable name="dokumentId" select="@dokument-id"/>
 
         <xsl:message><xsl:text>Fant versjon: </xsl:text><xsl:value-of
-                select="@ikrafttredelse"/></xsl:message>
+                select="@gyldig-fra"/></xsl:message>
                 <xsl:message><xsl:text>Fant dokumentId: </xsl:text><xsl:value-of select="@dokument-id"/></xsl:message>
         <xsl:result-document
             href="../output/html/vedtekter-{@ikrafttredelse}.html" method="html" omit-xml-declaration="yes" validation="lax">
             <html>
                 <xsl:apply-templates select="/r:regelsett/r:dokumenter/*">
-                    <xsl:with-param name="ikrafttredelse" select="@ikrafttredelse"/>
+                    <xsl:with-param name="ikrafttredelse" select="@gyldig-fra"/>
                     <xsl:with-param name="dokumentId" select="@dokument-id"/>
                 </xsl:apply-templates>
             </html>

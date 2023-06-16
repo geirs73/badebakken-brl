@@ -170,6 +170,8 @@
       <xs:element name="punkt-f" type="r:typ_formatert_setning" maxOccurs="unbounded"/>
     </xs:choice>
     <xs:attribute name="type" use="required" type="r:enm_punkter"/>
+    <xs:attributeGroup ref="r:ag_regel"/>
+    <xs:attributeGroup ref="r:ag_id_optional"/>
   </xs:complexType>
 
   <!-- Enumerasjoner ******************** -->
