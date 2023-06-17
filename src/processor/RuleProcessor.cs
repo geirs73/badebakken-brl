@@ -36,9 +36,9 @@ public class RuleProcessor
             string hashBase64String = Convert.ToBase64String(hashBytes);
             p.SetAttributeValue("hash", hashBase64String);
 
-            byte[] randomBytes = RandomNumberGenerator.GetBytes(4);
+            byte[] randomBytes = RandomNumberGenerator.GetBytes(6);
             string newId = Convert.ToHexString(randomBytes).ToLowerInvariant();
-            p.SetAttributeValue("new-id", newId);
+            p.SetAttributeValue("pid", newId);
         }
 
         return doc;

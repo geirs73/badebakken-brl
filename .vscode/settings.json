@@ -155,11 +155,14 @@
         "*.less"
     ],
     "xml.codeLens.enabled": true,
-    "xml.completion.autoCloseRemovesContent": true,
+    "xml.completion.autoCloseRemovesContent": false,
     "XSLT.tasks.saxonJar": "src\\lib\\saxon-he-12.2.jar",
     "XSLT.resources.xsltPackages": [],
     "xml.format.emptyElements": "collapse",
     "xml.format.joinCommentLines": true,
     "vssolution.xmlClosingTagSpace": false,
     "editor.wordBasedSuggestions": false,
+    "xml.format.grammarAwareFormatting": true,
+    "xml.format.enforceQuoteStyle": "preferred",
+    "xml.format.spaceBeforeEmptyCloseTag": true,
 }

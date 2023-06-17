@@ -45,6 +45,11 @@
     <xs:attribute name="dokument-id" type="xs:IDREF" use="required"/>
   </xs:complexType>
 
+  <xs:complexType name="typ_endring">
+    <xs:attribute name="handling" type="r:enm_handling" use="required"/>
+    <xs:attribute name="referanse" type="xs:IDREF" use="required"/>
+  </xs:complexType>
+
   <xs:complexType name="typ_dokument">
     <xs:sequence>
       <xs:element name="tittel" minOccurs="0" maxOccurs="1">
@@ -63,13 +68,11 @@
         <xs:element name="paragraf-p" minOccurs="0" maxOccurs="unbounded" type="r:typ_setning"/>
       </xs:choice>
     </xs:sequence>
-    <xs:attributeGroup ref="r:ag_dokument"/>
+    <xs:attributeGroup ref="r:ag_nummerert_under"/>
+    <xs:attribute name="gyldig-fra" type="xs:date" use="required"/>
+    <xs:attribute name="gyldig-til" type="xs:date" use="optional" default="9999-01-01"/>
+    <xs:attribute name="erstatter" type="xs:IDREFS"/>
     <xs:attributeGroup ref="r:ag_id"/>
-  </xs:complexType>
-
-  <xs:complexType name="typ_endring">
-    <xs:attribute name="handling" type="r:enm_handling" use="required"/>
-    <xs:attribute name="referanse" type="xs:IDREF" use="required"/>
   </xs:complexType>
 
   <xs:complexType name="typ_kapittel">
@@ -115,33 +118,15 @@
     <xs:attributeGroup ref="r:ag_id_optional"/>
   </xs:complexType>
 
-  <xs:complexType name="typ_setning">
-    <xs:simpleContent>
-      <xs:extension base="xs:normalizedString">
-        <xs:attributeGroup ref="r:ag_id_optional"/>
-        <xs:attributeGroup ref="r:ag_regel"/>
-      </xs:extension>
-    </xs:simpleContent>
-  </xs:complexType>
-
-  <xs:complexType name="typ_formatert_setning">
-    <xs:choice minOccurs="0" maxOccurs="unbounded">
-      <xs:element name="n" type="xs:string"/>
-      <xs:element name="b" type="xs:string"/>
-      <xs:element name="u" type="xs:string"/>
-      <xs:element name="lov" type="r:typ_lovreferanse"/>
-    </xs:choice>
-    <xs:attributeGroup ref="r:ag_regel"/>
-    <xs:attributeGroup ref="r:ag_id_optional"/>
-    <xs:attribute name="sha1" type="xs:hexBinary"/>
-  </xs:complexType>
-
   <xs:complexType name="typ_punktum">
     <xs:annotation>
       <xs:documentation>Punktum i lover er det samme som setninger i vanlig språkbruk. Forkortet til &lt;p&gt;</xs:documentation>
     </xs:annotation>
     <xs:simpleContent>
-      <xs:extension base="r:typ_setning"/>
+      <xs:extension base="r:typ_setning">
+        <xs:attributeGroup ref="r:ag_id_optional"/>
+        <xs:attributeGroup ref="r:ag_regel"/>
+      </xs:extension>
     </xs:simpleContent>
   </xs:complexType>
 
@@ -167,11 +152,32 @@
   <xs:complexType name="typ_punktliste">
     <xs:choice minOccurs="1" maxOccurs="unbounded">
       <xs:element name="punkt" type="r:typ_punktum" maxOccurs="unbounded"/>
-      <xs:element name="punkt-f" type="r:typ_formatert_setning" maxOccurs="unbounded"/>
+      <xs:element name="punkt-f" maxOccurs="unbounded" type="r:typ_punktum_f"/>
     </xs:choice>
     <xs:attribute name="type" use="required" type="r:enm_punkter"/>
     <xs:attributeGroup ref="r:ag_regel"/>
     <xs:attributeGroup ref="r:ag_id_optional"/>
+  </xs:complexType>
+
+  <xs:complexType name="typ_setning">
+    <xs:simpleContent>
+      <xs:extension base="xs:normalizedString">
+        <xs:attributeGroup ref="r:ag_id_optional"/>
+        <xs:attributeGroup ref="r:ag_regel"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="typ_formatert_setning">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="n" type="xs:string"/>
+      <xs:element name="b" type="xs:string"/>
+      <xs:element name="u" type="xs:string"/>
+      <xs:element name="lov" type="r:typ_lovreferanse"/>
+    </xs:choice>
+    <xs:attributeGroup ref="r:ag_regel"/>
+    <xs:attributeGroup ref="r:ag_id_optional"/>
+    <xs:attribute name="sha1" type="xs:hexBinary"/>
   </xs:complexType>
 
   <!-- Enumerasjoner ******************** -->
@@ -265,12 +271,9 @@
     </xs:attribute>
   </xs:attributeGroup>
 
-  <xs:attributeGroup name="ag_dokument">
-    <xs:attributeGroup ref="r:ag_nummerert_under"/>
-    <xs:attribute name="gyldig-fra" type="xs:date" use="required"/>
-    <xs:attribute name="gyldig-til" type="xs:date" use="optional" default="9999-01-01"/>
-    <xs:attribute name="erstatter" type="xs:IDREFS"/>
-  </xs:attributeGroup>
+  <xs:attributeGroup name="ag_"/>
+
+  <xs:attributeGroup name="ag_dokument"/>
 
   <xs:attributeGroup name="ag_regel">
     <xs:attributeGroup ref="r:ag_nummerert"/>

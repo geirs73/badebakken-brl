@@ -5,7 +5,7 @@
       <vedtak>Lorem ipsum</vedtak>
       <beskrivelse>Lorem ipsum</beskrivelse>
       <endringer>
-        <endring handling="tillegg" referanse="v1"/>
+        <endring handling="tillegg" referanse="v1" />
       </endringer>
     </versjon>
     <versjon gyldig-fra="2005-08-15" vedtaksdato="2005-04-11" dokument-id="v2">
@@ -17,8 +17,8 @@
         i kraft. Dvs at de gamle vedtektene gjelder inntil ny lov trer i
         funksjon.</beskrivelse>
       <endringer>
-        <endring handling="sletting" referanse="v1"/>
-        <endring handling="tillegg" referanse="v2"/>
+        <endring handling="sletting" referanse="v1" />
+        <endring handling="tillegg" referanse="v2" />
       </endringer>
     </versjon>
 
@@ -28,17 +28,17 @@
       <beskrivelse>Ny paragraf §2-4 om sammenslåing av
         andelsleiligheter</beskrivelse>
       <endringer>
-        <endring handling="tillegg" referanse="v2_k2_5"/>
+        <endring handling="tillegg" referanse="v2_k2_5" />
       </endringer>
     </versjon>
 
     <versjon gyldig-fra="2011-05-18" dokument-id="v2">
       <vedtak>Vedtatt på konstituerende generalforsamling den 19. februar
         1987, med senere endringer og sist den 18. mai 2011</vedtak>
-      <beskrivelse/>
+      <beskrivelse />
       <endringer>
-        <endring handling="tillegg" referanse="v2_k5_1_8_v1"/>
-        <endring handling="tillegg" referanse="v2_k5_2_6_v1"/>
+        <endring handling="tillegg" referanse="v2_k5_1_8_v1" />
+        <endring handling="tillegg" referanse="v2_k5_2_6_v1" />
       </endringer>
     </versjon>
 
@@ -46,7 +46,7 @@
       <vedtak>Vedtatt på konstituerende generalforsamling den 19. februar
         1987, med senere endringer og sist den 20. august 2012</vedtak>
       <endringer>
-        <endring handling="tillegg" referanse="v2_k2_5"/>
+        <endring handling="tillegg" referanse="v2_k2_5" />
       </endringer>
     </versjon>
 
@@ -54,11 +54,11 @@
       <vedtak>Vedtatt på konstituerende generalforsamling den 19. februar
         1987, med senere endringer og sist den 5. juni 2014</vedtak>
       <endringer>
-        <endring handling="sletting" referanse="v2_k2_1_4_x1"/>
-        <endring handling="tillegg" referanse="v2_k2_6"/>
-        <endring handling="tillegg" referanse="v2_k5_1_9"/>
-        <endring handling="tillegg" referanse="v2_k5_1_10"/>
-        <endring handling="tillegg" referanse="v2_k5_3"/>
+        <endring handling="sletting" referanse="v2_k2_1_4_x1" />
+        <endring handling="tillegg" referanse="v2_k2_6" />
+        <endring handling="tillegg" referanse="v2_k5_1_9" />
+        <endring handling="tillegg" referanse="v2_k5_1_10" />
+        <endring handling="tillegg" referanse="v2_k5_3" />
       </endringer>
     </versjon>
 
@@ -66,7 +66,7 @@
       <vedtak>Vedtatt på konstituerende generalforsamling den 19. februar
         1987, med senere endringer og sist den 3. juni 2015</vedtak>
       <endringer>
-        <endring handling="tillegg" referanse="v2_k2_7"/>
+        <endring handling="tillegg" referanse="v2_k2_7" />
       </endringer>
     </versjon>
 
@@ -74,7 +74,7 @@
       <vedtak>Vedtatt på konstituerende generalforsamling den 19. februar
         1987, med senere endringer og sist den 1. juni 2016</vedtak>
       <endringer>
-        <endring handling="tillegg" referanse="v2_k5_2_7"/>
+        <endring handling="tillegg" referanse="v2_k5_2_7" />
       </endringer>
     </versjon>
 
@@ -82,25 +82,25 @@
       <vedtak>Vedtatt på konstituerende generalforsamling den 19. februar
         1987, med senere endringer og sist den 31. mai 2018</vedtak>
       <endringer>
-        <endring handling="tillegg" referanse="v2_k2_4_5"/>
-        <endring handling="tillegg" referanse="v2_k2_4_6"/>
-        <endring handling="tillegg" referanse="v2_k2_4_7"/>
+        <endring handling="tillegg" referanse="v2_k2_4_5" />
+        <endring handling="tillegg" referanse="v2_k2_4_6" />
+        <endring handling="tillegg" referanse="v2_k2_4_7" />
       </endringer>
     </versjon>
 
     <versjon gyldig-fra="2023-05-30" dokument-id="v2">
       <vedtak>Vedtatt på konstituerende generalforsamling den 19. februar
         1987, med senere endringer og sist den 30. mai 2023</vedtak>
-      <beskrivelse/>
+      <beskrivelse />
       <endringer>
-        <endring handling="sletting" referanse="v2_k5_1_8_v2"/>
-        <endring handling="tillegg" referanse="v2_k5_1_8_v2"/>
-        <endring handling="sletting" referanse="v2_k5_1_9_1_v1"/>
-        <endring handling="tillegg" referanse="v2_k5_1_9_1_v2"/>
-        <endring handling="sletting" referanse="v2_k5_1_9_2_v1"/>
-        <endring handling="tillegg" referanse="v2_k5_1_9_2_v2"/>
-        <endring handling="sletting" referanse="v2_k5_2_6_v1"/>
-        <endring handling="tillegg" referanse="v2_k5_2_6_v2"/>
+        <endring handling="sletting" referanse="v2_k5_1_8_v2" />
+        <endring handling="tillegg" referanse="v2_k5_1_8_v2" />
+        <endring handling="sletting" referanse="v2_k5_1_9_1_v1" />
+        <endring handling="tillegg" referanse="v2_k5_1_9_1_v2" />
+        <endring handling="sletting" referanse="v2_k5_1_9_2_v1" />
+        <endring handling="tillegg" referanse="v2_k5_1_9_2_v2" />
+        <endring handling="sletting" referanse="v2_k5_2_6_v1" />
+        <endring handling="tillegg" referanse="v2_k5_2_6_v2" />
       </endringer>
     </versjon>
 
@@ -585,7 +585,7 @@
               nødvendige utbedringer, delvis eller i sin helhet, refundert fra
               andelseier.</p>
           </ledd>
-          <ledd id="v2_k5_1_9_v2" gyldig-fra="2023-05-30"/>
+          <ledd id="v2_k5_1_9_v2" gyldig-fra="2023-05-30" />
           <ledd-p id="v2_k5_1_10" gyldig-fra="2014-06-05">
             Godkjente eksterne anlegg kan pålegges fjernet eller flyttet på for
             andelseiers regning dersom vedlikehold av den generelle boligmassen

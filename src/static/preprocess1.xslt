@@ -8,7 +8,7 @@
     <!-- <xsl:strip-space elements="*" /> -->
     <xsl:output method="xml" indent="no" encoding="utf-8" omit-xml-declaration="yes"/>
 
-    <xsl:template match="r:dokument|r:paragraf|r:kapittel|r:ledd|r:ledd-p|r:punktliste|r:punkt|r:punkt-p">
+    <xsl:template match="r:dokument|r:paragraf|r:kapittel|r:ledd|r:ledd-p|r:punktliste|r:punkt|r:punkt-p|r:punkt-f|r:p|r:pf">
         <xsl:param name="gyldig-fra" select="if (@gyldig-fra) then @gyldig-fra else '1900-01-01'"/>
         <xsl:param name="gyldig-til" select="if (@gyldig-til) then @gyldig-til else '9999-12-31'"/>
         <xsl:copy>

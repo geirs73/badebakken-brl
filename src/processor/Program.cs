@@ -19,9 +19,13 @@ internal static class Program
             IgnoreWhitespace = false
         };
 
-        XmlWriterSettings xmlWriterSettings = new();
+        XmlWriterSettings xmlWriterSettings = new()
+        {
 
-        using XmlReader reader = XmlReader.Create(".\\sample\\vedtekter-eksempel.xml", xmlReaderSettings);
+        };
+
+
+        using XmlReader reader = XmlReader.Create(@"../static/vedtekter.xml", xmlReaderSettings);
         XDocument xDoc = XDocument.Load(reader);
         XDocument xDoc2 = rp.ProcessRuleDocument(xDoc);
 
