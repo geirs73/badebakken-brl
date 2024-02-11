@@ -46,9 +46,10 @@ er dog ønskelig at utleie også skjer til beboere i borettslaget.
 
 ## Nøkler og garasjeportåpner
 
-Ta kontakt med ansvarlig for nøkler og garasjeportåpner. Betaling
-skjer helst via VIPPS. Konto 99480 for nøkler til oppgangene og 99481 for
-garasjeportåpnere. Man kan evt. søke opp «Badebakken» under betalingssiden.
+Ta kontakt med ansvarlig for nøkler og garasjeportåpner, Hege S. Moen.
+Kontaktinformasjon er her: [] Betaling skjer helst via VIPPS. Konto 99480 for
+nøkler til oppgangene og 99481 for garasjeportåpnere. Man kan evt. søke opp
+«Badebakken» under betalingssiden.
 
 ## Bestilling av fellesrom
 

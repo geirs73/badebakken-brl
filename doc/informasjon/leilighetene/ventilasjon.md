@@ -51,6 +51,10 @@ på kjøkkenet. Spjeldet på denne må aldri lukke seg helt. Dersom avtrekk fra 
 og kjøkken hindres, vil luften i leiligheten bli svært dårlig, særlig i
 vintersesongen.
 
+Ventilene på badet kan bli tette av støv, så de bør støvsuges av og til slik at
+luftstrømmen er uhindret ut av leiligheten. Bruk evt. en trepinne pinne eller
+lignende om støvet har blitt hardt og sitter fast.
+
 ![Eksempel på dårlig ventilasjon](daarlig_ventilasjon-768x594.png)
 
 ## Gulvkaldt?
