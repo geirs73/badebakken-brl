@@ -19,7 +19,7 @@ Om opplysningene ikke stemmer, trykk på "Endre opplysninger"-knappen, og gjør 
 
 ## 2. Samtykke
 
-For at styret i borettslaget skal kunne kommunisere med deg via portalen, må du IKKE være reservert mot dette. Pass på at sjekkboksen under "Knyttet til din bolig - Reservasjon mot elektrnoisk kommunikasjon" er blank.
+For at styret i borettslaget skal kunne kommunisere med deg via portalen, må du IKKE være reservert mot dette. Pass på at avkryssingsboksen under "Knyttet til din bolig - Reservasjon mot elektronisk kommunikasjon" er blank.
 
 Neste seksjon "Knyttet til ditt medlemskap" er opp til deg hvordan du ønsker å krysse av, det skal kun handle om hva USBL kan kontakte deg for.
 
@@ -27,6 +27,6 @@ Neste seksjon "Knyttet til ditt medlemskap" er opp til deg hvordan du ønsker å
 
 ## 3. Varsler
 
-De færresten logger seg på Bonabo hele tiden for å se om det er noe nytt. Derfor er det viktig å krysse av for at man ønsker epost om det skjer noe nytt. Vi anbefaler at du minst krysser av for "Varsler på E-post" for "Oppslag" og for "Varsel om ny melding".
+De færreste logger seg på Bonabo hele tiden for å se om det er noe nytt. Derfor er det viktig å krysse av for at man ønsker epost om det skjer noe nytt. Vi anbefaler at du minst krysser av for "Varsler på E-post" for "Oppslag" og for "Varsel om ny melding".
 
 ![Alt text](bonabo_varsler.png)
