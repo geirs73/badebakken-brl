@@ -1,4 +1,4 @@
-# Periodisk vedlikehold
+# Enkle vedlikeholdsoppgaver for andelseiere
 
 Andelseierne må utføre en del vedlikehold selv, eller sørge for at det utføres om leiligheten er bruksoverlatt (utleid). Ikke alt som er nevnt i [vedtektenes § 5-1 om vedlikeholdsplikt](https://badebakken.no/informasjon/vedtekter-og-regler/) er nevnt her, så det anbefales å lese disse også.
 
