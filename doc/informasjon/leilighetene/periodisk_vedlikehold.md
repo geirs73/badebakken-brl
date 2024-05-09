@@ -1,12 +1,14 @@
-# Enkle vedlikeholdsoppgaver for andelseiere
+# Vedlikehold
+
+## Enkle vedlikeholdsoppgaver for andelseiere
 
 Andelseierne må utføre en del vedlikehold selv, eller sørge for at det utføres om leiligheten er bruksoverlatt (utleid). Ikke alt som er nevnt i [vedtektenes § 5-1 om vedlikeholdsplikt](https://badebakken.no/informasjon/vedtekter-og-regler/) er nevnt her, så det anbefales å lese disse også.
 
-## Årlige vedlikeholdsoppgaver
+### Årlige vedlikeholdsoppgaver
 
 Velg en dato og sett den i kalenderen. Noen oppgaver er det best å gjøre før vinter, slik som oljing av dørlåser, andre er det best å gjøre på en varm sommerdag.
 
-### Olje lås på balkongdør
+#### Olje lås på balkongdør
 
 Om leiligheten har balkongdør så bør den smøres opp med låseolje en gang i året, gjerne på høsten. Låseolje kan kjøpes på jernvarebutikker og kanskje fortsatt også på bensinstasjoner.
 
@@ -15,7 +17,7 @@ Merk: Låsene på fellesdører (de med de runde nøkkelhullene) skal aldri oljes
 ![Alt text](BalkongDoerOlje1.png)
 ![Alt text](BalkongDoerOlje2.png)
 
-### Aktivere kuleventiler
+#### Aktivere kuleventiler
 
 I fordelingsskapene for vann i hver leilighet er det kuleventiler i vannfordelingsskap. Om disse ikke aktiveres av og til vil de bli veldig trege og vanskelige å betjene. Derfor er det viktig at man stenger og åpner disse en gang i året.
 
@@ -27,9 +29,11 @@ I fordelingsskapene for vann i hver leilighet er det kuleventiler i vannfordelin
 ![Alt text](Kuleventil_1.png)
 ![Alt text](Kuleventil_2.png)
 
-### Olje treverk på balkong
+#### Olje treverk på balkong
 
-## Jevnlige oppgaver
+
+
+### Jevnlige oppgaver
 
 Enkelte punkter gjelder bare for leiligheter som har dette utstyret.
 

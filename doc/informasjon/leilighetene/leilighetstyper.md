@@ -7,7 +7,7 @@ Disse leilighetene befinner seg på yttersidene i første etasje i lavblokkene
 (omtalt som As). Andelsnummer: 01, 03s, 13, 15s, 45, 47s, 57 og 59s. Totalt 8,
 halvparten speilvendte. Klikk på bildet for større versjon.
 
-<a href="Leilighetstype_A.png"><img src="Leilighetstype_A.png" width="400"/></a>
+<a href="Leilighetstype_A.png"><img alt="type a" src="Leilighetstype_A.png" width="400"/></a>
 
 ## Type B
 
@@ -15,7 +15,7 @@ Disse leilighetene befinner seg i midt første til tredje etasje i lavblokkene
 (232, 234, 238, 240). Andelsnummer: 02, 05, 08, 14, 17, 20, 23, 46, 49, 52, 48,
 61, 64. Totalt 12. Klikk på bildet for større versjon.
 
-<a href="Leilighetstype_B.png"><img src="Leilighetstype_B.png" width="400"/></a>
+<a href="Leilighetstype_B.png"><img alt= "type b" src="Leilighetstype_B.png" width="400"/></a>
 
 ## Type BL
 
@@ -23,7 +23,7 @@ Disse leilighetene befinner seg i midt i fjerde etasje i lavblokkene (232, 234,
 238, 240). L står for loft, fordi det er skrå tak her.
 Andelsnummer: 11, 23, 55, 67. Totalt 4. Klikk på bildet for større versjon.
 
-<a href="Leilighetstype_BL.png"><img src="Leilighetstype_BL.png" width="400"/></a>
+<a href="Leilighetstype_BL.png"><img alt="type bl" src="Leilighetstype_BL.png" width="400"/></a>
 
 ## Type C
 
@@ -33,7 +33,7 @@ speilvendte (omtalt som Cs). Andelsnummer: 4, 6s, 7, 9s, 16, 18s, 19, 21s, 48,
 50s, 51, 53s, 60, 62s, 63, 65s. Totalt 16, halvparten speilvendte. Klikk på
 bildet for større versjon.
 
-<a href="Leilighetstype_C.png"><img src="Leilighetstype_C.png" width="400"/></a>
+<a href="Leilighetstype_C.png"><img alt="type c" src="Leilighetstype_C.png" width="400"/></a>
 
 ## Type D
 
@@ -42,7 +42,7 @@ Disse leilighetene befinner seg på yttersidene i fjerde etasje i lavblokkene
 som Ds). Andelsnummer: 10, 12s, 22, 24s, 54, 56s, 66, 68s. Totalt 8, halvparten
 speilvendte. Klikk på bildet for større versjon.
 
-<a href="Leilighetstype_D.png"><img src="Leilighetstype_D.png" width="400"/></a>
+<a href="Leilighetstype_D.png"><img alt="type d" src="Leilighetstype_D.png" width="400"/></a>
 
 ## Type E
 
@@ -51,7 +51,7 @@ etasje. Leilighetene til høyre sett fra gårdsplassen er speilvendte, omtalt so
 Es. Andelsnummer: 25, 28s, 29, 32s, 33, 36s, 37, 40s. Totalt 8, halvparten
 speilvendte. Klikk på bildet for større versjon.
 
-<a href="Leilighetstype_E.png"><img src="Leilighetstype_E.png" width="400"/></a>
+<a href="Leilighetstype_E.png"><img alt="type e" src="Leilighetstype_E.png" width="400"/></a>
 
 ## Type EL
 
@@ -60,7 +60,7 @@ loft, siden det er skrå tak her. Leiligheten til høyre sett fra gårdsplassen 
 speilvendt, omtalt som ELs. Andelsnummer: 41, 44s. Klikk på bildet for større
 versjon.
 
-<a href="Leilighetstype_EL.png"><img src="Leilighetstype_EL.png" width="400"/></a>
+<a href="Leilighetstype_EL.png"><img alt="type el" src="Leilighetstype_EL.png" width="400"/></a>
 
 ## Type G
 
@@ -69,7 +69,7 @@ Leilighetene til høyre sett fra gårdsplassen er speilvendte, omtalt som Gs.
 Andelsnummer: 26, 27s, 30, 31s, 34, 35s, 38, 39s. Totalt 8, halvparten
 speilvendt. Klikk på bildet for større versjon.
 
-<a href="Leilighetstype_G.png"><img src="Leilighetstype_G.png" width="400"/></a>
+<a href="Leilighetstype_G.png"><img alt="type g" src="Leilighetstype_G.png" width="400"/></a>
 
 ## Type GL
 
@@ -78,7 +78,7 @@ loft, siden det er skrå tak her. Leiligheten til høyre sett fra gårdsplassen 
 speilvendt, omtalt som GLs. Andelsnummer: 42, 43s. Klikk på bildet for større
 versjon.
 
-<a href="Leilighetstype_GL.png"><img src="Leilighetstype_GL.png" width="400"/></a>
+<a href="Leilighetstype_GL.png"><img alt="type gl" src="Leilighetstype_GL.png" width="400"/></a>
 
 ## Type H og HL
 
@@ -87,7 +87,7 @@ første til tredje etasje. HL ligger i fjerde. L står for loft, siden det er sk
 tak i HL-leiligheten. Andelsnummer: 69, 73, 77, 81 (HL). Klikk på bildet for
 større versjon.
 
-<a href="Leilighetstype_H_og_HL.png"><img src="Leilighetstype_H_og_HL.png" width="400"/></a>
+<a href="Leilighetstype_H_og_HL.png"><img alt="type h og hl" src="Leilighetstype_H_og_HL.png" width="400"/></a>
 
 ## Type J
 
@@ -96,7 +96,7 @@ Leilighetene til høyre sett fra gårdsplassen er speilvendte, omtalt som Js.
 Andelsnummer: 70, 71s, 74, 75s, 78, 79s, 82, 83s. Totalt 8, halvparten
 speilvendt. Klikk på bildet for større versjon.
 
-<a href="Leilighetstype_J.png"><img src="Leilighetstype_J.png" width="400"/></a>
+<a href="Leilighetstype_J.png"><img alt="type j" src="Leilighetstype_J.png" width="400"/></a>
 
 ## Type K og KL
 
@@ -105,7 +105,7 @@ til tredje etasje. KL ligger i fjerde. L står for loft, siden det er skrå tak 
 KL-leiligheten. Andelsnummer: 72, 76, 80 og 84(KL). Klikk på bildet for større
 versjon.
 
-<a href="Leilighetstype_K_og_KL.png"><img src="Leilighetstype_K_og_KL.png" width="400"/></a>
+<a href="Leilighetstype_K_og_KL.png"><img alt="type k kl" src="Leilighetstype_K_og_KL.png" width="400"/></a>
 
 ## Oppsummering
 
